@@ -1,0 +1,67 @@
+Story And Question
+Sanat eserlerinin taklit etmesiyle ünlenmiş Replika Avni.Aslında işlerini, bu
+olaydan habersiz olan ressam Defneye yaptırmaktadır.Son aldığı işten Replika Avni
+çok iyi para kazanacaktır.Ancak  Defne yaptığı resimlerin orjinalmiş gibi satıldığını
+öğrenince bu olaya çok sinirlenmiş ve resmi yaptığı tuvalin resmin olmadığı boş kısımlarına
+rastgele bir şeyler karalamaya başlamış.Bunla yetinemeyip bulduğu tüm boyaları
+resmin üzerine fırlatmış ve kayıplara karışmış.Replika Avni'nin ya resmin üzerinde
+bazı düzenlemeler yapması yada başka bir ressam bulup tekrar cizdirmesi gerekmektedir.
+Replika Avni'nin az süresi olduğundan dolayı hangi işlem daha kısa sürecekse onu yapması gerekmektedir.
+Tuvali düzeltirken aşağıdaki işlemleri yapabilir ve bu işlemlerin herbirinin her bir renk için farklı süreleri olabilir.
+1)Tuvalin bir kısmını kesebilir.
+2)Tuvaldeki bir noktadaki rengi silebilir.
+3)Tuvaldeki bir noktadaki rengi değiştirebilir.
+4)Tuvaldeki renksiz bir noktayı boyayabilir.
+Resmin yeniden çizilme süresi belli olduğuna göre Replika Avni'nin resmi yeniden mi çizdirmesi
+gerektiğini yoksa resmi düzeltmesi mi gerektiğini belirleyiniz.Tuvaldeki renkler Red Green Blue şeklinde verilecektir.
+Boş olan noktalar White şeklinde verilecektir.Tuvali kesme işlemi süre almamaktadır.
+Input Format
+İlk satırda Q sorgu sayısı verilecektir.
+Takip eden blokların
+İlk satırında Tuvali içeren Matrix'in boyutları N,M
+Sonraki N satırda  M tane 'R','G','B','W' renklerinden biri verilecektir.
+Sonraki satırda orjinal tuvali içeren Matrix'in boyutları I,K
+Sonraki I satırda K tane 'R','G','B','W' renklerinden biri verilecektir.
+Sonraki 6 satırda sırasıyla dönüşecek renk dönüşceği renk ve bu işlemin süresi verilecektir.
+Sonraki 3 satırda her renk için boyama işleminin süresi
+Sonraki 3 satırda her renk için çıkarma işleminin süresi
+Sonraki satırda tabloyu baştan çizdirme işleminin süresi
+
+
+
+
+Constrains
+
+Sample Input
+1
+5 5
+R G B R R
+B B B G R
+W W R G B
+G R W W B
+W W W R G
+3 3
+B R G
+B G R
+R B B
+R B 10
+R G 5
+G B 3
+B R 4
+B G 15
+G R 20
+R 2
+G 1
+B 1
+R 6
+G 4
+B 3
+150
+
+
+
+Sample Output
+Replika Avni'nin tabloyu düzeltmesi için "DUZELT" başkasına
+çizdirmesi için "CIZDIR".
+
+Explanation

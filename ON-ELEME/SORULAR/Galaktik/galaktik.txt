@@ -1,0 +1,55 @@
+Story And Question
+Bir galaktik kargo şirketi uzay istasyonları arasında taşımacılık yapmaktadır.
+Deuterium(Bir uzay yakıtı) fiyatlarındaki artış galaktik kargo şirketinide vurmuştur.
+Şirketin sahipleri rotalarını optimize etmek için bir yol aramaktadırlar.
+Onlara bu konuda yardım etmeniz beklenmektedir.
+İki uzay istasyonu arasında en kısa yol  belirtilen warp(Warp Drive teknolojisi) rotalarıdır.
+Warp teknolojisinin tek eksik yanı sadece belirlenebilen warp rotalarını kullanabilmesidir.(rotalar doğrusaldır)
+Her teslimat toplam iki paketten olusup paketlerin ikiside farklı istasyonlardan alıncak olup tek bir istasyona bırakılacaktır.
+Her teslimatın başlangıç noktası belirtilecek olan kargo merkezidir.
+Uzay istasyonları ve kargo merkezinin koordinatları üç boyutlu uzay sistemine göre verilecektir.
+Amacınız Kargo merkezinden başlayıp paketleri toplayıp hedefe ulastıran en kısa rotayı hesaplayıp uzunlugunu bulmanız.
+Uzay istasyonlarının herbirinin bir numarası olacak şekilde verilecektir.
+
+
+Input Format
+İlk satırda uzay istasyonu sayısı(N) ve Warp rotası sayısı (W)
+Sonraki W satırda Birbirne bağlı olan iki uzay istasyonunun numaraları verilecektir.
+
+Bunu izleyen N satırda Uzay istasyonu numarası ve 3 boyutlu uzaydaki koordinatları verilecektir.
+
+Sonrasındaki 2 satırda paketlerin bulunduğu uzay istayonunun numaraları verilecektir.
+Sonraki satırda hedefin bulundugu uzay istasyonun numarası verilecektir.
+Son satırda ise Kargo Merkezinin numarası verilecektir.
+
+Constrains
+
+
+OUTPUT FORMAT **********
+Sample Input
+6 10
+1 3
+1 2
+5 4
+6 4
+4 1
+4 2
+3 5
+2 5
+5 6
+3 6
+1 3 5 61
+2 3 4 19
+3 3 41 12
+4 1 34 12
+5 13 41 51
+6 4 53 12
+3
+5
+4
+1
+
+
+Sample Output
+
+Explanation
