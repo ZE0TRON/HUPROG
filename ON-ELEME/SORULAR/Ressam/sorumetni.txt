@@ -1,11 +1,11 @@
 Story And Question
-Sanat eserlerinin taklit etmesiyle ünlenmiş Replika Avni.Aslında işlerini, bu
+Sanat eserlerini taklit etmesiyle ünlenmiş Replika Avni işlerini, bu
 olaydan habersiz olan ressam Defneye yaptırmaktadır.Son aldığı işten Replika Avni
-çok iyi para kazanacaktır.Ancak  Defne yaptığı resimlerin orjinalmiş gibi satıldığını
-öğrenince bu olaya çok sinirlenmiş ve resmi yaptığı tuvalin resmin olmadığı boş kısımlarına
-rastgele bir şeyler karalamaya başlamış.Bunla yetinemeyip bulduğu tüm boyaları
-resmin üzerine fırlatmış ve kayıplara karışmış.Replika Avni'nin ya resmin üzerinde
-bazı düzenlemeler yapması yada başka bir ressam bulup tekrar cizdirmesi gerekmektedir.
+çok iyi para kazanacaktır. Ancak Defne yaptığı resimlerin orjinalmiş gibi satıldığını
+öğrenince bu olaya çok sinirlenmiş ve resmi yaptığı tuvaldeki resmin olmadığı boş kısımlarına
+rastgele bir şeyler karalamaya başlamış. Bununla yetinmeyip bulduğu tüm boyaları
+resmin üzerine fırlatmış ve kayıplara karışmıştır. Replika Avni'nin ya resmin üzerinde
+bazı düzenlemeler yapması ya da başka bir ressam bulup tekrar çizdirmesi gerekmektedir.
 Replika Avni'nin az süresi olduğundan dolayı hangi işlem daha kısa sürecekse onu yapması gerekmektedir.
 Tuvali düzeltirken aşağıdaki işlemleri yapabilir ve bu işlemlerin herbirinin her bir renk için farklı süreleri olabilir.
 1)Tuvalin bir kısmını kesebilir.
@@ -13,8 +13,8 @@ Tuvali düzeltirken aşağıdaki işlemleri yapabilir ve bu işlemlerin herbirin
 3)Tuvaldeki bir noktadaki rengi değiştirebilir.
 4)Tuvaldeki renksiz bir noktayı boyayabilir.
 Resmin yeniden çizilme süresi belli olduğuna göre Replika Avni'nin resmi yeniden mi çizdirmesi
-gerektiğini yoksa resmi düzeltmesi mi gerektiğini belirleyiniz.Tuvaldeki renkler Red Green Blue şeklinde verilecektir.
-Boş olan noktalar White şeklinde verilecektir.Tuvali kesme işlemi süre almamaktadır.
+gerektiğini yoksa resmi düzeltmesi mi gerektiğini belirleyiniz. Tuvaldeki renkler Red Green Blue şeklinde verilecektir.
+Boş olan noktalar White şeklinde verilecektir.Tuvali kesme işleminden süre alınmamaktadır.
 Input Format
 İlk satırda Q sorgu sayısı verilecektir.
 Takip eden blokların
@@ -30,7 +30,7 @@ Sonraki satırda tabloyu baştan çizdirme işleminin süresi
 
 
 
-Constrains
+Constraints
 
 Sample Input
 1
@@ -61,7 +61,7 @@ B 3
 
 
 Sample Output
-Replika Avni'nin tabloyu düzeltmesi için "DUZELT" başkasına
-çizdirmesi için "CIZDIR".
+Replika Avni'nin tabloyu düzeltmesi için ekrana "DUZELT" veya başkasına
+çizdirmesi için ekrana "CIZDIR" yazdırın.
 
 Explanation
