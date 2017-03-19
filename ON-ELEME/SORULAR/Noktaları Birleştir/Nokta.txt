@@ -1,20 +1,18 @@
 Story And Question
-Verilen bir nokta setinde bağlı olacak vertexler belli olup başlanılan noktaya
-geri dönülecek şekilde elini kaldırmadan edgeleri çizebilir misin ?
-Pınarla Kerem canları çok sıkılınca bir oyun icat ediyorlar.
-Bir kağıda rastgele noktalar çizip bu noktalardan hangilerinin birbirine bağlı olacağını
-söylüyorlar birbirlerinden ellerini kaldırmadan bu noktaları birleştirmelerini ve
-başladıkları noktaya geri dönmeleri gerekiyor.Onlara bu konuda yardımcı olabilir misinz ?
-Eğer bu noktalar bir şekilde birleştirelip aynı noktaya gelinebiliyorsa
-Not:Bütün noktaların bir şekilde birbirne bağlı olduğunun garantisi verilmektedir.
-1 yoksa -1 çıktısı veriniz.
+Verilen bir nokta setinde bağlı olacak vertexleri belli olan ve başlanılan noktaya
+geri dönecek şekilde elini kaldırmadan tüm edgeleri çizebilir misin?
+Pınarla Kerem canları çok sıkılınca bir oyun icat ediyorlar ve bir kağıda rastgele noktalar çizip bu noktalardan hangilerinin birbirine bağlı olacağını söylüyorlar. Birbirlerinden ellerini kaldırmadan bu noktaları birleştirmeleri ve
+başladıkları noktaya geri dönmeleri gerekiyor. Onlara bu konuda yardımcı olabilir misiniz?
+Eğer bu noktalar bir şekilde birleştirelip aynı noktaya gelinebiliyorsa 1 yoksa -1 çıktısı veriniz.
+(Bütün noktalar bir şekilde birbirine bağlıdır.) #### Düzelt burayı ####
+
 Input Format
 İlk satırda Q sorgu sayısı
 Takip eden Q tane blokta
-İlk satır N nokta sayısı C cizgi sayısı verilecektir.
+İlk satırda N nokta sayısı C cizgi sayısı verilecektir.
 Takip eden C satırda
-Birbirine bağlantı a ve b noktalarının indeksleri verilecek
-Constrains
+Birbirine bağlantı a ve b noktalarının indeksleri verilecektir
+Constraints
 
 Sample Input
 2
