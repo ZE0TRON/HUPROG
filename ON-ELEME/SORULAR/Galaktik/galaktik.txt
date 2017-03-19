@@ -1,14 +1,14 @@
 Story And Question
 Bir galaktik kargo şirketi uzay istasyonları arasında taşımacılık yapmaktadır.
-Deuterium(Bir uzay yakıtı) fiyatlarındaki artış galaktik kargo şirketinide vurmuştur.
-Şirketin sahipleri rotalarını optimize etmek için bir yol aramaktadırlar.
+Deuterium(Bir uzay yakıtı) fiyatlarındaki artış galaktik kargo şirketini de vurmuştur.
+Şirketin sahipleri rotalarını optimize etmek için yeni bir yol aramaktadırlar.
 Onlara bu konuda yardım etmeniz beklenmektedir.
-İki uzay istasyonu arasında en kısa yol  belirtilen warp(Warp Drive teknolojisi) rotalarıdır.
-Warp teknolojisinin tek eksik yanı sadece belirlenebilen warp rotalarını kullanabilmesidir.(rotalar doğrusaldır)
-Her teslimat toplam iki paketten olusup paketlerin ikiside farklı istasyonlardan alıncak olup tek bir istasyona bırakılacaktır.
+İki uzay istasyonu arasında en kısa yol belirlenen warp(Warp Drive teknolojisi) rotalarıdır.
+Warp teknolojisinin tek eksi yanı sadece belirlenebilen warp rotalarını kullanabilmesidir.(rotalar doğrusaldır)
+Her teslimat toplam iki paketten oluşup paketlerin ikiside farklı istasyonlardan alıncak olup tek bir istasyona bırakılacaktır.
 Her teslimatın başlangıç noktası belirtilecek olan kargo merkezidir.
 Uzay istasyonları ve kargo merkezinin koordinatları üç boyutlu uzay sistemine göre verilecektir.
-Amacınız Kargo merkezinden başlayıp paketleri toplayıp hedefe ulastıran en kısa rotayı hesaplayıp uzunlugunu bulmanız.
+Amacınız Kargo merkezinden başlayıp paketleri toplayıp hedefe ulaştıran en kısa rotayı hesaplayıp uzunluğunu bulmanız.
 Uzay istasyonlarının herbirinin bir numarası olacak şekilde verilecektir.
 
 
