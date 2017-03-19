@@ -1,1 +1,1 @@
-#HUPROG Hail Soru Takımı
+#HUPROG all Hail Soru Takımı
