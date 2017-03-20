@@ -1,5 +1,3 @@
-!!##AŞIRI BASİT bir soru değil mi gereğinden çok kolay ? ##!!
-
 Story And Question
 Bir kahvehanenin müdavimi olan N tane amca vardır. Amcalar oyun oynarken bazen birbirlerine
 çay ısmarlıyorlar. Kahvehanenin sahibi(kahvenin sahibi soruyu bulan kişi olsun?) ise bunların hepsinin notunu tutuyor ve
