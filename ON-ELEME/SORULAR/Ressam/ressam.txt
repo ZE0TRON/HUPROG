@@ -8,10 +8,10 @@ resmin üzerine fırlatmış ve kayıplara karışmıştır. Replika Avni'nin ya
 bazı düzenlemeler yapması ya da başka bir ressam bulup tekrar çizdirmesi gerekmektedir.
 Replika Avni'nin az süresi olduğundan dolayı hangi işlem daha kısa sürecekse onu yapması gerekmektedir.
 Tuvali düzeltirken aşağıdaki işlemleri yapabilir ve bu işlemlerin herbirinin her bir renk için farklı süreleri olabilir.
-1)Tuvalin bir kısmını kesebilir.
-2)Tuvaldeki bir noktadaki rengi silebilir.
-3)Tuvaldeki bir noktadaki rengi değiştirebilir.
-4)Tuvaldeki renksiz bir noktayı boyayabilir.
+1)Tuvaldeki bir noktadaki rengi silebilir.
+2)Tuvaldeki bir noktadaki rengi değiştirebilir.
+3)Tuvaldeki renksiz bir noktayı boyayabilir.
+!!!!! Şunu doğru yere ekleyin resmin geri kalanındaki alan beyaz renkte olmak zorundadır.
 Resmin yeniden çizilme süresi belli olduğuna göre Replika Avni'nin resmi yeniden mi çizdirmesi
 gerektiğini yoksa resmi düzeltmesi mi gerektiğini belirleyiniz. Tuvaldeki renkler Red Green Blue şeklinde verilecektir.
 Boş olan noktalar White şeklinde verilecektir.Tuvali kesme işleminden süre alınmamaktadır.
@@ -31,31 +31,35 @@ Sonraki satırda tabloyu baştan çizdirme işleminin süresi
 
 
 Constraints
+N=I+2
+
+
+
 
 Sample Input
 1
-5 5
-R G B R R
-B B B G R
-W W R G B
-G R W W B
-W W W R G
+5 3
+RGB
+BBB
+WWR
+GRW
+WWW
 3 3
-B R G
-B G R
-R B B
+BRG
+BGR
+RBB
 R B 10
+R W 15
 R G 5
 G B 3
+G W 4
 B R 4
 B G 15
+B W 2
 G R 20
-R 2
-G 1
-B 1
-R 6
-G 4
-B 3
+W R 2
+W G 1
+W B 1
 150
 
 
