@@ -1,27 +1,23 @@
 Story And Question
 
-Bir galaktik kargo şirketi uzay istasyonları arasında taşımacılık yapmaktadır.
-Deuterium(Bir uzay yakıtı) fiyatlarındaki artış galaktik kargo şirketini de vurmuştur.
-Şirketin sahipleri rotalarını optimize etmek için yeni bir yol aramaktadırlar.
-Onlara bu konuda yardım etmeniz beklenmektedir.
-İki uzay istasyonu arasında en kısa yol belirlenen warp(Warp Drive teknolojisi) rotalarıdır.
-Warp teknolojisinin tek eksi yanı sadece belirlenebilen warp rotalarını kullanabilmesidir.
-Warp rotaları doğrusaldır.
+Bir galaktik kargo şirketi, uzay istasyonları arasında taşımacılık yapmaktadır. Deuterium(Bir uzay yakıtı) fiyatlarındaki artış galaktik kargo şirketini de etkilemektedir. Şirketin sahipleri rotalarını optimize etmek için yeni bir yol aramaktadırlar. Onlara bu konuda yardım etmeniz beklenmektedir.
+İki uzay istasyonu arasında en kısa yol, belirlenen Warp(Warp Drive teknolojisi) rotalarıdır. 
+Warp teknolojisinin tek olumsuz yanı, sadece belirlenebilen Warp rotalarını kullanabilmesidir. Warp rotaları doğrusaldır.
 Her teslimat toplam iki paketten oluşmaktadır.
-Paketlerin ikiside farklı istasyonlardan alıncak olup tek bir istasyona bırakılacaktır.
+Paketlerin ikisi de farklı istasyonlardan alınacak olup hedef istasyona bırakılacaktır.
 Her teslimatın başlangıç noktası belirtilecek olan kargo merkezidir.
-Uzay istasyonları ve kargo merkezinin koordinatları üç boyutlu uzay sistemine göre verilecektir.
-Amacınız kargo merkezinden başlayıp paketleri toplayıp hedefe ulaştıran en kısa rotayı hesaplayıp bu rotanın uzunluğunu bulmanız.
-Uzay istasyonlarının herbirinin bir numarası olacak şekilde verilecektir.
+Uzay istasyonları ve kargo merkezinin koordinatları üç boyutlu koordinat sistemine göre verilecektir.
+Amacınız, kargo merkezinden başlayıp paketleri toplayan, sonunda hedef istasyona ulaştıran en kısa rotanın uzunluğunu hesaplamaktır.
+Her uzay istasyonunun bir numarası vardır.
 
 
 Input Format
 
 İlk satırda uzay istasyonu sayısı(N) ve Warp rotası sayısı (W) verilecektir.
-Sonraki W satırda birbirine bağlı olan iki uzay istasyonunun numaraları verilecektir.
-Bunu izleyen N satırda uzay istasyonu numarası ve 3 boyutlu uzaydaki koordinatları verilecektir.
-Sonrasındaki 2 satırda paketlerin bulunduğu uzay istayonlarının numaraları verilecektir.
-Sonraki satırda hedefin bulunduğu uzay istasyonun numarası verilecektir.
+Takip eden W satırda birbirine bağlı olan iki uzay istasyonunun numaraları verilecektir.
+Takip eden N satırda uzay istasyonu numarası ve üç boyutlu uzaydaki koordinatları verilecektir.
+Sonraki iki satırda paketlerin bulunduğu uzay istayonlarının numaraları verilecektir.
+Sonraki satırda hedef uzay istasyonun numarası verilecektir.
 Son satırda ise kargo merkezinin numarası verilecektir.
 
 Constraints
