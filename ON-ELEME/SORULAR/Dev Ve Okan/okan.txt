@@ -1,6 +1,5 @@
-Okan tırmandığı dağın tepesinde bir devle karşılaşır. Dev, Okan'ın yaşamasına tek bir koşulla
-izin verecektir. Devin istediği kelimenin harflerini dağdan şehre inerken toplaması gerekmektedir.
-Dev dağı Okan'ın işlerini zorlaştırmak için merdivenler şekline getirmiştir ve okan her seferinde bir basamak mesafeden aşağı inebilmektedir. Okan kaç farklı şekilde hayatta kalabilir?
+Okan tırmandığı dağın tepesinde bir devle karşılaşır. Dev, Okan'ın yaşamasına tek bir koşulla izin verecektir. Devin istediği kelimenin harflerini dağdan şehre inerken toplaması gerekmektedir.Dev dağı Okan'ın işlerini zorlaştırmak için merdivenler şekline getirmiştir ve okan her seferinde bir basamak mesafeden aşağı inebilmektedir. Okan kaç farklı şekilde aşağıya inip hayatta kalabilir?
+
 Resim:
 
 <img></img>
@@ -10,10 +9,32 @@ Constraints:
 
 Input Format:
 İlk satırda Q sorgu sayısı
-Takip eden blocklarda satırda Merdivenin boyutları N,M
+Takip eden blocklarda satırda Merdivenin boyutları M satır,N sutun
 Sonraki satırda devin istediği kelime verilecektir.
 Takip eden M satırda N tane farklı Ai....An harf verilecektir.
 
 
 Output Format:
-Okanın kaç farklı şekilde hayatta kalabileceğini hesaplayınız.
+Okanın kaç farklı şekilde hayatta kalır.
+
+input:
+1
+2 3
+ACM7
+ACM
+CM7
+
+Output:
+3
+
+Explanation:
+<img></img>
+
+yada
+
+ACM
+  7
+A
+CM7
+AC
+ M7
