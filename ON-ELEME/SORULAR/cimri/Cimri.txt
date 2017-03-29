@@ -1,13 +1,13 @@
 Story And Question
 
-Bir kahvehanenin müdavimi olan N tane amca vardır. Amcalar oyun oynarken bazen birbirlerine çay ısmarlıyorlar. Kahvehanenin sahibi ise bunların hepsini bir listeye yazıyor ve amcalar aralarındaki en cimri kişiyi bulmak istiyorlar. Bunun için sizden yardım istiyorlar. (Eğer aynı sayıda çay ısmarlayan iki amca varsa en düşük indeksli amcayı alınız.)
+Bir kahvehanenin müdavimi olan N tane amca vardır. Bazen bu amcalar, oyun sırasında birbirlerine çay ısmarlamaktadırlar. Kahvehanenin sahibi ise bütün ısmarlamaların listesini tutmaktadır ve müşterileri aralarındaki en cimri kişiyi bulmak istemektedir. Bunun içinse sizin yardımınıza ihtiyacı vardır.
 
 Input Format
 
-İlk satırda sorgu sayısı Q verilecek
-Q kadar blok şeklinde
-İlk satırı N (amca sayısı) olacak şekilde
-N tane satırda 1 den N'e kadar indeksi i olan amcaya indeksi N olan amcanın kaç tane çay ısmarladığını belirten Ci sayısı verilcektir.
+İlk satırda sorgu sayısı Q
+Takip eden Q seferde:
+İlk satırda amca sayısı N,
+Takip eden NxN'lik matrikste, j indeksli amcanın i indeksli amcaya kaç tane çay ısmarladığını belirten Ci sayısı verilcektir. (i,j - sütun - satır numarası)
 
 Constraints
 
@@ -16,8 +16,8 @@ Constraints
 0<=Ci<100
 
 OUTPUT FORMAT **********
-Her bir sorgu için alt alta olacak şekilde
-En cimri olan amcanın indeksi
+Her bir sorgu için yeni satırda en cimri olan amcanın indeksi yazdırınız.
+Eğer aynı sayıda çay ısmarlayan iki amca varsa en düşük indeksi yazdırınız.
 
 Sample Input
 
@@ -39,7 +39,9 @@ Sample Output
 
 Explanation
 
-İlk amca 0+1+2=3, ikinci amca 3+1+3=7, üçüncü amca 4+5+7=16, son amca 9+1+3=13 çay ısmarladı.
+İlk sorguda:
+Toplamda ilk amca 0+1+2=3, ikinci amca 3+1+3=7, üçüncü amca 4+5+7=16, son amca 9+1+3=13 çay ısmarladı.
 En az çay ısmarlayan amcanın indeksi 1 olduğu için output 1 olacaktır.
-İlk amca 5+4=9, ikinci amca 2+1=3, üçüncü amca 4+1=5 çay ısmarladı.
+İkinci sorguda:
+Toplamda ilk amca 5+4=9, ikinci amca 2+1=3, üçüncü amca 4+1=5 çay ısmarladı.
 En az çay ısmarlayan amcanın indeksi 2 olduğu için output 2 olacaktır
