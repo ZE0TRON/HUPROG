@@ -1,8 +1,6 @@
 Story And Question
-Bir kahvehanenin müdavimi olan N tane amca vardır. Amcalar oyun oynarken bazen birbirlerine
-çay ısmarlıyorlar. Kahvehanenin sahibi ise bunların hepsinin notunu tutuyor ve
-Amcalar aralarındaki en cimri kişiyi bulmak istiyorlar. Bunun için sizden yardım istiyorlar. 
-(Eğer aynı sayıda çay ısmarlayan iki amca varsa en düşük indeksli amcayı alınız.)
+Bir kahvehanenin müdavimi olan N tane amca vardır. Amcalar oyun oynarken bazen birbirlerine çay ısmarlıyorlar. Kahvehanenin sahibi ise bunların hepsini hesaba yazıyor ve Amcalar aralarındaki en cimri kişiyi bulmak istiyorlar. Bunun için sizden yardım istiyorlar. (Eğer aynı sayıda çay ısmarlayan iki amca varsa en düşük indeksli amcayı alınız.)
+
 Input Format
 İlk satır sorgu sayısı Q verilcek
 Q kadar blok şeklinde
@@ -13,9 +11,11 @@ Constraints
 1<=Q<10000
 1<=N<50
 0<=Ci<100
+
 OUTPUT FORMAT **********
 Her bir sorgu için alt alta olacak şekilde
 En cimri olan amcanın indeksi
+
 Sample Input
 2
 4
@@ -31,6 +31,9 @@ Sample Input
 Sample Output
 1
 2
+
 Explanation
-İlk örnekte en az çay ısmarlayan amcanın indeksi 1 olduğu için output 1 olacaktır
-İkinci örnekte en az çay ısmarlayan amcanın indeksi 2 olduğu için output 2 olacaktır
+İlk amca 0+1+2=3, ikinci amca 3+1+3=7, üçüncü amca 4+5+7=16, son amca 9+1+3=13 çay ısmarladı.
+En az çay ısmarlayan amcanın indeksi 1 olduğu için output 1 olacaktır.
+İlk amca 5+4=9, ikinci amca 2+1=3, üçüncü amca 4+1=5 çay ısmarladı.
+En az çay ısmarlayan amcanın indeksi 2 olduğu için output 2 olacaktır
