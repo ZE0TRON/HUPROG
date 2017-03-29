@@ -1,3 +1,5 @@
+Story And Question:
+
 Okan, tırmandığı dağın tepesinde bir devle karşılaşır. Dev, Okan'ın yaşamasına tek bir koşulla izin verecektir: Okan, devin istediği kelimenin harflerini dağdan şehre inerken toplamalıdır.Dev, dağı Okan'ın işlerini zorlaştırmak için merdivenler şekline getirmiştir ve Okan her seferinde bir basamak aşağı inebilmektedir. Okan, hayatta kalabilmek için kaç farklı seçim yapabilir?
 
 Resim:
@@ -16,22 +18,22 @@ Takip eden M satırda N tane (Ai....An) harf verilecektir.
 
 
 Output Format:
-Okanın hayatta kalabilmek için yapabileceği farklı seçim sayısını yazdırınız.
+Okanın hayatta kalabilmek için yapabileceği farklı seçim sayılarını alt alta yazdırınız.
 
-input:
+Input Format:
 1
 2 3
 ACM7
 ACM
 CM7
 
-Output:
+Sample Output:
 3
 
 Explanation:
 <img></img>
 
-yada
+ya da
 
 ACM
   7

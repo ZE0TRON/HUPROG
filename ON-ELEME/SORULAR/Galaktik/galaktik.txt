@@ -1,4 +1,5 @@
 Story And Question
+
 Bir galaktik kargo şirketi uzay istasyonları arasında taşımacılık yapmaktadır.
 Deuterium(Bir uzay yakıtı) fiyatlarındaki artış galaktik kargo şirketini de vurmuştur.
 Şirketin sahipleri rotalarını optimize etmek için yeni bir yol aramaktadırlar.
@@ -15,6 +16,7 @@ Uzay istasyonlarının herbirinin bir numarası olacak şekilde verilecektir.
 
 
 Input Format
+
 İlk satırda uzay istasyonu sayısı(N) ve Warp rotası sayısı (W) verilecektir.
 Sonraki W satırda birbirine bağlı olan iki uzay istasyonunun numaraları verilecektir.
 Bunu izleyen N satırda uzay istasyonu numarası ve 3 boyutlu uzaydaki koordinatları verilecektir.
@@ -22,13 +24,15 @@ Sonrasındaki 2 satırda paketlerin bulunduğu uzay istayonlarının numaraları
 Sonraki satırda hedefin bulunduğu uzay istasyonun numarası verilecektir.
 Son satırda ise kargo merkezinin numarası verilecektir.
 
-Constrains
+Constraints
 
 
 OUTPUT FORMAT
+
 En kısa rotanın uzunluğunu yazdırınız.
 
 Sample Input
+
 6 10
 1 3
 1 2
@@ -53,4 +57,5 @@ Sample Input
 
 
 Sample Output
+
 142.46508782160475
