@@ -1,1 +1,0 @@
-#ressamin inputunu olusturcaz
