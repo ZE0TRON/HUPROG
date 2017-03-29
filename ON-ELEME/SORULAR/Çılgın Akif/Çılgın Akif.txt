@@ -1,23 +1,22 @@
-Çılgın Akif evinde çok çılgın bir düzenek hazırlamaktadır. Düzenekteki her mekanizma kendine bağlı alt mekanizmaları tetikleyecek şekilde kurulmuştur.
-Her mekanizmanın üzerinde birer sayaç bulunmaktadır. Mekanizmalar bir yada birden fazla top ile tetiklenebilirler. 
-Mekanizma üzerindeki sayaçlar, tetiklendiği top sayısı kadar artmaktadır.
-Mekanizmalar arasında bir hiyerarşi vardır ve bu hiyerarşi basitçe bir ağaç gibidir.
+Çılgın Akif, evine çok çılgın bir düzenek kurmuştur. Bu düzenek birbirine bağlı, numaralandırılmış mekanizmalardan oluşmaktadır. Mekanizmalar arasında bir hiyerarşi vardır ve bu hiyerarşi basitçe bir ağaç gibidir. Düzeneğin kullanımı ise mekanizmaların kullanıcı tarafından toplarla tetiklenmesi esasına dayanır. Düzenekte tetiklenen her mekanizma, kendine bağlı alt mekanizmaları tetikleyecek şekilde kurulmuştur.
+Her mekanizmanın üzerinde birer sayaç bulunmaktadır. Bir mekanizma tetiklendiğinde sayacındaki değer, tetiklendiği top sayısı kadar artmaktadır. Mekanizmalar bir ya da birden fazla top ile tetiklenebilirler. 
 
-Akif bir tetikleme başlatırken bir başlangıç ve bir bitiş mekanızması belirlemek zorundadır.
-Her mekanizma tetiklendiğinde varış mekanizması üzerinde bulunan tüm mekanizmaları ve onun alt mekanizmalarını tetkilemektedir.
+
+Akif bir tetikleme başlatırken bir başlangıç ve bir bitiş mekanizması belirlemek zorundadır.
+Her mekanizma tetiklendiğinde varış mekanizması üzerinde bulunan tüm mekanizmaları ve onun alt mekanizmalarını tetiklemektedir.
 Akif deneyi boyunca iki işlem yapabilmektedir.
 
 İşlemler:
-1) A mekanizmasından başlayıp B mekanizmasında bitecek T topluk bir tetikleme. ===> 1 A B T (Örnek Parametreler)
+1. İşlem: A mekanizmasından başlayıp B mekanizmasında bitecek T topluk bir tetikleme. ===> 1 A B T (Örnek Parametreler)
 Not: Başlangıç ve bitiş arasındaki tüm düzenekler sırasıyla tetiklenmektedir.
-2) A Mekanizması ve altında bulunan tüm mekanizmalardaki sayaç değerlerini toplayıp yazmak. Sonuçlar çok büyük çıkabileceği için 10009 a göre mod alıp yazdırınız. ====> 2 A (Örnek Parametreler)
-1. mekanizma her zaman kök mekanizması olacaktır ve sayaçlar sıfırlanmamaktadır.
+2. İşlem: A mekanizması ve altında bulunan tüm mekanizmalardaki sayaç değerlerini toplayıp yazma. Sonuçlar çok büyük çıkabileceği için 10009'a göre mod alıp yazdırınız. ====> 2 A (Örnek Parametreler)
+1 no'lu mekanizma her zaman kök mekanizması olacaktır ve sayaçlar sıfırlanmamaktadır.
 
 Input Format:
-İlk satır N (mekanizma sayısını)
-Sonraki N-1 satır mekanizmalar arasında bağlantıyı vericektir. Verilen A ve B mekanizmaları birbirine bağlıdır.
-Sonraki Satır M (İşlem sayısı)'i verecektir.
-Sonraki M satır, işlemleri ve bu işlemlerin parametrelerini içerecektir.
+İlk satırda mekanizma sayısı N,
+Takip eden N-1 satırda, mekanizmalar arası bağlantılar (A ve B birbirine bağlı olacak şekilde),
+Sonraki satırda işlem sayısı M,
+Takip eden M satırda, işlemler ve bu işlemlerin parametreleri verilecektir.
 
 
 
@@ -49,10 +48,9 @@ Sample Output:
 12
 
 Explanation :
-Akif 4 mekanizmasından başlayacak ve 10 mekanizmasında bitecek T=2 toplu bir tetikleme başlattığında
-sayaçlardaki son değerler şekildeki gibi olmaktadır.
-Bu değerlere göre sayaçların değerleri toplamı 2. mekanizma için: 2-6-8-11-10-12 mekanizmalarındaki sayıların toplamı  4+6+4+6+8+4 = 32
-Sonraki 2 nolu işlem için ise 5 numaraları mekanizma için 5-7-9 mekanizmalarındaki sayıların toplamı 4+4+4 = 12
+Akif 4 no'lu mekanizmadan başlayan ve 10 no'lu mekanizmada biten T=2 toplu bir tetikleme başlattığında (1. işlem) sayaçlardaki son değerler şekildeki gibi olmaktadır.
+Bu değerlere göre 2 no'lu mekanizma için 2. işlem yapıldığında; 2,6,8,11,10,12 no'lu mekanizmalardaki sayaç değerleri toplanır.  Sonuç 4+6+4+6+8+4 = 32'dir.
+5 no'lu mekanizma için 2. işlem yapıldığında ise 5,7,9 no'lu mekanizmalardaki sayaç değerleri toplanır. Sonuç 4+4+4 = 12'dir.
 
             1(2)
            /    \
