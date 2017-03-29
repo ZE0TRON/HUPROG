@@ -10,7 +10,7 @@ Takip eden C satırda, birbirine bir çizgi ile bağlı olması gereken A ve B n
 Constraints
 
 Output Fomat
-Eğer bu noktaları elinizi kaldırmadan birleştirip aynı noktaya gelmenin bir yolu varsa 1, aksi halde -1 yazdırınız.
+Her sorgu için yeni satırda olacak şekilde; eğer bu noktaları elinizi kaldırmadan birleştirip aynı noktaya gelmenin bir yolu varsa 1, aksi halde -1 yazdırınız.
 
 Sample Input
 2
