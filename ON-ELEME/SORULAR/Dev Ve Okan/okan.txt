@@ -16,7 +16,7 @@ Takip eden M satırda N tane (Ai....An) harf verilecektir.
 
 
 Output Format:
-Okanın kaç farklı şekilde hayatta kalır.
+Okanın hayatta kalabilmek için yapabileceği farklı seçim sayısını yazdırınız.
 
 input:
 1
