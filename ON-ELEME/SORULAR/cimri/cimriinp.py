@@ -2,7 +2,7 @@ from random import randint
 
 print("Dosya Adı: ")
 output = input()
-out = open(output + "inp.txt","w")
+out = open("Inputs/input"+output+".txt","w")
 
 print("soru sayısı: ")
 soruSayısı = int(input())
