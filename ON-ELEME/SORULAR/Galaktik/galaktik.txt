@@ -1,7 +1,7 @@
 Story And Question
 
 Bir galaktik kargo şirketi, uzay istasyonları arasında taşımacılık yapmaktadır. Deuterium(Bir uzay yakıtı) fiyatlarındaki artış galaktik kargo şirketini de etkilemektedir. Şirketin sahipleri rotalarını optimize etmek için yeni bir yol aramaktadırlar. Onlara bu konuda yardım etmeniz beklenmektedir.
-İki uzay istasyonu arasında en kısa yol, belirlenen Warp(Warp Drive teknolojisi) rotalarıdır. 
+İki uzay istasyonu arasında en kısa yol, belirlenen Warp(Warp Drive teknolojisi) rotalarıdır.
 Warp teknolojisinin tek olumsuz yanı, sadece belirlenebilen Warp rotalarını kullanabilmesidir. Warp rotaları doğrusaldır.
 Her teslimat toplam iki paketten oluşmaktadır.
 Paketlerin ikisi de farklı istasyonlardan alınacak olup hedef istasyona bırakılacaktır.
@@ -26,7 +26,7 @@ Constraints
 OUTPUT FORMAT
 
 En kısa rotanın uzunluğunu yazdırınız.
-
+Virgülden sonraki 3 basamak aynı olduğu sürece cevabınız doğru kabul edilecektir.
 Sample Input
 
 6 10
@@ -55,3 +55,6 @@ Sample Input
 Sample Output
 
 142.46508782160475
+
+Explanation :
+Verilen girdiler doğrultusunda 2 paketinde alınıp hedef noktaya ulaştırıldığı en kısa rotanın uzunluğu çıktı olarak verilmiştir.
