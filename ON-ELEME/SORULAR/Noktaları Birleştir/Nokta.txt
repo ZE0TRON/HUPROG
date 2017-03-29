@@ -1,11 +1,11 @@
 Story And Question
-Pınarla Kerem canları çok sıkılınca bir oyun icat ediyorlar ve bir kağıda rastgele noktalar çizip bu noktalardan hangilerinin birbirine bir çizgi ile bağlı olacağını söylüyorlar. Birbirlerinden ellerini kaldırmadan bu noktaları birleştirmelerini ve başladıkları noktaya geri dönmelerini bekliyorlar. Onlara bu konuda yardımcı olabilir misiniz?
+Pınarla Kerem canları çok sıkılıyor. Diğer oyunlardan artık bıktıkları için bir oyun yapmaya karar veriyorlar ve bir kağıda rastgele noktalar çizip bu noktalardan hangilerinin birbirine bir çizgi ile bağlı olacağını söylüyorlar. Birbirlerinden ellerini kaldırmadan bu noktaları birleştirmelerini ve başladıkları noktaya geri dönmelerini bekliyorlar. Onlara bu konuda yardımcı olabilir misiniz?
 Eğer bu noktaları elinizi kaldırmadan birleştirip aynı noktaya gelmenin bir yolu varsa 1 aksi halde -1 çıktısı veriniz.
 Input Format
-İlk satırda Q sorgu sayısı
-Takip eden Q tane blokta
+İlk satırda Q sorgu sayısı,
+Takip eden Q tane blokta,
 İlk satırda N nokta sayısı C çizgi sayısı verilecektir.
-Takip eden C satırda
+Takip eden C satırda,
 Birbirine bir çizgi ile bağlı olması gereken a ve b noktalarının numaraları verilecektir.
 Constraints
 
@@ -35,4 +35,4 @@ Sample Output
 1
 Explanation
 İlk örnekte verilen nokta ve çizgi kümesi için bu işlem imkansız olduğundan -1 çıktısı verilmiştir.
-İkinci örnekte 2-4-5-1-2-3-5-2 rotası izlenerek elini kaldırmadan noktaları birleştirmek mümkündür.
+İkinci örnekte 2-4-5-1-2-3-5-2 rotası izlenerek elinizi kaldırmadan noktaları birleştirmek mümkün olduğu için 1 çıktısı verilmiştir.
