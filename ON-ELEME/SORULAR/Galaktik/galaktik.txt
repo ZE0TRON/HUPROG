@@ -4,28 +4,30 @@ Deuterium(Bir uzay yakıtı) fiyatlarındaki artış galaktik kargo şirketini d
 Şirketin sahipleri rotalarını optimize etmek için yeni bir yol aramaktadırlar.
 Onlara bu konuda yardım etmeniz beklenmektedir.
 İki uzay istasyonu arasında en kısa yol belirlenen warp(Warp Drive teknolojisi) rotalarıdır.
-Warp teknolojisinin tek eksi yanı sadece belirlenebilen warp rotalarını kullanabilmesidir.(rotalar doğrusaldır)
-Her teslimat toplam iki paketten oluşup paketlerin ikiside farklı istasyonlardan alıncak olup tek bir istasyona bırakılacaktır.
+Warp teknolojisinin tek eksi yanı sadece belirlenebilen warp rotalarını kullanabilmesidir.
+Warp rotaları doğrusaldır.
+Her teslimat toplam iki paketten oluşmaktadır.
+Paketlerin ikiside farklı istasyonlardan alıncak olup tek bir istasyona bırakılacaktır.
 Her teslimatın başlangıç noktası belirtilecek olan kargo merkezidir.
 Uzay istasyonları ve kargo merkezinin koordinatları üç boyutlu uzay sistemine göre verilecektir.
-Amacınız Kargo merkezinden başlayıp paketleri toplayıp hedefe ulaştıran en kısa rotayı hesaplayıp uzunluğunu bulmanız.
+Amacınız kargo merkezinden başlayıp paketleri toplayıp hedefe ulaştıran en kısa rotayı hesaplayıp bu rotanın uzunluğunu bulmanız.
 Uzay istasyonlarının herbirinin bir numarası olacak şekilde verilecektir.
 
 
 Input Format
-İlk satırda uzay istasyonu sayısı(N) ve Warp rotası sayısı (W)
-Sonraki W satırda Birbirne bağlı olan iki uzay istasyonunun numaraları verilecektir.
-
-Bunu izleyen N satırda Uzay istasyonu numarası ve 3 boyutlu uzaydaki koordinatları verilecektir.
-
-Sonrasındaki 2 satırda paketlerin bulunduğu uzay istayonunun numaraları verilecektir.
-Sonraki satırda hedefin bulundugu uzay istasyonun numarası verilecektir.
-Son satırda ise Kargo Merkezinin numarası verilecektir.
+İlk satırda uzay istasyonu sayısı(N) ve Warp rotası sayısı (W) verilecektir.
+Sonraki W satırda birbirine bağlı olan iki uzay istasyonunun numaraları verilecektir.
+Bunu izleyen N satırda uzay istasyonu numarası ve 3 boyutlu uzaydaki koordinatları verilecektir.
+Sonrasındaki 2 satırda paketlerin bulunduğu uzay istayonlarının numaraları verilecektir.
+Sonraki satırda hedefin bulunduğu uzay istasyonun numarası verilecektir.
+Son satırda ise kargo merkezinin numarası verilecektir.
 
 Constrains
 
 
-OUTPUT FORMAT **********
+OUTPUT FORMAT
+En kısa rotanın uzunluğunu yazdırınız.
+
 Sample Input
 6 10
 1 3
@@ -51,5 +53,4 @@ Sample Input
 
 
 Sample Output
-
-Explanation
+142.46508782160475
