@@ -1,0 +1,66 @@
+Çılgın Akif evinde çok çılgın bir düzenek hazırlamaktadır. Düzenekte her bir mekanizma
+bir birini tetikleyecek şekilde kurulmuştur.
+Her mekanizmanın üzerinde bir sayaç bulunmaktadır.
+Mekanizmalar bir yada birden fazla topla tetiklenebilir ve mekanizma üzerindeki sayaçlar
+tetiklendiği top sayısı kadar artmaktadır.
+Mekanizmalar arasında bir hiyerarşi vardır.Bu  hiyerarşi basitçe bir ağaç gibidir.
+Akif bir tetikleme başlatırken bir başlangıç ve bir bitiş mekanızması belirlemektedir.
+Her mekanizma tetiklendiğinde varış mekanizması üzerinde bulunan
+tüm mekanizmaları ve onun alt mekanizmalarını tetkilemektedir.
+Akif deneyi boyunca iki işlem yapabilmektedir.
+1) A mekanizmasından başlayıp B mekanizmasında bitecek T topluk bir tetikleme. ===> 1 A B T
+2) A Mekanizması ve altında bulunan tüm mekanizmalardaki sayaç değerlerini toplayıp yazmak. Sonuçlar çok büyük çıkabileceği için 10009 a göre mod alıp yazdırınız. ====> 2 A
+1. mekanizma her zaman kök mekanizması olacaktır.
+Sayaçlar sıfırlanmamaktadır.
+
+Input Format:
+İlk satır N(mekanizma sayısını)
+Sonraki N-1 satır mekanizmalar arasında bağlantıyı vericektir. Verilen A ve B mekanizmaları birbirine bağlıdır.
+Sonraki Satır M(İşlem sayısı)' ı verecektir.
+Sonra M satır işlemleri ve bu işlemlerin parametrelerini içerecektir.
+
+
+
+Constraints :
+1 <= N,M <= 10^5
+1 <= A,B <= N
+1 <= T <= 1000
+
+Sample Input:
+12
+1 3
+1 2
+3 5
+3 4
+2 6
+2 8
+5 7
+5 9
+6 11
+6 10
+8 12
+3
+1 4 10 2
+2 2
+2 5
+
+Sample Output:
+32
+12
+
+Explanation :
+Akif 4 mekanizmasından başlayacak ve 10 mekanizmasında bitecek T=2 toplu bir tetikleme başlattığında
+sayaçlardaki son değerler şekildeki gibi olmaktadır.
+Bundan sayaç değerleri toplamları 2. mekanızma için  2-6-8-11-10-12 mekanizmalarındaki sayıların toplamı  4+6+4+6+8+4 = 32
+Sonraki 2 nolu işlem için ise 5 numaraları mekanizma için 5-7-9 mekanizmalarındaki sayıların toplamı 4+4+4 = 12
+
+            1(2)
+           /    \
+          /      \
+        3(4)     2(4)
+       / \       / \
+      /   \     /   \
+    5(4)  4(6) 6(6)  8(4)
+    / \        / \     \
+   /   \      /   \     \
+ 7(4) 9(4) 11(6) 10(8) 12(4)
