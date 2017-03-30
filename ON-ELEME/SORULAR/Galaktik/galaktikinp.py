@@ -18,7 +18,7 @@ def BFS(graph, start):
 
 print("Dosya Adı: ")
 output = input()
-out = open("Inputs/input"+output + ".txt","w")
+out = open("input/input"+output + ".txt","w")
 print("Uzay istasyonu sayısı(N): ")
 n = int(input())
 print("warp rotası sayısı: ")

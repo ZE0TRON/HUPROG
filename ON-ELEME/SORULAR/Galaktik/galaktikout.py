@@ -66,8 +66,8 @@ def dijkstra(graph,weights,start,end):
     cloud[u]=key
     return cloud[end]
 
-inpdosya=open("Inputs/input"+argv[1]+".txt","r")
-outdosya=open("Outputs/output"+argv[1]+".txt","w")
+inpdosya=open("input/input"+argv[1]+".txt","r")
+outdosya=open("output/output"+argv[1]+".txt","w")
 
 
 

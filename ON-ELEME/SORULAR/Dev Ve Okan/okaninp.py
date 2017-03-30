@@ -3,7 +3,7 @@ import string
 
 print("Dosya Adı: ")
 output = input()
-out = open("Inputs/input"+output + ".txt","w")
+out = open("input/input"+output + ".txt","w")
 
 print("soru sayısı: ")
 soruSayısı = int(input())

@@ -1,7 +1,9 @@
 from collections import defaultdict
+from time import time
 from sys import argv
-inpdosya=open("Inputs/input"+argv[1]+".txt","r")
-outdosya=open("Outputs/output"+argv[1]+".txt","w")
+atime=time()
+inpdosya=open("input/input"+argv[1]+".txt","r")
+outdosya=open("output/output"+argv[1]+".txt","w")
 q=int(inpdosya.readline())
 
 
@@ -19,3 +21,4 @@ for test in range(q):
         if(elem%2==1):
             okey=-1
     print(okey,file=outdosya)
+print(time()-atime)
