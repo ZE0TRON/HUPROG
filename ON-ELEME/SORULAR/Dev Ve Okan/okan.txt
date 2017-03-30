@@ -21,15 +21,25 @@ Output Format:
 Her sorgu için,
 Okanın hayatta kalabilmek için kaç farklı seçim yapabileceğini yazdırınız.
 Sonuç çok büyük çıkabileceğinden dolayı sonucu mod 10^9+7 şeklinde yazdırınız.
+
 Input Format:
-1
+2
 2 3
 ACM7
 ACM
 CM7
+7 6
+ACMHAC
+CMHACE
+MHACET
+HACETT
+ACETTE
+CETTEP
+ETTEPE
 
 Sample Output:
 3
+462
 
 Explanation:
 <img></img>
