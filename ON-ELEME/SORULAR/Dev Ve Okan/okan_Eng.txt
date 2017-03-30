@@ -1,5 +1,5 @@
 Story And Question
-Okan comes across with a giant at the top of a mountain. Giant lets Okan live with only one condition: Okan has to pick the letters of a word which giant wants respectively and without any other letter in between, as he goes down the mountain. To make things difficult for Okan, giant transforms the mountain to stairs and spread the letters of the word to each stair. Okan can go only one step at a time. How many options Okan have, to survive?
+Okan comes across with a giant at the top of a mountain. Giant lets Okan live with only one condition: Okan has to pick the letters of a word which giant wants respectively and without any other letter in between, as he goes down the mountain. To make things difficult for Okan, giant transforms the mountain to stairs and spreads the letters of the word to each stair. Okan can go only one step at a time. How many options Okan have, to survive?
 
 Image:
 <img></img>
@@ -9,13 +9,13 @@ Constraints:
 Input Format:
 First line contains an integer, Q, denoting the number of queries.
 Each of the Q queries contain:
-First line contains two space-seperated integers denoting width, M and number of stairs, N. (MxN matrix)
+First line contains two space-separated integers denoting width, M and number of stairs, N. (MxN matrix)
 Second line contains the word which giants wants Okan to pick from the mountain.
-Next M lines contains N space-seperated letters (Ai....An).
+Next M lines contains N space-separated letters (Ai....An).
 
 Output Format:
 For each query, print an integer on a new line denoting total number of ways Okan survives.
-As result can be too big, output the answer modulo 10^9+7.
+As results can be too big, output the answers modulo 10^9+7.
 
 Input Format:
 2
