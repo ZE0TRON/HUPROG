@@ -8,7 +8,9 @@ Takip eden Q blokta:
 Takip eden C satırda, birbirine bir çizgi ile bağlı olması gereken A ve B noktalarının numaraları verilecektir.
 
 Constraints
-
+1<=Q<250
+1<=N<5000
+1<=C<20000
 Output Format
 Her sorgu için yeni satırda olacak şekilde; eğer bu noktaları elinizi kaldırmadan birleştirip aynı noktaya gelmenin bir yolu varsa 1, aksi halde -1 yazdırınız.
 
