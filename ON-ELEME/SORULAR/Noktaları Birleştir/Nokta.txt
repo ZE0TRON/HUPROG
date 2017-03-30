@@ -1,5 +1,5 @@
 Story And Question
-Oğuz ile Batuhan’ın canları çok sıkılıyor. Bildikleri oyunları oynamaktan bıktıkları için bir oyun yapmaya karar veriyorlar ve bir kağıda rastgele noktalar çizip bu noktalardan hangilerinin birbirine bir çizgi ile bağlı olacağını söylüyorlar. Birbirlerinden ellerini kaldırmadan bu noktaları birleştirmelerini ve başladıkları noktaya geri dönmelerini bekliyorlar. Onlara bu konuda yardımcı olabilir misiniz?
+Oğuz ile Batuhan’ın canları çok sıkılıyor. Bildikleri oyunları oynamaktan bıktıkları için bir oyun yapmaya karar veriyorlar ve bir kağıda rastgele noktalar çizip bu noktalardan hangilerinin birbirine bir çizgi ile bağlı olacağını söylüyorlar. Birbirlerinden ellerini kaldırmadan ve aynı çizgileri bir daha çizmeden bu noktaları birleştirmelerini ve başladıkları noktaya geri dönmelerini bekliyorlar. Onlara bu konuda yardımcı olabilir misiniz?
 
 Input Format
 İlk satırda Q sorgu sayısı,
