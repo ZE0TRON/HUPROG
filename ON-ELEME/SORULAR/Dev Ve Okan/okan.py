@@ -6,6 +6,6 @@ def factorial(n):
 q=int(input())
 for test in range(q):
     n,m=map(int,input().split())
-    for i in range(M):
+    for i in range(m):
         input()
-print(factorial(n+m-2)//(factorial(n-1)*factorial(m-1))%((10**9)+7))
+    print(factorial(n+m-2)//(factorial(n-1)*factorial(m-1))%((10**9)+7))
