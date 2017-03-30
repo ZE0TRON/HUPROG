@@ -1,14 +1,14 @@
 Story And Question
 
-Bir galaktik kargo şirketi, uzay istasyonları arasında taşımacılık yapmaktadır. Deuterium(Bir uzay yakıtı) fiyatlarındaki artış galaktik kargo şirketini de etkilemektedir. Şirketin sahipleri rotalarını optimize etmek için yeni bir yol aramaktadırlar. Onlara bu konuda yardım etmeniz beklenmektedir.
+Bir galaktik kargo şirketi, uzay istasyonları arasında taşımacılık yapmaktadır. Deuterium(Bir uzay gemisi yakıtı) fiyatlarındaki artış galaktik kargo şirketini de etkilemektedir. Şirketin sahipleri rotalarını optimize etmek için yeni bir yol aramaktadırlar. Onlara bu konuda yardım etmeniz beklenmektedir.
 İki uzay istasyonu arasında en kısa yol, belirlenen Warp(Warp Drive teknolojisi) rotalarıdır.
-Warp teknolojisinin tek olumsuz yanı, sadece belirlenebilen Warp rotalarını kullanabilmesidir. Warp rotaları doğrusaldır.
+Warp teknolojisinin tek olumsuz yanı, sadece belirlenen Warp rotalarını kullanabilmesidir. Warp rotaları doğrusaldır.
 Her teslimat toplam iki paketten oluşmaktadır.
 Paketlerin ikisi de farklı istasyonlardan alınacak olup hedef istasyona bırakılacaktır.
 Her teslimatın başlangıç noktası belirtilecek olan kargo merkezidir.
 Uzay istasyonları ve kargo merkezinin koordinatları üç boyutlu koordinat sistemine göre verilecektir.
 Amacınız, kargo merkezinden başlayıp paketleri toplayan, sonunda hedef istasyona ulaştıran en kısa rotanın uzunluğunu hesaplamaktır.
-Her uzay istasyonunun bir numarası vardır.
+Uzay istasyonları numaralandırılmıştır.
 
 
 Input Format
@@ -16,7 +16,7 @@ Input Format
 İlk satırda uzay istasyonu sayısı(N) ve Warp rotası sayısı (W) verilecektir.
 Takip eden W satırda birbirine bağlı olan iki uzay istasyonunun numaraları verilecektir.
 Takip eden N satırda uzay istasyonu numarası ve üç boyutlu uzaydaki koordinatları verilecektir.
-Sonraki iki satırda paketlerin bulunduğu uzay istayonlarının numaraları verilecektir.
+Sonraki iki satırda paketlerin bulunduğu uzay istasyonlarının numaraları verilecektir.
 Sonraki satırda hedef uzay istasyonun numarası verilecektir.
 Son satırda ise kargo merkezinin numarası verilecektir.
 
@@ -26,7 +26,7 @@ Constraints
 OUTPUT FORMAT
 
 En kısa rotanın uzunluğunu yazdırınız.
-Virgülden sonraki 3 basamak aynı olduğu sürece cevabınız doğru kabul edilecektir.
+Sonucun virgülden sonraki 3 basamağı aynı olduğu sürece cevabınız doğru kabul edilecektir.
 Sample Input
 
 6 10
@@ -57,4 +57,4 @@ Sample Output
 142.46508782160475
 
 Explanation :
-Verilen girdiler doğrultusunda 2 paketinde alınıp hedef noktaya ulaştırıldığı en kısa rotanın uzunluğu çıktı olarak verilmiştir.
+Verilen girdiler doğrultusunda iki paketin de alınıp hedef noktaya ulaştırıldığı en kısa rotanın uzunluğu çıktı olarak verilmiştir.

@@ -1,6 +1,6 @@
 Story And Question:
 
-Okan, tırmandığı dağın tepesinde bir devle karşılaşır. Dev, Okan'ın yaşamasına tek bir koşulla izin verecektir: Okan, devin istediği kelimenin harflerini dağdan şehre inerken toplamalıdır.Dev, dağı Okan'ın işlerini zorlaştırmak için merdivenler şekline getirmiştir ve Okan her seferinde bir basamak aşağı inebilmektedir. Okan, hayatta kalabilmek için kaç farklı seçim yapabilir?
+Okan, tırmandığı dağın tepesinde bir devle karşılaşır. Dev, Okan'ın yaşamasına tek bir koşulla izin verecektir: Okan, devin istediği kelimenin harflerini dağdan şehre inerken toplamalıdır. Dev, Okan'ın işlerini zorlaştırmak için dağı merdivenler şekline getirmiştir. Okan her seferinde bir basamak aşağı inebilmektedir. Okan, hayatta kalabilmek için kaç farklı seçim yapabilir?
 
 Resim:
 
@@ -11,15 +11,16 @@ Constraints:
 
 Input Format:
 İlk satırda Q sorgu sayısı
-Takip eden Q seferde:
+Takip eden Q blokta:
 İlk satırda merdivenin boyutları M x N (genişlik x basamak sayısı)
 İkinci satırda devin istediği kelime verilecektir.
 Takip eden M satırda N tane (Ai....An) harf verilecektir.
 
 
 Output Format:
-Okanın hayatta kalabilmek için yapabileceği farklı seçim sayılarını alt alta yazdırınız.
-Sonuc çok büyük çıkabilceğinden sonucu mod 10^9+7 şeklinde yazdırınız.
+Her sorgu için,
+Okanın hayatta kalabilmek için kaç farklı seçim yapabileceğini yazdırınız.
+Sonuç çok büyük çıkabileceğinden dolayı sonucu mod 10^9+7 şeklinde yazdırınız.
 Input Format:
 1
 2 3
@@ -33,11 +34,3 @@ Sample Output:
 Explanation:
 <img></img>
 
-ya da
-
-ACM
-  7
-A
-CM7
-AC
- M7

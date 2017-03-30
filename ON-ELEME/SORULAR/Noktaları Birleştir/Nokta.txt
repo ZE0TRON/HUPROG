@@ -1,15 +1,15 @@
 Story And Question
-Pınar ile Keremin canları çok sıkılıyor. Bildikleri oyunları oynamaktan bıktıkları için bir oyun yapmaya karar veriyorlar ve bir kağıda rastgele noktalar çizip bu noktalardan hangilerinin birbirine bir çizgi ile bağlı olacağını söylüyorlar. Birbirlerinden ellerini kaldırmadan bu noktaları birleştirmelerini ve başladıkları noktaya geri dönmelerini bekliyorlar. Onlara bu konuda yardımcı olabilir misiniz?
+Oğuz ile Batuhan’ın canları çok sıkılıyor. Bildikleri oyunları oynamaktan bıktıkları için bir oyun yapmaya karar veriyorlar ve bir kağıda rastgele noktalar çizip bu noktalardan hangilerinin birbirine bir çizgi ile bağlı olacağını söylüyorlar. Birbirlerinden ellerini kaldırmadan bu noktaları birleştirmelerini ve başladıkları noktaya geri dönmelerini bekliyorlar. Onlara bu konuda yardımcı olabilir misiniz?
 
 Input Format
 İlk satırda Q sorgu sayısı,
-Takip eden Q seferde:
+Takip eden Q blokta:
 İlk satırda N nokta sayısı ve C çizgi sayısı,
 Takip eden C satırda, birbirine bir çizgi ile bağlı olması gereken A ve B noktalarının numaraları verilecektir.
 
 Constraints
 
-Output Fomat
+Output Format
 Her sorgu için yeni satırda olacak şekilde; eğer bu noktaları elinizi kaldırmadan birleştirip aynı noktaya gelmenin bir yolu varsa 1, aksi halde -1 yazdırınız.
 
 Sample Input

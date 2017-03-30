@@ -48,7 +48,7 @@ Sample Output:
 12
 
 Explanation :
-Akif 4 no'lu mekanizmadan başlayan ve 10 no'lu mekanizmada biten T=2 toplu bir tetikleme başlattığında (1. işlem) sayaçlardaki son değerler şekildeki gibi olmaktadır.
+Akif, 4 no'lu mekanizmadan başlayan ve 10 no'lu mekanizmada biten T=2 toplu bir tetikleme başlattığında (1. işlem) sayaçlardaki son değerler şekildeki gibi olmaktadır.
 Bu değerlere göre 2 no'lu mekanizma için 2. işlem yapıldığında; 2,6,8,11,10,12 no'lu mekanizmalardaki sayaç değerleri toplanır.  Sonuç 4+6+4+6+8+4 = 32'dir.
 5 no'lu mekanizma için 2. işlem yapıldığında ise 5,7,9 no'lu mekanizmalardaki sayaç değerleri toplanır. Sonuç 4+4+4 = 12'dir.
 
