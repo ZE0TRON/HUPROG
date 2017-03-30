@@ -1,7 +1,7 @@
 from sys import argv
 
-inpdosya=open("Inputs/input"+argv[1]+".txt","r")
-outdosya=open("Outputs/output"+argv[1]+".txt","w")
+inpdosya=open("input/input"+argv[1]+".txt","r")
+outdosya=open("output/output"+argv[1]+".txt","w")
 q=int(inpdosya.readline())
 for test in range(q):
     N=int(inpdosya.readline())
