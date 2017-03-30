@@ -33,9 +33,9 @@ for _ in range(soruSayısı):
     xCoor = 0
     yCoor = 0
     while True:
-        if yCoor == matrixBoyutuY:
+        if yCoor == matrixBoyutuX:
             break
-        elif xCoor == matrixBoyutuX:
+        elif xCoor == matrixBoyutuY:
             yCoor += 1
             xCoor = 0
             print("", file=out)

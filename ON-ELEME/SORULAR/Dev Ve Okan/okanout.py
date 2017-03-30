@@ -9,6 +9,6 @@ outdosya=open("output/output"+argv[1]+".txt","w")
 q=int(inpdosya.readline())
 for test in range(q):
     n,m=map(int,inpdosya.readline().split())
-    for i in range(m+1):
+    for i in range(n+1):
         inpdosya.readline()
     print((factorial(n+m-2)//(factorial(n-1)*factorial(m-1))%((10**9)+7)),file=outdosya)
