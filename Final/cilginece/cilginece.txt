@@ -1,17 +1,38 @@
 Story And Question
-
-
+Çılgın profesör Ece, çok çılgın bir deney yapmaktadır. Deneyinde bir tüp içerisine farklı
+atomların antimadde ve normal madde hallerini eklemektedir.
+Her ekleme yaptığında o madde veya antimaddeden 1 mol eklemektedir.
+Ece bir yere kadar eklediği madde ve antimaddeleri hafızasında tutabilmektedir.
+Ancak hafızasına da çok güvenmediğinden bir deftere eklediği maddeleri ve antimaddeleri yazmaktadır.
+Deneyin ilerleyen aşamalarında Ece'nin kafası karışıp eklediği maddeleri ve antimaddeleri unutmuştur.
+Ece'nin deney tüpündeki maddelerin tamamını enerjiye dönüştürmesi gerekmektedir.(Madde + Antimadde = Enerji)
+Ancak aynı atom numarasına sahip maddeler ve antimaddeler eşit molde tepkimeye girerek enerji oluşturabilirler.
+Ece deney tüpüne aynı atom numarasındaki bir parçacığı eklerken madde-antimadde-madde-....-antimadde şeklinde devam etmektedir.
+Yalnız Ece'nin bu şekilde eklemeyi unuttuğu bir parçacık türü kalmıştır.
+Ece defterine çok fazla şey yazdığını fark edip bunla başa çıkamayacağına karar verip yakın arkadaşı çılgın Akif'i çağırmıştır.
+Çılgın Akif'in Ece'nin defterine bakarak, hangi atom numarasına sahip madde veya antimadde nin tüpte kaldığını tespit etmesi gerekmektedir.
+Ona bu konuda yardımcı olabilir misiniz ?
 Input Format
-
-
+İlk satırda Q sorgu sayısı
+Takip eden Q blokta
+İlk satırda N toplam eklenen madde+antimadde sayısı
+Sonraki satırda sırasıyla deney tüpüne eklenen madde veya antimaddelerin atom numaraları verilecektir.
 Constraints
 
 
 OUTPUT FORMAT **********
-
+Her bir sorgu için alt alta,
+deney tüpüne eklenmesi gereken madde veya antimaddenin atom numarasını çıktı olarak veriniz.
 Sample Input
+2
+5
+1 2 3 2 3
+10
+2 3 4 5 12 4 2 12 3
 
 Sample Output
-
-
+1
+5
 Explanation
+İlk deneyde 1 atom numaralı madde nin anti maddesi eklenmemiş olduğundan deney tüpüne 1 atom numaralı antimadde eklemelidir.
+İkinci deneyde 5 atom numaralı madde nin anti maddesi eklenmemiş olduğundan deney tüpüne 5 atom numaralı antimadde eklemelidir.
