@@ -5,7 +5,7 @@ print("Dosya Adı: ")
 output = input()
 out = open("input/input"+output + ".txt","w")
 
-print("soru sayısı: ")
+print("sorgu sayısı: ")
 soruSayısı = int(input())
 
 print("Matrix boyutu minimum x:")
