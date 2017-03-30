@@ -1,13 +1,13 @@
 Story And Question
 
-There are N customers that are regulars of a coffehouse. Occasionally they order tea to each other during their games and owner of the coffeshop keeps a list of these orders. Customers need your help to find the stingiest among each other.
+There are N customers that are regulars of a coffeehouse. Occasionally they order tea to each other during their games and owner of the coffee shop keeps a list of these orders. Customers need your help to find the stingiest among each other.
 
 Input Format
 
 First line contains an integer, Q, denoting the number of queries.
 Each of the Q queries contain:
 First line contains an integer N (the number of customers).
-Next N lines of NxN matrix contains N space-seperated integers, Ci, tea order count of customer with index j to customer with index i. (i: column, j: row)
+Next N lines of NxN matrix contains N space-separated integers, Ci, tea order count of customer with index j to customer with index i. (i: column, j: row)
 
 Constraints
 
@@ -17,7 +17,7 @@ Constraints
 
 Output Format
 
-For each query, print an integer on a new line denoting the stingiest customers index.
+For each query, print an integer on a new line denoting the stingiest customer's index.
 If there are more than one stingy person print the one with the smaller index.
 
 Sample Input
@@ -41,9 +41,8 @@ Sample Output
 Explanation
 
 For the first query:
-First customer ordered total 0+1+2=3 tea, second customer 3+1+3=7, third customer 4+5+7=16, last customer 9+1+3=13.
+First customer ordered  0+1+2=3 tea, second customer 3+1+3=7, third customer 4+5+7=16, last customer 9+1+3=13.
 As customer with index 1 has the least tea order count, answer is 1.
 For the second query:
 First customer ordered total 5+4=9 tea, second customer 2+1=3, last customer 4+1=5
 As customer with index 2 has the least tea order count, answer is 2.
-
