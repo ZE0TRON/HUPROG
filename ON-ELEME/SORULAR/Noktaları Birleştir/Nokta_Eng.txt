@@ -1,0 +1,44 @@
+Story And Question
+Oðuz and Batuhan are really bored. As they are done with playing same games, they decide to create a game. After they draw random points on a paper and connect some pairs, they ask each other whether they can draw a line such that it has to come back to it's beginning position after passing all lines only one time, without any hand lifting. Can you help them with this game?
+
+Input Format
+First line contains an integer, Q, denoting the number of queries.
+Each of the Q queries contain:
+First line contains two space-separated integers, denoting the total number of points, N and the total number of lines, C.
+Next C lines contain two space-separated integers, denoting A and B points which connected with each other.
+
+Constraints
+1<=Q<250
+1<=N<5000
+1<=C<20000
+
+Output Format
+For each query, print 1 if there is a way of connecting every point without lifting hand and coming back to its beginning position, otherwise -1.
+
+Sample Input
+2
+5 8
+1 2
+2 3
+3 4
+4 5
+5 1
+5 2
+5 3
+4 2
+5 7
+1 2
+2 3
+4 5
+5 1
+5 2
+5 3
+4 2
+
+Sample Output
+-1
+1
+
+Explanation
+For the first query it is impossible so -1 is printed.
+For the second query it is possible if 2-4-5-1-2-3-5-2 route is followed, answer is 1.
