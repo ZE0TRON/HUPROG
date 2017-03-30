@@ -12,3 +12,5 @@ for test in range(q):
     for i in range(n+1):
         inpdosya.readline()
     print((factorial(n+m-2)//(factorial(n-1)*factorial(m-1))%((10**9)+7)),file=outdosya)
+inpdosya.close()
+outdosya.close()
