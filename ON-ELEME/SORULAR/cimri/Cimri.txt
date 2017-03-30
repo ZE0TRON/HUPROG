@@ -1,13 +1,13 @@
 Story And Question
 
-Bir kahvehanenin müdavimi olan N tane amca vardır. Bazen bu amcalar, oyun sırasında birbirlerine çay ısmarlamaktadırlar. Kahvehanenin sahibi ise bütün ısmarlamaların listesini tutmaktadır ve müşterileri aralarındaki en cimri kişiyi bulmak istemektedir. Bunun içinse sizin yardımınıza ihtiyacı vardır.
+Bir kahvehanenin müdavimi olan N tane amca vardır. Bazen bu amcalar, oyun sırasında birbirlerine çay ısmarlamaktadırlar. Kahvehanenin sahibi ise bütün ısmarlamaların listesini tutmaktadır ve amcalar, aralarındaki en cimri kişiyi bulmak istemektedir. Bunun içinse sizin yardımınıza ihtiyaçları vardır.
 
 Input Format
 
 İlk satırda sorgu sayısı Q
-Takip eden Q seferde:
+Takip eden Q blokta:
 İlk satırda amca sayısı N,
-Takip eden NxN'lik matrikste, j indeksli amcanın i indeksli amcaya kaç tane çay ısmarladığını belirten Ci sayısı verilcektir. (i,j - sütun - satır numarası)
+Takip eden NxN'lik matriste, j indeksli amcanın i indeksli amcaya kaç tane çay ısmarladığını belirten Ci sayısı verilcektir. (i: sütun, j: satır numarası)
 
 Constraints
 
@@ -16,11 +16,10 @@ Constraints
 0<=Ci<100
 
 OUTPUT FORMAT **********
-Her bir sorgu için yeni satırda en cimri olan amcanın indeksi yazdırınız.
-Eğer aynı sayıda çay ısmarlayan iki amca varsa en düşük indeksi yazdırınız.
+Her bir sorgu için yeni satırda en cimri olan amcanın indeksini yazdırınız.
+Eğer aynı sayıda çay ısmarlayan iki amca varsa en düşük indeksli olanı yazdırınız.
 
 Sample Input
-
 2
 4
 0 0 1 2
@@ -40,8 +39,8 @@ Sample Output
 Explanation
 
 İlk sorguda:
-Toplamda ilk amca 0+1+2=3, ikinci amca 3+1+3=7, üçüncü amca 4+5+7=16, son amca 9+1+3=13 çay ısmarladı.
-En az çay ısmarlayan amcanın indeksi 1 olduğu için output 1 olacaktır.
+İlk amca 0+1+2=3, ikinci amca 3+1+3=7, üçüncü amca 4+5+7=16, son amca 9+1+3=13 çay ısmarlamıştır.
+En az çay ısmarlayan amcanın indeksi 1 olduğu için çıktı 1 olacaktır.
 İkinci sorguda:
-Toplamda ilk amca 5+4=9, ikinci amca 2+1=3, üçüncü amca 4+1=5 çay ısmarladı.
-En az çay ısmarlayan amcanın indeksi 2 olduğu için output 2 olacaktır
+İlk amca 5+4=9, ikinci amca 2+1=3, üçüncü amca 4+1=5 çay ısmarlamıştır.
+En az çay ısmarlayan amcanın indeksi 2 olduğu için çıktı 2 olacaktır.
