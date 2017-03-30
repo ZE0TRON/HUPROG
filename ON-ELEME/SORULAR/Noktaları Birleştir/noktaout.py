@@ -1,7 +1,7 @@
 from collections import defaultdict
 from sys import argv
-inpdosya=open(argv[1]+"inp.txt","r")
-outdosya=open(argv[1]+"out.txt","w")
+inpdosya=open("Inputs/input"+argv[1]+".txt","r")
+outdosya=open("Outputs/output"+argv[1]+".txt","w")
 q=int(inpdosya.readline())
 
 

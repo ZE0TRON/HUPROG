@@ -20,7 +20,7 @@ def BFS(graph, start):
 
 print("Dosya Adı: ")
 output = input()
-out = open(output + ".txt","w")
+out = open("Inputs/input"+output + ".txt","w")
 
 print("soru sayısı: ")
 soruSayısı = int(input())
