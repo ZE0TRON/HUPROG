@@ -19,7 +19,7 @@ Takip eden M satırda N tane (Ai....An) harf verilecektir.
 
 Output Format:
 Okanın hayatta kalabilmek için yapabileceği farklı seçim sayılarını alt alta yazdırınız.
-
+Sonuc çok büyük çıkabilceğinden sonucu mod 10^9+7 şeklinde yazdırınız.
 Input Format:
 1
 2 3

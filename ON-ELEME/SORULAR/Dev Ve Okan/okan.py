@@ -8,4 +8,4 @@ for test in range(q):
     N,M=map(int,input().split())
     for i in range(M):
         input()
-print(factorial(n+m-2)/(factorial(n-1)*factorial(m-1)))
+print(factorial(n+m-2)//(factorial(n-1)*factorial(m-1))%((10**9)+7))
