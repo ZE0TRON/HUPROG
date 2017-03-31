@@ -1,6 +1,9 @@
+#include <iostream>
 #include <algorithm>
 #include <cstdio>
 #include <vector>
+#include <fstream>
+#include <string>
 #define FOR(i,a,b) for(i=a; i<=b; i++)
 #define FOR2(i,n) FOR(i,0,n-1)
 #define TFOR(i,a,b) for(i=a; i>=b; i--)
@@ -13,9 +16,41 @@
 #define MAXT 262150
 using namespace std;
 typedef pair < int , int > pii;
-int read(){ int res(0),sign(1); char c;
-    while(1){ c = getchar(); if('0' <= c && c <= '9') { res = c - '0'; break; } else if(c == '-') { sign = -1; break; } }
-    while(1){ c = getchar(); if('0' <= c && c <= '9') res = res*10 + c - '0'; else break; }
+int read(){
+    string sira;
+    cout<<"Dosya sirasi"<<endl;
+    cin>>sira;
+    string dosyaAdi;
+    dosyaAdi=sira;
+    ifstream inpFile;
+    inpFile.open(dosyaAdi);
+    int res(0),sign(1);
+    char c;
+    while(1){
+        if (inpFile.is_open()) {
+     while (!inpFile.eof()) {
+        inpFile >> c;
+     }
+    }
+        if('0' <= c && c <= '9') {
+            res = c - '0';
+            break;
+        }
+        else if(c == '-') {
+            sign = -1;
+            break;
+        }
+    }
+    while(1){
+        if (inpFile.is_open()) {
+     while (!inpFile.eof()) {
+        inpFile >> c;
+     }
+    }
+        if('0' <= c && c <= '9') res = res*10 + c - '0';
+        else break;
+    }
+    inpFile.close();
     return res * sign;
 }
 vector < int > G[MAXN];
@@ -160,6 +195,13 @@ void up(int a,int b,int t)
 }
 int main()
 {
+    string sira;
+    cout<<"Dosya sirasi"<<endl;
+    cin>>sira;
+    string dosyaAdi;
+    dosyaAdi="output"+sira;
+    ofstream myFileOut;
+
     int a,b,c,i,j,res,s,t,type;
     N = read();
     FOR(i,1,N-1)
@@ -197,7 +239,10 @@ int main()
                 s = M( s + sum2( 1,1,N, S[ dad[b] ] , S[b] ) );
                 b = parent[ dad[b] ];
             }
-            printf("%d\n" , M( s * size[a] + sum( 1,1,N,S[a],F[a] ) ) );
+            myFileOut.open (dosyaAdi);
+            myFileOut << M( s * size[a] + sum( 1,1,N,S[a],F[a] ) )<<endl;
+            myFileOut.close();
+            
         }
     }
     return 0;
