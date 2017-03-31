@@ -5,9 +5,11 @@ for _ in range(q):
     liste.sort()
     temp = liste[0]
     count = 1
+    paralel = 0
     for elem in liste[1:]:
         if elem != temp:
             if count % 2 == 1:
+                paralel = 1
                 print(temp)
                 break
             else:
@@ -15,3 +17,5 @@ for _ in range(q):
                 count = 1
         else:
             count += 1
+    if paralel == 0:
+        print(elem)

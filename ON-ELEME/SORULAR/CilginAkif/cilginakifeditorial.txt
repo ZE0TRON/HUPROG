@@ -1,0 +1,19 @@
+Bu çözümde Heavy Light Decomposition yapısına dayanan 2 farklı
+Interval Tree kullandık.İşlem 1 için a, b düğümleri ve bir t sayısı verildiğinde
+İlk önce birinci Interval Tree yi kullanarak a ve b
+arasındaki düğümleri t kadar artırmalıyız. Bu işlemi O(logN)^2) de yapabiliriz.
+a ve b düğümleri arasındaki
+herhangi bir x düğümü için sub[x]= x in alt ağacındaki eleman sayısına eşit olsun.
+
+Sonra ikinci Interval Tree mizdeki değerleri artırmalıyız.
+Ama bu sefer artırma miktarımız herhangi bir x düğümü için t*sub[x] olsun.
+Bu işlemi O(logN)^2) yapabiliriz.
+
+Sonrasında İşlem 2 için bize bir x düğümü verildiğinde x in alt ağacındaki düğümlerin
+değerleri toplamını bulmamız gerekiyor.Bu işlemi iki adıma ayırarak yapıcaz.
+İlk önce x ten önce yapılan artırmalara bakmamız gerekiyor.Bu artırımların bizim sonucumuzu
+nasıl etkileyeceğini hesaplamalıyız. Bunu birinci Interval Tree mizi kullanarak yapabiliriz.
+Sadece x in üzerindeki tüm değerleri toplayıp sonrasında bunu sub[x] ile çarparsak sonuca ulaşırız.
+Bu işlemi O(logN)^2) yapabiliriz.
+Sonrasında, ikinci interval treemizde yaptığımız artırımlar sayesinde, sadece x'in alt ağacındaki düğümlerin
+değerlerini toplayarak yukardaki artırımların cevabımızı nasıl etkileyeceğini bulabiliriz.
