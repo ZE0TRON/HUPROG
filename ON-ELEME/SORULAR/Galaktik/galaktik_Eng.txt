@@ -1,0 +1,52 @@
+A galactic cargo company shipping between space stations. Increase at Deuterium(a spaceship fuel) prices make company owners look for new ways to optimize  their routes. It is accepted from you to help company organize their routes.
+Shortest way between two space station is determined as Warp routes. Only negative part of the Warp Drive Technology is, it is compulsory to use these linear routes.
+Every delivery consists of two packages. Both packages have to picked up from different stations and delivered at a final station. Each delivery has a starting cargo center. Numbered space stations and cargo centers coordinates will provided to you according to three dimension coordinate system. Purpose is to calculate the shortest road, while using Warp routes, starting from cargo center, picking up deliveries and arriving at target station.
+
+Input format
+First line contains two space-separated integers, denoting N (number of space stations) and W (number of Warp routes).
+Next W lines contain two space-separated integers denoting one pair of connected space-stations.
+Next N lines contain four space-separated integers denoting A (space station number) and X Y Z coordinates.
+Next 2 lines contain cargos present space station numbers
+This line contains target space stations numbers
+Last line has the space station number of cargo center
+
+Output Format
+Output the shortest roads length
+It is accepted if the floating 3 digits are matchingS
+
+
+Constraints
+6≤N≤1000
+10≤W≤9000
+N≤W
+
+Sample Input
+6 10
+1 3
+1 2
+5 4
+6 4
+4 1
+4 2
+3 5
+2 5
+5 6
+3 6
+1 3 5 61
+2 3 4 19
+3 3 41 12
+4 1 34 12
+5 13 41 51
+6 4 53 12
+3
+5
+4
+1
+
+
+Sample Output
+
+142.46508782160475
+
+Explanation
+According to given inputs shortest road length calculated
