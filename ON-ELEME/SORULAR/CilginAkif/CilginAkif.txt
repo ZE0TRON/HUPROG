@@ -18,6 +18,8 @@ Takip eden N-1 satırda, mekanizmalar arası bağlantılar (A ve B birbirine ba�
 Sonraki satırda işlem sayısı M,
 Takip eden M satırda, işlemler ve bu işlemlerin parametreleri verilecektir.
 
+Output Format:
+Her 2 işlemi için ekrana 2 işleminin çıktısını mod 10009'a göre yazdırınız. 
 
 
 Constraints :
