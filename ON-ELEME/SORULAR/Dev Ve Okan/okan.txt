@@ -1,6 +1,7 @@
 Story And Question:
 
 Okan, tırmandığı dağın tepesinde bir devle karşılaşır. Dev, Okan'ın yaşamasına tek bir koşulla izin verecektir: Okan, devin istediği kelimenin harflerini aynı sırayla ve arada başka harf olmadan dağdan şehre inerken toplamalıdır. Dev, Okan'ın işlerini zorlaştırmak için dağı merdivenler şekline getirmiş ve merdivenin her bir basamağına istediği kelimenin harflerini dağıtmıştır. Okan her seferinde bir basamak aşağı inebilmektedir. Okan, hayatta kalabilmek için kaç farklı seçim yapabilir?
+Harflerin her zaman sırasıyla dağılacağı garanti edilmektedir.
 
 Resim:
 
@@ -8,7 +9,8 @@ Resim:
 
 
 Constraints:
-
+2≤Q≤1000                    
+1≤N,M≤1500
 Input Format:
 İlk satırda Q sorgu sayısı
 Takip eden Q blokta:
