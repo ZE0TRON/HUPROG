@@ -1,28 +1,27 @@
 Story And Question
-Çılgın profesör Ece, çok çılgın bir deney yapmaktadır. Deneyinde bir tüp içerisine farklı
-atomların antimadde ve normal madde hallerini eklemektedir.
-Her ekleme yaptığında o madde veya antimaddeden 1 mol eklemektedir.
-Ece bir yere kadar eklediği madde ve antimaddeleri hafızasında tutabilmektedir.
-Ancak hafızasına da çok güvenmediğinden bir deftere eklediği maddeleri ve antimaddeleri yazmaktadır.
-Deneyin ilerleyen aşamalarında Ece'nin kafası karışıp eklediği maddeleri ve antimaddeleri unutmuştur.
+Çılgın profesör Ece, çok çılgın bir deney yapmaktadır. Deneyinde, bir tüpe farklı maddeler ve onların antimaddelerini eklemektedir. Her eklemede, o madde veya antimaddenin eklenme miktarı 1 moldür.
+Ece bir yere kadar eklediği madde ve antimaddeleri hafızasında tutabilmektedir ancak hafızasına da çok güvenmediğinden bir deftere eklediği maddeleri ve antimaddelerin atom numaralarını yazmaktadır. (Bir atomun madde ve antimadde formunda atom numarası aynıdır.)
+Deneyin ilerleyen aşamalarında Ece'nin kafası karışmıştır ve eklediği maddeleri ve antimaddeleri unutmuştur.
 Ece'nin deney tüpündeki maddelerin tamamını enerjiye dönüştürmesi gerekmektedir.(Madde + Antimadde = Enerji)
-Ancak aynı atom numarasına sahip maddeler ve antimaddeler eşit molde tepkimeye girerek enerji oluşturabilirler.
-Ece deney tüpüne aynı atom numarasındaki bir parçacığı eklerken madde-antimadde-madde-....-antimadde şeklinde devam etmektedir.
-Yalnız Ece'nin bu şekilde eklemeyi unuttuğu bir parçacık türü kalmıştır.
-Ece defterine çok fazla şey yazdığını fark edip bunla başa çıkamayacağına karar verip yakın arkadaşı çılgın Akif'i çağırmıştır.
-Çılgın Akif'in Ece'nin defterine bakarak, hangi atom numarasına sahip madde veya antimadde nin tüpte kaldığını tespit etmesi gerekmektedir.
-Ona bu konuda yardımcı olabilir misiniz ?
+Sadece aynı atom numarasına sahip maddeler ve antimaddeler eşit molde tepkimeye girerek enerji oluşturabilirler.
+Ece, deney tüpüne aynı atom numarasındaki bir parçacığı eklerken madde-antimadde-madde-....-antimadde şeklinde devam etmektedir.
+Ece'nin eklemeyi unuttuğu bir parçacık türü kalmıştır ve bu yüzden tüpte hala parçaçıklar bulunmaktadır.
+Ece, defterine çok fazla şey yazdığını fark edip bununla başa çıkamayacağına karar vermiştir ve yakın arkadaşı Çılgın Akif'i çağırmıştır.
+Çılgın Akif'in, Ece'nin defterine bakarak hangi atom numarasına sahip madde veya antimaddenin tüpte kaldığını tespit etmesi gerekmektedir. Ona bu konuda yardımcı olabilir misiniz?
+
 Input Format
-İlk satırda Q sorgu sayısı
-Takip eden Q blokta
-İlk satırda N toplam eklenen madde+antimadde sayısı
+İlk satırda Q sorgu sayısı,
+Takip eden Q blokta:
+İlk satırda N toplam eklenen madde ve antimadde sayısı,
 Sonraki satırda sırasıyla deney tüpüne eklenen madde veya antimaddelerin atom numaraları verilecektir.
+
+
 Constraints
 
 
 OUTPUT FORMAT **********
-Her bir sorgu için alt alta,
-deney tüpüne eklenmesi gereken madde veya antimaddenin atom numarasını çıktı olarak veriniz.
+Her bir sorgu için alt alta olacak şekilde, deney tüpüne eklenmesi gereken madde veya antimaddenin atom numarasını çıktı olarak veriniz.
+
 Sample Input
 2
 5
@@ -34,5 +33,5 @@ Sample Output
 1
 5
 Explanation
-İlk deneyde 1 atom numaralı madde nin anti maddesi eklenmemiş olduğundan deney tüpüne 1 atom numaralı antimadde eklemelidir.
-İkinci deneyde 5 atom numaralı madde nin anti maddesi eklenmemiş olduğundan deney tüpüne 5 atom numaralı antimadde eklemelidir.
+İlk deneyde, 1 atom numaralı maddenin antimaddesi eklenmemiş olduğundan deney tüpüne 1 atom numaralı antimadde eklemelidir.
+İkinci deneyde 5 atom numaralı maddenin antimaddesi eklenmemiş olduğundan deney tüpüne 5 atom numaralı antimadde eklemelidir.
