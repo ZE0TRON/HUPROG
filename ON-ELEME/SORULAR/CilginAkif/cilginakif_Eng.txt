@@ -1,0 +1,58 @@
+Crazy Akif build a crazy machine consist of connected and numbered mechanisms at his home. There are hierarchy between mechanisms like a tree. Use of machine based on triggering a mechanism with balls. Every mechanism that triggered also triggers other mechanisms that are below and connected. There are counters on every mechanism and counter increases number of ball times, every time mechanism triggered. They can be triggered with multiple balls.
+Akif have two operations during experiment:
+1. Operation:
+Launching machine from starting mechanism A to ending mechanism B with T number of balls. Sample parameters: 1 A B T
+2. Operation:
+Summing every counter below A mechanism. As result can be big print result modulo 10009. Sample parameters: 2 A
+Root mechanism is always 1. mechanism and counters never resets.
+
+Input Format
+First line contains an integer N, denoting the number of mechanisms.
+Next N-1 subsequent lines contain two space-separated integers A and B, denoting connected mechanism pairs.
+This line contains an integer M, denoting number of operations.
+Next M subsequent lines contain operation parameters.
+
+Output Format
+For every operation 2 output result modulo 10009 on a new line.
+Constraints :
+1 <= N,M <= 10^5
+1 <= A,B <= N
+1 <= T <= 1000
+
+Sample Input:
+
+1 3
+1 2
+3 5
+3 4
+2 6
+2 8
+5 7
+5 9
+6 11
+6 10
+8 12
+3
+1 4 10 2
+2 2
+2 5
+
+Sample Output:
+32
+12
+
+
+            1(2)
+           /    \
+          /      \
+        3(4)     2(4)
+       / \       / \
+      /   \     /   \
+    5(4)  4(6) 6(6)  8(4)
+    / \        / \     \
+   /   \      /   \     \
+ 7(4) 9(4) 11(6) 10(8) 12(4)
+Explanation
+When Akif starts the machine from 4. mechanism to 10. mechanism with T=2 balls counter values increases like above.
+When operation 2 is applied for 2. mechanism 2., 6., 8., 11., 10. and 12. mechanisms total counter value: 4+6+4+6+8+4=32.
+For 5. mechanism sum of 5., 7. and 9. mechanisms counter values found as 4+4+4=12 when operation 2 applied.
