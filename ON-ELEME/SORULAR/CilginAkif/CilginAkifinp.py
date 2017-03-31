@@ -85,4 +85,4 @@ for _ in range(m - 1):
         print(1,sayi1,sayi2,t,file=out)
     else:
         print(2,randint(1,elem),file=out)
-
+print("0 0" ,file=out)

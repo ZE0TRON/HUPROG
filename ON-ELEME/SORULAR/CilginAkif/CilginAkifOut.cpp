@@ -4,6 +4,7 @@
 #include <vector>
 #include <fstream>
 #include <string>
+#include <sstream>
 #define FOR(i,a,b) for(i=a; i<=b; i++)
 #define FOR2(i,n) FOR(i,0,n-1)
 #define TFOR(i,a,b) for(i=a; i>=b; i--)
@@ -16,43 +17,6 @@
 #define MAXT 262150
 using namespace std;
 typedef pair < int , int > pii;
-int read(){
-    string sira;
-    cout<<"Dosya sirasi"<<endl;
-    cin>>sira;
-    string dosyaAdi;
-    dosyaAdi=sira;
-    ifstream inpFile;
-    inpFile.open(dosyaAdi);
-    int res(0),sign(1);
-    char c;
-    while(1){
-        if (inpFile.is_open()) {
-     while (!inpFile.eof()) {
-        inpFile >> c;
-     }
-    }
-        if('0' <= c && c <= '9') {
-            res = c - '0';
-            break;
-        }
-        else if(c == '-') {
-            sign = -1;
-            break;
-        }
-    }
-    while(1){
-        if (inpFile.is_open()) {
-     while (!inpFile.eof()) {
-        inpFile >> c;
-     }
-    }
-        if('0' <= c && c <= '9') res = res*10 + c - '0';
-        else break;
-    }
-    inpFile.close();
-    return res * sign;
-}
 vector < int > G[MAXN];
 pii ST[MAXT] , ST2[MAXT];
 int N,Q,dis;
@@ -195,18 +159,31 @@ void up(int a,int b,int t)
 }
 int main()
 {
-    string sira;
-    cout<<"Dosya sirasi"<<endl;
-    cin>>sira;
-    string dosyaAdi;
-    dosyaAdi="output"+sira;
     ofstream myFileOut;
+    string outName;
+    cout<<"Dosya sirasi output"<<endl;
+    cin>>outName;
+    myFileOut.open("output"+outName+".txt");
+    string sonuc;
+    
+    ifstream myFileInp;
+    myFileInp.open(outName+".txt");
 
     int a,b,c,i,j,res,s,t,type;
-    N = read();
+    string temp1;
+    myFileInp>>temp1;
+    N = stoi(temp1);
+    cout<<N<<endl;
+
     FOR(i,1,N-1)
     {
-        a = read(); b = read();
+        string temp3,temp4;
+        myFileInp>>temp3;
+        myFileInp>>temp4;
+        
+        a = stoi(temp3); b = stoi(temp4);
+        cout<<a<<endl;
+        cout<<b<<endl;
         G[a].pb(b);
         G[b].pb(a);
     }
@@ -215,15 +192,28 @@ int main()
     dfs(1,-1);
     dad[1] = 1;
     dfs2(1,-1);
-
-    Q = read();
+    string temp2;
+    myFileInp>>temp2;
+    Q = stoi(temp2);
+    cout<<Q<<endl;
 
     while(Q--)
     {
-        type = read(); a = read();
+        string temp5,temp6,temp7,temp8;
+        myFileInp>>temp5;
+        myFileInp>>temp6;
+       
+
+        type = stoi (temp5); a = stoi (temp6);
+        cout<<type<<endl;
+        cout<<a<<endl;
         if( type == 1 )
         {
-            b = read(); t = read();
+             myFileInp>>temp7;
+             myFileInp>>temp8;
+            b = stoi (temp7); t = stoi (temp8);
+            cout<<b<<endl;
+            cout<<t<<endl;
             c = LCA(a,b);
             up(a,c,t);
             up(b,c,t);
@@ -239,11 +229,13 @@ int main()
                 s = M( s + sum2( 1,1,N, S[ dad[b] ] , S[b] ) );
                 b = parent[ dad[b] ];
             }
-            myFileOut.open (dosyaAdi);
-            myFileOut << M( s * size[a] + sum( 1,1,N,S[a],F[a] ) )<<endl;
-            myFileOut.close();
+            sonuc+= to_string(M( s * size[a] + sum( 1,1,N,S[a],F[a] ) )) + "\n";
+            
             
         }
     }
+    myFileOut << sonuc;
+    myFileOut.close();
+
     return 0;
 }
