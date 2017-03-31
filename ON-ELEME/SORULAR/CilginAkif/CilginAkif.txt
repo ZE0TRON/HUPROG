@@ -1,5 +1,5 @@
 Çılgın Akif, evine çok çılgın bir düzenek kurmuştur. Bu düzenek birbirine bağlı, numaralandırılmış mekanizmalardan oluşmaktadır. Mekanizmalar arasında bir hiyerarşi vardır ve bu hiyerarşi basitçe bir ağaç gibidir. Düzeneğin kullanımı ise mekanizmaların kullanıcı tarafından toplarla tetiklenmesi esasına dayanır. Düzenekte tetiklenen her mekanizma, kendine bağlı alt mekanizmaları tetikleyecek şekilde kurulmuştur.
-Her mekanizmanın üzerinde birer sayaç bulunmaktadır. Bir mekanizma tetiklendiğinde sayacındaki değer, tetiklendiği top sayısı kadar artmaktadır. Mekanizmalar bir ya da birden fazla top ile tetiklenebilirler. 
+Her mekanizmanın üzerinde birer sayaç bulunmaktadır. Bir mekanizma tetiklendiğinde sayacındaki değer, tetiklendiği top sayısı kadar artmaktadır. Mekanizmalar bir ya da birden fazla top ile tetiklenebilirler.
 
 
 Akif bir tetikleme başlatırken bir başlangıç ve bir bitiş mekanizması belirlemek zorundadır.
@@ -19,11 +19,11 @@ Sonraki satırda işlem sayısı M,
 Takip eden M satırda, işlemler ve bu işlemlerin parametreleri verilecektir.
 
 Output Format:
-Her 2 işlemi için ekrana 2 işleminin çıktısını mod 10009'a göre yazdırınız. 
+Her 2 işlemi için ekrana 2 işleminin çıktısını mod 10009'a göre yazdırınız.
 
 
 Constraints :
-1 <= N,M <= 10^5
+1 <= N,M <= 10^6
 1 <= A,B <= N
 1 <= T <= 1000
 

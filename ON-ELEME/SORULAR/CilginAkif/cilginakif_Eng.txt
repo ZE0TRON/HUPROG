@@ -15,7 +15,7 @@ Next M subsequent lines contain operation parameters.
 Output Format
 For every operation 2 output result modulo 10009 on a new line.
 Constraints :
-1 <= N,M <= 10^5
+1 <= N,M <= 10^6
 1 <= A,B <= N
 1 <= T <= 1000
 
