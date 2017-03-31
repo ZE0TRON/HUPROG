@@ -21,7 +21,9 @@ Sonraki satırda hedef uzay istasyonun numarası verilecektir.
 Son satırda ise kargo merkezinin numarası verilecektir.
 
 Constraints
-
+6≤N≤1000
+10≤W≤9000
+N≤W
 
 OUTPUT FORMAT
 
