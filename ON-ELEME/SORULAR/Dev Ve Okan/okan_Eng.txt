@@ -12,7 +12,7 @@ Each of the Q queries contain:
 First line contains two space-separated integers denoting width, M and number of stairs, N. (MxN matrix)
 Second line contains the word which giants wants Okan to pick from the mountain.
 Next M lines contains N space-separated letters (Ai....An).
-
+It has been guaranteed that the worlds will spread in order.
 Output Format:
 For each query, print an integer on a new line denoting total number of ways Okan survives.
 As results can be too big, output the answers modulo 10^9+7.
