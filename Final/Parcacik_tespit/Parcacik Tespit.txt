@@ -1,0 +1,68 @@
+Uzay gözlem çalýþmalarýnýn yapýldýðý Prozone Laboratories de bir gözlem için mühendislik çözümü aranmaktadýr.
+
+Gözlemci makinenin çalýþtýrýlmasý:
+*Dünyadan uzaya küresel bir dalga gönderilmiþ dalga her çarptýðý parçacýða parçacýk tespit numarasý 1'den baþlayarak atanmýþtýr.(1,2..)
+*Her parçacýðýn dünyadan olan dikey uzaklýklýðý(Dinamik küresel dalganýn o anki çapý) not alýnmýþtýr.(1,143,10^8..)
+*Tüm bu parçacýklar rastgele bir þekilde birbiriyle sýralý(yönlü,hiyerarþik) sanal çizgilerle iliþkilendirilmiþtir.
+Hedef:
+*Dünyadan her belli X uzaklýðýndaki noktalar üzerinde K adet parçacýk vardýr.Ayný uzaklýktaki parçacýklar tek sayýlmak
+üzere (K -> 1) verilen bir baþlangýç parçacýðýndan yönlü çizgiler üzerinden ulaþýlabilen her parçacýk için ayný uzaklýktaki
+parçacýklar 1 kabul edilerek elde edilen toplam sayýya(Farklý uzaklýklardaki parçacýk sayýsý) ulaþýlmak istenmektedir.
+**Parçacýklar noktasal düþünülmüþtür.
+***Hiyerarþik çizgiler üzerinden bir parçacýktan baþka bir parçacýða tek bir yol üzerinden ulaþýlabilir.
+
+Input Format 
+Ýlk satýr sýrasýyla parçacýk sayýsý, sorgu sayýsý ve hiyerarþinin en tepesindeki parçacýk.
+
+Sonraki her parçacýk sayýsý-1 kadar satýr için a b numaralý parçacýklarýn baðýl iliþkisi.
+HINT:Baðýl iliþki sýralý olmak(1'den baþlamak) zorunda deðil.
+
+Sonraki parçacýk sayýsý kadar satýr için parçacýk sayýsý + M'inci satýr M parçacýk numaralý parçacýðýn dünyaya olan uzaklýðý.
+
+Sonraki sorgu sayýsý kadar satýr: baþlangýç parçacýðý.
+
+Output Format 
+Sorgu sayýsý kadar satýrýn her birinde farklý uzaklýkta tespit edilen parçacýk sayýsý.
+
+Constraints 
+0 <= Sorgu sayýsý <= 10^5
+1 <= Parçacýk sayýsý <= 10^5
+1 <= Baþlangýç parçacýðý <= Parçacýk sayýsý
+1 <= Parçacýðýn dünyaya uzaklýðý <= 10^9
+
+Example
+
+Sample Input
+
+7 4 1
+1 2
+1 3
+2 7
+3 4
+3 5
+3 6
+112
+124
+112
+100
+100
+9
+1119
+1
+2
+4
+3
+
+Sample Output
+
+5
+2
+1
+3
+
+Explanation
+
+Sorgu 1-Baþlangýç parçacýðý 1 kendi dahil ulaþýlabilen parçacýklar 1,2,3,4,5,6,7 bunlardaki farklý uzaklýklar 112,124,1119,100,9 adet =5.
+Sorgu 2-Baþlangýç parçacýðý 2 kendi dahil ulaþýlabilen parçacýklar 2,7 bunlardaki farklý uzaklýklar 124,1119 adet =2.
+Sorgu 3-Baþlangýç parçacýðý 4 kendi dahil ulaþýlabilen parçacýklar 4 bunlardaki farklý uzaklýklar 100 adet =1.
+Sorgu 4-Baþlangýç parçacýðý 3 kendi dahil ulaþýlabilen parçacýklar 3,4,5,6 bunlardaki farklý uzaklýklar 112,100,9 adet =3.
