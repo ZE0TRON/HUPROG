@@ -1,0 +1,35 @@
+Crazy Professor Ece conduct a crazy experiment. In the experiment she adds different matters and their anti-matters to a tube. Each added anti-matter and matter has an amount of 1 mole.
+Ece can keep every matter and anti-matter that she added to tube in her mind to a point however as she doesn't trust her memory, she writes every matters and anti-matters atomic number to her notebook.
+A matters atomic number is same as its anti-matter form and Ece should transform all matters in the tube into energy. (Matter + Anti-Matter = Energy)
+Only matters and anti-matters that has the same atomic number can transform into energy if there are same amount of mole in the tube.
+Ece adds same atomic numbered particles in order matter - antimatter - matter - ... - antimatter.
+At one point Ece get confused and forgot anti-matters and matters that she added. There is only one particle forgotten to add and there are lots of particle written in notebook. Ece decided she can't handle and ask for help from her close friend Crazy Akif.
+Crazy Akif need to detect the last particles atom number that left in tube. Can you help him to find?
+
+Input Format
+First line contains an integer Q, denoting number of queries.
+Next Q subsequent lines contain:
+First line contains an integer N, total added number of matter and anti-matter.
+Next N space-separated integers denotes atomic numbers that written in notebook.
+
+Constraints
+1?Q?10000
+5?N?3599
+
+Output Format
+For each query output the atomic number that left in the tube on a new line.
+
+Sample Input
+2
+5
+1 2 3 2 3
+9
+2 3 4 5 12 4 2 12 3
+
+Sample Output
+1
+5
+
+Explanation
+In the first experiment, 1 atomic numbered matters anti-matter form isn't in the tube, output 1.
+In the first experiment, 5 atomic numbered matters anti-matter form isn't in the tube, output 5.
