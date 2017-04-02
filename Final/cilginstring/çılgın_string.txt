@@ -1,0 +1,37 @@
+Meriç, telefonla konuşurken yerinde duramayanlardandır. Saatlerce sürecek olan o konuşmalardan birine daha başlamışken, önündeki kağıdı gelişigüzel karalamakta, bazen de konuşmada geçen kelimeleri yazmakta ve bu kelimelerle oynamaktadır.
+Zaman ilerledikçe fark etmiştir ki, belli bir kuralla yaptığı bu oynamalar sonunda çok ilginç kelimeler türetilebilmekte. Böylece dilde varolan kelimelerden kendi şifreli kelimelerini oluşturmaya karar vermiştir. 
+Meriç'e kolay gelsin diyor, sizdense şifreli kelimelere ulaşmak için yapılması gereken minimum değişiklik sayısını bulmanızı istiyoruz.
+
+Değişiklik kuralı:
+Herhangi bir kelimenin istenen yerinden, istenen uzunlukta bir parça kesilip kelimenin sonuna ekleniyor. Böylece şifreli kelime üretiliyor.
+
+Input Format:
+İlk satırda Q sorgu sayısı,
+Takip eden Q blokta:
+İlk satırda kelimenin uzunluğu(harf sayısı) N,
+İkinci satırda asıl kelime S1 ve şifreli kelime S2
+
+Output Format:
+Her sorgu sayısı için yeni satırda olmak üzere, en az kaç hamlede şifreli kelimenin oluşturulabileceğini yazdırınız.
+
+Sample Input 
+2
+12
+ACMHACETTEPE ACMEEPETTHAC
+12
+SERGUZESTLER ESERGUZRSTLE
+
+Sample Output:
+2
+4
+
+Explanation:
+Değişiklikler aşağıdaki gibi yapıldığında minimum hamleyle istenilen şifreli kelime elde edilebilir.
+
+<img></img>
+
+SERGUZESTLER
+ESTLERSERGUZ
+ESTSERGUZLER
+ESERGUZLERST
+ESERGUZRSTLE
