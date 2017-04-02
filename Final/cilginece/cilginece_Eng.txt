@@ -13,8 +13,8 @@ First line contains an integer N, total added number of matter and anti-matter.
 Next N space-separated integers denotes atomic numbers that written in notebook.
 
 Constraints
-1?Q?10000
-5?N?3599
+1≤Q≤10000
+5≤N≤3599
 
 Output Format
 For each query output the atomic number that left in the tube on a new line.
