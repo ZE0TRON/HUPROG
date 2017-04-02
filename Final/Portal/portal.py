@@ -1,3 +1,6 @@
+from collections import defaultdict
+def negativer():
+    return -1
 class PriorityQueueBase:
     class _Item:
         __slots__ = '_key','_value'
@@ -164,3 +167,9 @@ def dijkstra(G,b,start,finish):
 #portalIndexs[(1,2)]=1 defaultdict return -1
 #G example
 #G[(0,0)]=[(0,1),(1,0),(1,2)]
+portalIndexs=defaultdict(negativer)
+N=int(input())
+for i in range(N):
+    a,b,c,d=map(int,input().split())
+    portalIndexs[(a,b)]=i
+    portalIndexs[(c,d)]=i
