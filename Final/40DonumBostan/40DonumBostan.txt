@@ -1,0 +1,18 @@
+Story and Question:
+Verilen Q sayıdaki MxN boyutlu tarlada çeşitli bitki türleri yetiştirilecektir. Her bitkinin büyümesi için gereken alan A,B şeklinde ve bitki ismiyle birlikte verilecektir.
+Sizden beklenen verilen bitkileri tarlaya sığacak şekilde yerleştirmeniz. 
+
+Constaints:
+
+Input Format:
+İlk satırda Q tarla sayısı,
+Sonraki takip eden Q blokta;
+Bitkinin özellikleri Bitkiİsmi,
+
+
+Output Format:
+
+
+Explanation:
+
+
