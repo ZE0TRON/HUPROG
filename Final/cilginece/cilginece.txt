@@ -17,7 +17,8 @@ Sonraki satırda sırasıyla deney tüpüne eklenen madde veya antimaddelerin at
 
 
 Constraints
-
+1≤Q≤10000
+5≤N≤3599 
 
 OUTPUT FORMAT **********
 Her bir sorgu için alt alta olacak şekilde, deney tüpüne eklenmesi gereken madde veya antimaddenin atom numarasını çıktı olarak veriniz.
