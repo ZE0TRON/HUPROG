@@ -1,0 +1,36 @@
+Meriç can't bear just standing still while talking on the phone. When she starts talking on the phone that takes hours, she randomly scratch a paper, time to time she write words that passes in the conversation and play with them.
+As the time passes she notices, she can produce really interesting words when she applyies some rules to this playings.
+We are asking you to find the minimum number of changes to reach the encoded words.
+Modification Rules:
+In the given word it is allowed to cut a piece in any length from any place in the word and added in the end of the word.
+
+Input Format:
+First line contains an integer Q, number of queries.
+Next Q subsequent lines contain:
+First line contains an integer N, length of the word.
+Second line contains two words, original word and encoded word.
+
+Output Format:
+For each query output the minimum number of changes to modify original word to encoded word.
+
+Sample Input 
+2
+12
+ACMHACETTEPE ACMEEPETTHAC
+12
+SERGUZESTLER ESERGUZRSTLE
+
+Sample Output:
+2
+4
+
+Explanation:
+When changes applied as below encoded word can be produced.
+
+<img></img>
+
+SERGUZESTLER
+ESTLERSERGUZ
+ESTSERGUZLER
+ESERGUZLERST
+ESERGUZRSTLE
