@@ -9,7 +9,7 @@ class PriorityQueueBase:
             self._key=k
             self._value=v
 
-        def __It__(self,other):
+        def __lt__(self,other):
             return self._key < other._key
 
     def is_empty(self):
@@ -107,7 +107,7 @@ class AdaptableHeapPriorityQueue(HeapPriorityQueue):
         self._upheap(len(self._data)-1)
         return token
     def update(self, loc, newkey, newval):
-        j = loc. index
+        j = loc._index
         if not (0 <= j < len(self) and self._data[j] is loc):
             raise ValueError('Invalid locator')
         loc._key = newkey
@@ -131,30 +131,48 @@ def dijkstra(G,b,start,finish):
     D={}
     pq=AdaptableHeapPriorityQueue()
     pqlocator={}
-    for vertex in G:
-        D[vertex]=float('inf')
-        pqlocator[vertex]=pq.add(D[vertex],vertex)
-    D[start]=0
     cloud={}
+    for vertex in G.keys():
+        if(vertex == start):
+            D[vertex]=0
+        else:
+            D[vertex]=float('inf')
+        pqlocator[vertex]=pq.add(D[vertex],vertex)
+        #print(vertex)
+
     while len(pq)!=0:
         key,u=pq.remove_min()
         cloud[u]=key
+        #print("Silindi : ",u)
         del pqlocator[u]
         for vertex in G[u]:
-            if vertex not in cloud:
+            if vertex not in cloud.keys():
+                #print("Cloud keys : ",cloud.keys())
+                #print("Vertex : ",vertex)
+                #print("U: ",u)
                 if portalIndexs[vertex]!=-1 and portalIndexs[u] != -1:
                     time = portalTime[portalIndexs[vertex]]
-                    if cloud[u] > time[1]:
+                    if D[u] > time[1]:
+                        #print("girdim cook fena")
+                        #print("Cloud U : ",cloud[u],"u : ",u)
+
                         weight = float('inf')
-                    elif cloud[u] < time[0]:
+                    elif D[u] < time[0]:
                         weight = time[0]-cloud[u]
                     else:
                         weight=0
-            else:
-                weight=b
-            if(D[u]+weight<D[vertex]):
-                D[vertex]=D[u]+weight
-                pq.update(pqlocator[vertex],D[vertex],vertex)
+                        #print("Portala girdim")
+                    del portalIndexs[vertex],
+                    del portalIndexs[u]
+                else:
+                    weight=b
+                #print(weight)
+                if D[u]+weight<D[vertex]:
+                    D[vertex]=D[u]+weight
+                    #print("Şurdan geliyom ",u)
+                    #print("Şuna : ",vertex,"Şu yüklendi : ",D[vertex])
+                    pq.update(pqlocator[vertex],D[vertex],vertex)
+    #print(cloud)
     return cloud[finish]
 #portalTime example
 #portalTime=[(5,25),(10,15)]
@@ -171,17 +189,22 @@ for i in range(N):
     line = input().split()
     Matrice.append([])
     for j in range(M):
-        Matrice[i].append(j)
-for i in range(N-1):
-    for j in range(M-1):
+        Matrice[i].append(line[j])
+for i in range(N):
+    for j in range(M):
         if(Matrice[i][j]!="x"):
-            if(Matrice[i][j+1]=="0"):
-                G[(i,j)].append((i,j+1))
-                print("ekledim")
-                G[(i,j+1)].append((i,j))
-            if(Matrice[i+1][j]=="0"):
-                G[(i,j)].append((i+1,j))
-                G[(i+1,j)].append((i,j))
+            try:
+                if(Matrice[i][j+1]=="0"):
+                    G[(i,j)].append((i,j+1))
+                    G[(i,j+1)].append((i,j))
+            except:
+                nothing=0
+            try:
+                if(Matrice[i+1][j]=="0"):
+                    G[(i,j)].append((i+1,j))
+                    G[(i+1,j)].append((i,j))
+            except:
+                nothing=0
 steptime=int(input())
 p=int(input())
 for i in range(p):
@@ -196,4 +219,6 @@ a,b=map(int,input().split())
 start=(a,b)
 c,d=map(int,input().split())
 finish=(c,d)
+#print(G[(2,0)])
+#print("Start : ",start,"Finish : ",finish)
 print(dijkstra(G,steptime,start,finish))
