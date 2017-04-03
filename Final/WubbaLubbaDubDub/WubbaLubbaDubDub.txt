@@ -1,0 +1,4 @@
+N tane n-1 boyutlu kürenin birbirine teğet olduğunu vercez.
+Kürelerin yarı çaplarının alabileceği aralığı vercez.
+Sonrasında bu kürelerin yarı çapları toplamı a olsun
+Kaç farklı a değeri bulabiliriz.
