@@ -1,29 +1,31 @@
-Okanı rüyasında başkanı Bilge olan Eglib gezeninden uzaylılar kaçırmıştır ve denek olarak kullanmak üzere V216 tesislerine götürler.Tesiste evrenin çeşitli yerlerinden toplanan canlılar(toplam canlı sayısı sorgu Q sayısı) herbiri  birbirinden farklı odalı labirentlere konur.Her kaçırılan canlı gezegenin en zekisi olduğu ispatlanmıştır.Bu yüzden labirentten en kısa sürede çıkmaları istenmektedir.
-Labirentte karşımıza odalar(herbir kordinat x1,y1 bir oda), girişi çıkışı olmayan(kapalı) odalar ve uzaylıların gelişmiş teknolojilerinden biri olan, labirentin farklı konumlarına yerleştirilmiş olan zaman ayarlı portal çiftleri vardır.Kapanan portallar bir daha açılmamaktadır.Bir canlı istediği konumda istediği kadar bekleyebilir.Portallı odaları normal oda gibi görüp hiç portalı kullanmadan odaya girip çıkabiliriz.
-Labirentte hareket ederken herbir odadan diğer odaya geçiş eşit sürede olmaktadır ve yönler sağ sol yukarı aşağıdır. Portal kullanımı anlık olarak olduğundan süresi 0 dır.
-Okanın ve diğer canlıların labirentten en hızlı çıkmalarına yardımcı olun.
+﻿Rüyasında Okan'ı, başkanı Bilge olan Elgib gezeninden uzaylılar kaçırmıştır ve denek olarak kullanmak üzere V216 tesislerine götürmüşlerdir.
+Okan tesiste, odalardan oluşan bir labirente konur. Labirentteki odalar açık odalar, giriş-çıkış yapılamayan kapalı odalar ve portal bulunan odalar olmak üzere üçe ayrılır. 
+Uzaylıların gelişmiş teknolojilerinden biri olan portallar zaman ayarlıdır ve çiftler halinde bulunur. Portal çiftleri, birinden girip eşinden çıkma esasına dayanır ve çift yönlüdür.
+Her portalın açık olduğu bir zaman aralığı vardır ve bu süre dışında geçişe kapalıdır. Okan istediği konumda, istediği kadar bekleyebilir.
+Portallı odalarda portal kullanımı zorunlu değildir, boş odalardaki gibi doğrudan komşu odaya geçiş yapılabilir. 
+Odalar arası geçiş süresi sabittir, portal kullanıldığında ise geçiş anlıktır ve geçen süre sıfırdır. Labirentte sağ, sol, yukarı ve aşağıya ilerlenebilir.
+Okan, labirentten en hızlı şekilde kurtulabilirse Dünya'ya geri yollanacaktır. Okan'ın sıla hasretini sonlandırmak için izlemesi gereken yolu bulunuz.
 
 INPUT FORMAT:
-ilk satır sorgu Q sayısı
-ikinci satırda labirentin boyutu K(satır sayısı)xJ(sutun sayısı)
-üçünü satırda bir odadan diğer odaya geçiş süresi
-dördüncü satırda N portal çifti sayısı 
-takip eden N satırda portalların labirentteki giriş ve çıkış odasının konumu(P1i,P1o/...../Pni,Pno)
-takip eden N sayıda portalların açılış kapanış süreleri(P1/...../Pn)
-sonraki satırda D kapalı oda sayısını 
-takip eden D satırda kapalı odalar
-sonraki satırda başlangıç odasının konumu
-son satırda bitiş odasının konumu verilmektedir.
+İlk satırda labirentin boyutu IxJ (satır x sütun sayısı),
+İkinci satırda bir odadan diğer odaya geçiş süresi,
+Üçüncü satırda N portal çifti sayısı,
+Takip eden iki satırlık N blokta:
+İlk satırda portal çiftinin konumları (xi,yi,xo,yo),
+İkinci satırda portal çiftinin açık kaldığı zaman aralığı (t1,t2),
+Sonraki satırda D kapalı oda sayısını,
+Takip eden D satırda kapalı odaların koordinatları,
+Sonraki satırda başlangıç odasının koordinatları,
+Son satırda bitiş odasının koordinatları verilmektedir.
 
 OUTPUT FORMAT:
-Başlangıçtan bitişe en az kaç saniyede bitirebileceğini yazdırınız.
+Okan'ın labirentten kurtulacağı minimum süreyi yazdırınız.
 
 CONSTRAINS:
 
 
 
 INPUT:
-1
 5 5
 1
 1
