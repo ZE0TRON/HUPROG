@@ -1,29 +1,31 @@
-Okaný rüyasýnda baþkaný Bilge olan Ilgeb gezeninden uzaylýlar kaçýrmýþtýr ve denek olarak kullanmak üzere V216 tesislerine götürler.Tesiste evrenin çeþitli yerlerinden toplanan canlýlar(toplam canlý sayýsý sorgu Q sayýsý) herbiri  birbirinden farklý odalý labirentlere konur.Her kaçýrýlan canlý gezegenin en zekisi olduðu ispatlanmýþtýr.Bu yüzden labirentten en kýsa sürede çýkmalarý istenmektedir.
-Labirentte karþýmýza odalar(herbir kordinat x1,y1 bir oda), giriþi çýkýþý olmayan(kapalý) odalar ve uzaylýlarýn geliþmiþ teknolojilerinden biri olan, labirentin farklý konumlarýna yerleþtirilmiþ olan zaman ayarlý portal çiftleri vardýr ve portallar tek yönlüdür(giriþ çýkýþ olarak).Kapanan portallar bir daha açýlmamaktadýr.Bir canlý istediði konumda istediði kadar bekleyebilir.Portallý odalarý normal oda gibi görüp hiç portalý kullanmadan odaya girip çýkabiliriz.
-Labirentte hareket ederken herbir odadan diðer odaya geçiþ eþit sürede olmaktadýr ve yönler sað sol yukarý aþaðýdýr. Portal kullanýmý anlýk olarak olduðundan süresi 0 dýr.
-Okanýn ve diðer canlýlarýn labirentten en hýzlý çýkmalarýna yardýmcý olun.
+Rüyasýnda Okan'ý, baþkaný Bilge olan Elgib gezeninden uzaylýlar kaçýrmýþtýr ve denek olarak kullanmak üzere V216 tesislerine götürmüþlerdir.
+Okan tesiste, odalardan oluþan bir labirente konur. Labirentteki odalar açýk odalar, giriþ-çýkýþ yapýlamayan kapalý odalar ve portal bulunan odalar olmak üzere üçe ayrýlýr. 
+Uzaylýlarýn geliþmiþ teknolojilerinden biri olan portallar zaman ayarlýdýr ve çiftler halinde bulunur. Portal çiftleri, birinden girip eþinden çýkma esasýna dayanýr ve çift yönlüdür.
+Her portalýn açýk olduðu bir zaman aralýðý vardýr ve bu süre dýþýnda geçiþe kapalýdýr. Okan istediði konumda, istediði kadar bekleyebilir.
+Portallý odalarda portal kullanýmý zorunlu deðildir, boþ odalardaki gibi doðrudan komþu odaya geçiþ yapýlabilir. 
+Odalar arasý geçiþ süresi sabittir, portal kullanýldýðýnda ise geçiþ anlýktýr ve geçen süre sýfýrdýr. Labirentte sað, sol, yukarý ve aþaðýya ilerlenebilir.
+Okan, labirentten en hýzlý þekilde kurtulabilirse Dünya'ya geri yollanacaktýr. Okan'ýn sýla hasretini sonlandýrmak için izlemesi gereken yolu bulunuz.
 
 INPUT FORMAT:
-ilk satýr sorgu Q sayýsý
-ikinci satýrda labirentin boyutu K(satýr sayýsý)xJ(sutun sayýsý)
-üçünü satýrda bir odadan diðer odaya geçiþ süresi
-dördüncü satýrda N portal çifti sayýsý 
-takip eden N satýrda portallarýn labirentteki giriþ ve çýkýþ odasýnýn konumu(P1i,P1o/...../Pni,Pno)
-takip eden N sayýda portallarýn açýlýþ kapanýþ süreleri(P1/...../Pn)
-sonraki satýrda D kapalý oda sayýsýný 
-takip eden D satýrda kapalý odalar
-sonraki satýrda baþlangýç odasýnýn konumu
-son satýrda bitiþ odasýnýn konumu verilmektedir.
+Ýlk satýrda labirentin boyutu IxJ (satýr x sütun sayýsý),
+Ýkinci satýrda bir odadan diðer odaya geçiþ süresi,
+Üçüncü satýrda N portal çifti sayýsý,
+Takip eden iki satýrlýk N blokta:
+Ýlk satýrda portal çiftinin konumlarý (xi,yi,xo,yo),
+Ýkinci satýrda portal çiftinin açýk kaldýðý zaman aralýðý (t1,t2),
+Sonraki satýrda D kapalý oda sayýsýný,
+Takip eden D satýrda kapalý odalarýn koordinatlarý,
+Sonraki satýrda baþlangýç odasýnýn koordinatlarý,
+Son satýrda bitiþ odasýnýn koordinatlarý verilmektedir.
 
 OUTPUT FORMAT:
-Baþlangýçtan bitiþe en az kaç saniyede bitirebileceðini yazdýrýnýz.
+Okan'ýn labirentten kurtulacaðý minimum süreyi yazdýrýnýz.
 
 CONSTRAINS:
 
 
 
 INPUT:
-1
 5 5
 1
 1
