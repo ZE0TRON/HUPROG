@@ -1,23 +1,23 @@
 Story and Question:
 Şehir hayatından kaçıp doğayla iç içe yaşamaya karar veren Oğuz, tarım işine girmiştir. Piyasada araştırma yapan Oğuz yetiştirebileceği bitkileri, bu bitkilerin tohum fiyatlarını, bitkilerin yetiştirilmesi gereken alan miktarını, mahsüllerin satış fiyatlarını ve bölgedeki tarla fiyatlarını bulmuştur.
-Fiyatları bulduktan sonra her bitki için birim alan başına alınan kârı hesaplamıştır. Tarlalara bitkileri ekerken farketmiştir ki bu problemin altından kalkamayacaktır. 
+Fiyatları bulduktan sonra her bitki için birim alan başına alınan karı hesaplamıştır. Tarlalara bitkileri ekerken farketmiştir ki bu problemin altından kalkamayacaktır. 
 Oğuz bu konuda sizden yardım istemektedir.
-Oğuz'un sizden beklediği, verilen bitkileri tarlaya sığacak şekilde yerleştirip maksimum kârı elde etmeniz.
+Oğuz'un sizden beklediği, verilen bitkileri tarlaya yerleştirip maksimum karı elde etmeniz.
 
-Constaints:
+Constraints:
 
 Sample Input:
 
 
 Input Format:
-Verilen Q sayıdaki MxN boyutlu tarlalarda çeşitli bitki türleri yetiştirilecektir. Her bitkinin büyümesi için gereken AxB'lik alan, bitki ismi, birim alan başına alınan kâr(K) ve bitki sayısı(L) verilecektir.
+Verilen Q sayıdaki MxN boyutlu tarlalarda çeşitli bitki türleri yetiştirilecektir. Her bitkinin büyümesi için gereken AxB'lik alan, bitki ismi, birim alan başına alınan kar(K) ve bitki sayısı(L) verilecektir.
 
 İlk satırda Q tarla sayısı,
 İkinci satırda L bitki sayısı
 Takip eden L satırda;
-Bitkinin özellikleri: Bitkiİsmi,A,B,K
+Bitkinin özellikleri: Bitki İsmi, A, B, K
 Takip eden Q blokta;
-Tarlanın boyutları: M,N
+Tarlanın boyutları: M, N
 
 Output Format:
 

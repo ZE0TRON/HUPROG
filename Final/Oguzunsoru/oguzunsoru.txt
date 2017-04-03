@@ -1,7 +1,7 @@
 M tane hissedar hisselerini farklı tarihlerde bir hisse havuzuna katıyorlar. Hissedarların havuza katıldıkları tarihteki
 hisse değerleri x1,x2,x3,x4...xn olsun. Bir hissedarın N sene sonraki hissesinin değeri ise sqrt(x^2+N) olsun.
 Hissedarların havuza katılma tarihleri, bugünün tarihi ve hisse havuzunun şu anki
-toplam değeri bilindiğine göre tüm hisselerin havuza katılmadan önceki değerlerinin toplamını bulunuz.
+toplam değeri bilindiğine göre tüm hisselerin havuza katılmadan önceki değerlerinin toplamını bulunuz. 
 
 Constaints:
 

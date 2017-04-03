@@ -1,4 +1,4 @@
-Meriç can't bear just standing still while talking on the phone. When she starts talking on the phone that takes hours, she randomly scratch a paper, time to time she write words that passes in the conversation and play with them.
+Meric can't bear just standing still while talking on the phone. When she starts talking on the phone that takes hours, she randomly scratch a paper, time to time she write words that passes in the conversation and play with them.
 As the time passes she notices, she can produce really interesting words when she applyies some rules to this playings.
 We are asking you to find the minimum number of changes to reach the encoded words.
 Modification Rules:
@@ -13,7 +13,7 @@ Second line contains two words, original word and encoded word.
 Output Format:
 For each query output the minimum number of changes to modify original word to encoded word.
 
-Sample Input 
+Sample Input
 2
 12
 ACMHACETTEPE ACMEEPETTHAC
