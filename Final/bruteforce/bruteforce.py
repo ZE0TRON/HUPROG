@@ -20,5 +20,77 @@ for k1 in range(1000):
                 counter+=1
 print(counter)
 """
-for k4 in range(100):
-    deg=[1 for _ in range(k4)]
+"""
+def square(a):
+    return a**2
+
+Q = int(input())
+for test in range(Q):
+    N=int(input())
+    minv=int(input())
+    maxv=int(input())
+    radsums=set()
+    rads=[minv for i in range(N+2)]
+    counter1=0
+    counter2=0
+    curvatures=[1/rad for rad in rads]
+    print(curvatures)
+    while rads[N+1]!=maxv:
+        counter1=counter1%(N+2)
+        rads[counter1]+=1
+        curvatures[counter1]=1/rads[counter1]
+        ssum=sum(map(square,curvatures))
+        a=sum(curvatures)**2
+        b=N*ssum
+        if(format(a,'.7f')==format(b,'.7f') ):
+            print(format(a,'.4f'),format(b,'.4f'))
+            radsums.add(sum(rads))
+        counter1+=1
+    print(len(radsums))
+"""
+from time import time
+times=time()
+def square(a):
+    return a**2
+from random import randint
+N=int(input())
+
+minv=int(input())
+maxv=int(input())
+posslist=[]
+for j in range(10):
+    counter=0
+    for i in range(100000):
+        rads=[1/randint(1,2<<32)+randint(minv,maxv-1) for i in range(N+2)]
+        curvatures=[1/rad for rad in rads]
+        ssum=sum(map(square,curvatures))
+        a=sum(curvatures)**2
+        b=N*ssum
+        if(format(a,'.8f')==format(b,'.8f') and format(a,'.8f').count('0')<8):
+            counter+=1
+    posslist.append(format(counter/100000,'.3f'))
+maxcount=0
+maxcounted=0
+for elem in posslist:
+    a=posslist.count(elem)
+    if a>maxcount:
+        maxcount=a
+        maxcounted=elem
+print(elem)
+"""
+from math import sqrt
+
+r1=2
+r2=0.05
+r3=1
+N=2
+r4=r1*r2*r3/(r1*r2+r2*r3+r3*r1+2*sqrt(r1*r2*r3*(r1+r2+r3)))
+rads=[r1,r2,r3,r4]
+curvatures=[1/rad for rad in rads]
+ssum=sum(map(square,curvatures))
+a=sum(curvatures)**2
+b=N*ssum
+print(format(a,'.4f'),format(b,'.4f'))
+if(format(a,'.4f')==format(b,'.4f')):
+    print("it works")
+"""
