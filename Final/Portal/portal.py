@@ -9,7 +9,7 @@ class PriorityQueueBase:
             self._key=k
             self._value=v
 
-        def __It__(self,other):
+        def __lt__(self,other):
             return self._key < other._key
 
     def is_empty(self):
@@ -87,79 +87,92 @@ class HeapPriorityQueue(PriorityQueueBase):
             print(self._data[i]._key,self._data[i]._value)
 
 class AdaptableHeapPriorityQueue(HeapPriorityQueue):
-    ”””A locator-based priority queue implemented with a binary heap.”””
-    #------------------------------ nested Locator class ------------------------------ class Locator(HeapPriorityQueue. Item):
-    ”””Token for locating an entry of the priority queue.”””
-     __slots__ = '_index'
-     def __init__():
-         super().__init__(k,v)
-         self._index=j
-
+    class Locator(HeapPriorityQueue._Item):
+        __slots__ = '_index'
+        def __init__(self,k,v,j):
+            super().__init__(k,v)
+            self._index=j
     def _swap(self, i, j):
-       super(). swap(i,j)
-       self. data[i]. index = i
-       self. data[j]. index = j
-    # perform the swap
-    # reset locator index (post-swap) # reset locator index (post-swap)
+        super()._swap(i,j)
+        self._data[i]._index = i
+        self._data[j]._index = j
     def  _bubble(self, j):
-        if j > 0 and self. data[j] < self. data[self. parent(j)]:
-            self. upheap(j)
+        if j > 0 and self._data[j] < self._data[self._parent(j)]:
+            self._upheap(j)
         else:
-            self. downheap(j)
+            self._downheap(j)
     def add(self, key, value):
-        token = self.Locator(key, value, len(self. data)) # initiaize locator index
-        self. data.append(token)
-        self. upheap(len(self. data) − 1)
+        token = self.Locator(key, value, len(self._data))
+        self._data.append(token)
+        self._upheap(len(self._data)-1)
         return token
     def update(self, loc, newkey, newval):
-        j = loc. index
-        if not (0 <= j < len(self) and self. data[j] is loc):
+        j = loc._index
+        if not (0 <= j < len(self) and self._data[j] is loc):
             raise ValueError('Invalid locator')
-        loc. key = newkey
-        loc. value = newval
-        self. bubble(j)
+        loc._key = newkey
+        loc._value = newval
+        self._bubble(j)
     def remove(self, loc):
-        j = loc. index
-        if not (0 <= j < len(self) and self. data[j] is loc):
+        j = loc._index
+        if not (0 <= j < len(self) and self._data[j] is loc):
             raise ValueError( 'Invalid locator')
-        if j == len(self) − 1:
+        if j == len(self)-1:
             self. data.pop( )
         else:
-            self. swap(j, len(self)−1)
+            self. swap(j, len(self)-1)
             self. data.pop( )
             self. bubble(j)
-        return (loc. key, loc. value)
+        return (loc._key, loc._value)
 
 
 
 def dijkstra(G,b,start,finish):
     D={}
-    pq=AdaptableHeapPriortyQueue()
+    pq=AdaptableHeapPriorityQueue()
     pqlocator={}
-    for vertex in G:
-        D[vertex]=float('inf')
-        pqlocator[vertex]=pq.add(D[vertex],vertex)
-    D[start]=0
     cloud={}
+    for vertex in G.keys():
+        if(vertex == start):
+            D[vertex]=0
+        else:
+            D[vertex]=float('inf')
+        pqlocator[vertex]=pq.add(D[vertex],vertex)
+        #print(vertex)
+
     while len(pq)!=0:
         key,u=pq.remove_min()
         cloud[u]=key
+        #print("Silindi : ",u)
         del pqlocator[u]
         for vertex in G[u]:
-            if vertex not in cloud:
+            if vertex not in cloud.keys():
+                #print("Cloud keys : ",cloud.keys())
+                #print("Vertex : ",vertex)
+                #print("U: ",u)
                 if portalIndexs[vertex]!=-1 and portalIndexs[u] != -1:
-                    time = portalTimes[portalIndexs[vertex]]
-                    if cloud[u] > time[1]:
+                    time = portalTime[portalIndexs[vertex]]
+                    if D[u] > time[1]:
+                        #print("girdim cook fena")
+                        #print("Cloud U : ",cloud[u],"u : ",u)
+
                         weight = float('inf')
-                    elif cloud[u] < time[0]:
+                    elif D[u] < time[0]:
                         weight = time[0]-cloud[u]
                     else:
                         weight=0
-            else:
-                weight=b
-            if(D[u]+weight<D[vertex]):
-                D[vertex]=D[u]+weight
-                pq.update(pqlocator[vertex],D[vertex],vertex)
+                        #print("Portala girdim")
+                    del portalIndexs[vertex],
+                    del portalIndexs[u]
+                else:
+                    weight=b
+                #print(weight)
+                if D[u]+weight<D[vertex]:
+                    D[vertex]=D[u]+weight
+                    #print("Şurdan geliyom ",u)
+                    #print("Şuna : ",vertex,"Şu yüklendi : ",D[vertex])
+                    pq.update(pqlocator[vertex],D[vertex],vertex)
+    #print(cloud)
     return cloud[finish]
 #portalTime example
 #portalTime=[(5,25),(10,15)]
@@ -167,9 +180,45 @@ def dijkstra(G,b,start,finish):
 #portalIndexs[(1,2)]=1 defaultdict return -1
 #G example
 #G[(0,0)]=[(0,1),(1,0),(1,2)]
+G=defaultdict(list)
+portalTime={}
 portalIndexs=defaultdict(negativer)
-N=int(input())
+N,M=map(int,input().split())
+Matrice=[]
 for i in range(N):
+    line = input().split()
+    Matrice.append([])
+    for j in range(M):
+        Matrice[i].append(line[j])
+for i in range(N):
+    for j in range(M):
+        if(Matrice[i][j]!="x"):
+            try:
+                if(Matrice[i][j+1]=="0"):
+                    G[(i,j)].append((i,j+1))
+                    G[(i,j+1)].append((i,j))
+            except:
+                nothing=0
+            try:
+                if(Matrice[i+1][j]=="0"):
+                    G[(i,j)].append((i+1,j))
+                    G[(i+1,j)].append((i,j))
+            except:
+                nothing=0
+steptime=int(input())
+p=int(input())
+for i in range(p):
     a,b,c,d=map(int,input().split())
     portalIndexs[(a,b)]=i
     portalIndexs[(c,d)]=i
+    G[(a,b)].append((c,d))
+    G[(c,d)].append((a,b))
+    t1,t2=map(int,input().split())
+    portalTime[i]=(t1,t2)
+a,b=map(int,input().split())
+start=(a,b)
+c,d=map(int,input().split())
+finish=(c,d)
+#print(G[(2,0)])
+#print("Start : ",start,"Finish : ",finish)
+print(dijkstra(G,steptime,start,finish))

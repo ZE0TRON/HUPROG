@@ -1,0 +1,53 @@
+Okanı rüyasında başkanı Bilge olan Eglib gezeninden uzaylılar kaçırmıştır ve denek olarak kullanmak üzere V216 tesislerine götürler.Tesiste evrenin çeşitli yerlerinden toplanan canlılar(toplam canlı sayısı sorgu Q sayısı) herbiri  birbirinden farklı odalı labirentlere konur.Her kaçırılan canlı gezegenin en zekisi olduğu ispatlanmıştır.Bu yüzden labirentten en kısa sürede çıkmaları istenmektedir.
+Labirentte karşımıza odalar(herbir kordinat x1,y1 bir oda), girişi çıkışı olmayan(kapalı) odalar ve uzaylıların gelişmiş teknolojilerinden biri olan, labirentin farklı konumlarına yerleştirilmiş olan zaman ayarlı portal çiftleri vardır.Kapanan portallar bir daha açılmamaktadır.Bir canlı istediği konumda istediği kadar bekleyebilir.Portallı odaları normal oda gibi görüp hiç portalı kullanmadan odaya girip çıkabiliriz.
+Labirentte hareket ederken herbir odadan diğer odaya geçiş eşit sürede olmaktadır ve yönler sağ sol yukarı aşağıdır. Portal kullanımı anlık olarak olduğundan süresi 0 dır.
+Okanın ve diğer canlıların labirentten en hızlı çıkmalarına yardımcı olun.
+
+INPUT FORMAT:
+ilk satır sorgu Q sayısı
+ikinci satırda labirentin boyutu K(satır sayısı)xJ(sutun sayısı)
+üçünü satırda bir odadan diğer odaya geçiş süresi
+dördüncü satırda N portal çifti sayısı 
+takip eden N satırda portalların labirentteki giriş ve çıkış odasının konumu(P1i,P1o/...../Pni,Pno)
+takip eden N sayıda portalların açılış kapanış süreleri(P1/...../Pn)
+sonraki satırda D kapalı oda sayısını 
+takip eden D satırda kapalı odalar
+sonraki satırda başlangıç odasının konumu
+son satırda bitiş odasının konumu verilmektedir.
+
+OUTPUT FORMAT:
+Başlangıçtan bitişe en az kaç saniyede bitirebileceğini yazdırınız.
+
+CONSTRAINS:
+
+
+
+INPUT:
+1
+5 5
+1
+1
+2 0 0 3
+4 25
+6
+0 1
+1 1
+2 3
+3 0
+3 3
+4 3
+0 0
+4 4
+
+OUTPUT:
+9
+
+EXPLANATION:
+G X 0 P O
+O X 0 0 0
+P 0 0 X 0
+X 0 0 X 0
+0 0 0 X C
+
+
+
