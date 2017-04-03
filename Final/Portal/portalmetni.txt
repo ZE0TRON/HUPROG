@@ -1,10 +1,10 @@
-﻿Rüyasında Okan'ı, başkanı Bilge olan Elgib gezeninden uzaylılar kaçırmıştır ve denek olarak kullanmak üzere V216 tesislerine götürmüşlerdir.
-Okan tesiste, odalardan oluşan bir labirente konur. Labirentteki odalar açık odalar, giriş-çıkış yapılamayan kapalı odalar ve portal bulunan odalar olmak üzere üçe ayrılır. 
+﻿Rüyasında Bilge'yi, HaaaToka gezeninden uzaylılar kaçırmıştır ve denek olarak kullanmak üzere V216 tesislerine götürmüşlerdir.
+Bilge tesiste, odalardan oluşan bir labirente konur. Labirentteki odalar açık odalar, giriş-çıkış yapılamayan kapalı odalar ve portal bulunan odalar olmak üzere üçe ayrılır.
 Uzaylıların gelişmiş teknolojilerinden biri olan portallar zaman ayarlıdır ve çiftler halinde bulunur. Portal çiftleri, birinden girip eşinden çıkma esasına dayanır ve çift yönlüdür.
-Her portalın açık olduğu bir zaman aralığı vardır ve bu süre dışında geçişe kapalıdır. Okan istediği konumda, istediği kadar bekleyebilir.
-Portallı odalarda portal kullanımı zorunlu değildir, boş odalardaki gibi doğrudan komşu odaya geçiş yapılabilir. 
+Her portalın açık olduğu bir zaman aralığı vardır ve bu süre dışında geçişe kapalıdır. Bilge istediği konumda, istediği kadar bekleyebilir.
+Portallı odalarda portal kullanımı zorunlu değildir, boş odalardaki gibi doğrudan komşu odaya geçiş yapılabilir.
 Odalar arası geçiş süresi sabittir, portal kullanıldığında ise geçiş anlıktır ve geçen süre sıfırdır. Labirentte sağ, sol, yukarı ve aşağıya ilerlenebilir.
-Okan, labirentten en hızlı şekilde kurtulabilirse Dünya'ya geri yollanacaktır. Okan'ın sıla hasretini sonlandırmak için izlemesi gereken yolu bulunuz.
+Bilge, labirentten en hızlı şekilde kurtulabilirse Dünya'ya geri yollanacaktır. Bilge'ın sıla hasretini sonlandırmak için izlemesi gereken yolu bulunuz.
 
 INPUT FORMAT:
 İlk satırda labirentin boyutu IxJ (satır x sütun sayısı),
@@ -19,7 +19,7 @@ Sonraki satırda başlangıç odasının koordinatları,
 Son satırda bitiş odasının koordinatları verilmektedir.
 
 OUTPUT FORMAT:
-Okan'ın labirentten kurtulacağı minimum süreyi yazdırınız.
+Bilge'ın labirentten kurtulacağı minimum süreyi yazdırınız.
 
 CONSTRAINS:
 
@@ -50,6 +50,3 @@ O X 0 0 0
 P 0 0 X 0
 X 0 0 X 0
 0 0 0 X C
-
-
-

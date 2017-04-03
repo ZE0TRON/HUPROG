@@ -192,7 +192,7 @@ for i in range(N):
         Matrice[i].append(line[j])
 for i in range(N):
     for j in range(M):
-        if(Matrice[i][j]!="x"):
+        if(Matrice[i][j]!="X"):
             try:
                 if(Matrice[i][j+1]=="0"):
                     G[(i,j)].append((i,j+1))
