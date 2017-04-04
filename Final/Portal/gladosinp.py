@@ -46,12 +46,17 @@ while True:
         bitis =  baslangic + randint(minS,maxS)
         print(baslangic,bitis,file=out)
         portalList.append([elem[0],elem[1],elem[2],elem[3],baslangic,bitis])
-    while True:
+    n = 100
+    while n > 0:
         startX,startY,finishX,finishY = randint(0,(matrixX - 1) // 10 + 1),randint(0,(matrixY - 1) // 10 + 1),randint(matrixX - ((matrixX - 1) // 10 + 1),matrixX - 1),randint(matrixY - ((matrixY - 1) // 10 + 1),matrixY - 1)
         if (startX == finishX and startY == finishY) or matrix[startX][startY] == "X" or matrix[finishX][finishY] == "X":
+            n -= 1
             continue
         break
     print(startX," ",startY,"\n",finishX," ",finishY,sep="",file=out)
+    if n == 0:
+        print("bozuk bu")
+        continue
 
     def negativer():
         return -1
