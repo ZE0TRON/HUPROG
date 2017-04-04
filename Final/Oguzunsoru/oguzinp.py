@@ -1,5 +1,5 @@
 from random import randint
-
+from math import sqrt
 print("Dosya Adı: ")
 output = input()
 out = open(output + ".txt","w")
@@ -12,18 +12,19 @@ print("min, max k sayısı: (minK maxK)")
 minK,maxK = map(int,input().rstrip().split(" "))
 print("min,max l sayısı(hissedardan fazla olsun): (minL maxL)")
 minL,maxL = map(int,input().rstrip().split(" "))
-
-
 print(q,file=out)
 for _ in range(q):
     while True:
         hissedar = randint(minM,maxM)
         l = randint(minL,maxL)
-        if l >= hissedar:
+        k = randint(minK,maxK)
+        c =  k ** 2 + l ** 2
+        if(sqrt(c)==int(sqrt(c))):
             break
+
+        #if l >= hissedar:
+        #    break
     print(hissedar,file=out)
-    k = randint(minK,maxK)
-    c = k ** 2 + l ** 2
     düsükOrt = l // hissedar
     liste = []
     for _ in range(hissedar):
@@ -38,4 +39,4 @@ for _ in range(q):
         kareliListe.append(lol ** 2)
     for elem in kareliListe:
         print(elem,file=out)
-    print(c,file=out)
+    print(int(sqrt(c)),file=out)
