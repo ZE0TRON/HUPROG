@@ -19,10 +19,11 @@ for _ in range(q):
     kelime = ""
     for _ in range(uzunluk):
         kelime += (choice(ascii_lowercase))
-    print(kelime,file=out)
+    print(uzunluk,file=out)
     karistirma = randint(minK,maxK)
+    temp=kelime
     for _ in range(karistirma):
         start = randint(0,uzunluk - 2)
         end = randint(start,uzunluk - 1)
         kelime = kelime[:start] + kelime[end:] + kelime[start:end]
-    print(kelime,file=out)
+    print(temp,kelime,file=out)
