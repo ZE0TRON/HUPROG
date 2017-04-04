@@ -1,0 +1,6 @@
+Defne bir büyücülük okulunda okumaktadır. Defne yeni öğrendiği bir büyü konusunda sıkıntı
+çekmektedir. Büyü havadaki  3 adet doğrusal olmayacak şekilde dağılmış sihirli parçacıkları kullanmakla alakalıdır.
+Büyünün işe yarayabilmesi için iki farklı sihirli parçacık kümesinin herbiri için havaya bir halka çizmeli ve bu halka o kümedeki tüm sihirli parçacıkların üzerinden geçmelidir.
+Büyünün son aşamasında bu iki halka birbirine zincir gibi geçmişse ve birbirine temas etmiyorsa büyü gerçekleşebilir.
+
+Input Format
