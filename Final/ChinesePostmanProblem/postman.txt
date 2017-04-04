@@ -1,23 +1,22 @@
-Akif pacman oyununu çok sevmektedir ve pacman için bir bot yazmıştır.Arkadaşları
-sırf onu sinir etmek için pacman oyununu değiştirip tekrar yazmışlardır.
-Onun bu versiyonunda hiç hayalet bulunmayıp sadece pacman ve yemekler bulunmaktadır.
-Pacman bir etabı ne kadar kısa sürede bitirirse o kadar çok puan almaktadır.
-Pacman'in bir etabı tamamlayabilmesi için tüm yemekleri yiyip aynı noktaya dönmesi gerekmetedir.
-Akif ise bunun altında kalmamak için yeni bir bot geliştirmeye karar vermiştir.
+﻿Akif, Pacman oyununu çok sevmektedir ve oyun için bir bot yazmıştır. 
+Akif'in muzip arkadaşları ise sırf onu sinir etmek için Pacman oyununu değiştirip tekrar yazmışlardır.
+Oyunun yeni versiyonunda hiç hayalet yoktur, sadece Pacman ve yiyecekler vardır.
+Pacman'in bir etabı tamamlayabilmesi için tüm yiyecekleri yiyip başladığı noktaya dönmesi gerekmektedir.
+Oyuncu, bir etabı ne kadar kısa sürede bitirirse o kadar çok puan almaktadır.
+Akif ise bu şakanın altında kalmamak için yeni oyunda maksimum skoru alacak yeni bir bot geliştirmeye karar vermiştir.
 Ona bu konuda yardımcı olabilir misiniz ?
 
 Input Format:
-Pacman'in haritasındaki her bir köşe bir çizgenin düğümünü temsil etsin.
-Bir köşeden başka bir köşeye giden yol bir çizgedeki yolun uzunluğu kadar ağırlıklı bir kenarı temsil etsin
-Buna göre ilk satırda sorgu sayısı Q
-Takip eden Q blokta
-N,M düğüm ve kenar sayısı
-Takip eden M satırda
-A , B düğümleri ve düğümler arasındaki uzaklık C verilmektedir.
+Pacman'in haritasındaki her bir köşe, bir çizgenin düğümünü temsil etsin.
+Bir köşeden başka bir köşeye giden yol, bir çizgedeki yolun uzunluğu kadar ağırlıklı bir kenarı temsil etsin.
+Buna göre, ilk satırda sorgu sayısı Q,
+Takip eden Q blokta:
+İlk satıda N,M düğüm ve kenar sayısı,
+Takip eden M satırda A, B düğümleri ve düğümler arasındaki uzaklık C verilmektedir.
 
 
 Output Format
-Herbir sorgu için Pacman'in ulasabileceği en kısa süreyi hesaplayınız.
+Her bir sorgu için yeni satırda olmak üzere, botun her etabı tamamlayabileceği en kısa süreyi hesaplayınız.
 
 Sample Input:
 
