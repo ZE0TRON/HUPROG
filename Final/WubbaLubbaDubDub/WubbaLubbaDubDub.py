@@ -58,7 +58,7 @@ maxv=int(input())
 posslist=[]
 for j in range(3):
     counter=0
-    for i in range(50000):
+    for i in range(100000):
         rads=[1/randint(1,2<<32)+randint(minv,maxv-1) for i in range(N+2)]
         curvatures=[1/rad for rad in rads]
         ssum=sum(map(square,curvatures))
@@ -66,8 +66,8 @@ for j in range(3):
         b=N*ssum
         if(format(a,'.9f')[:-1] ==format(b,'.9f')[:-1] and format(a,'.9f')[:-1].count('0')<8):
             counter+=1
-    print(counter/50000)
-    posslist.append(format(counter/50000,'.4f')[:-1])
+    print(counter/100000)
+    posslist.append(format(counter/100000,'.4f')[:-1])
 maxcount=0
 maxcounted=0
 for elem in posslist:
