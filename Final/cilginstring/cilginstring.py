@@ -18,4 +18,8 @@ def DParak(a,counter):
         return z
     else:
         return DP[a]
-        
+Q=int(input())
+for test in range(Q):
+    N=int(input())
+    s1 ,aranan = input().split()
+    print(DParak(s1))

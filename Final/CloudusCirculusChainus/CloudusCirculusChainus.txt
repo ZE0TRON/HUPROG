@@ -3,4 +3,12 @@ Defne bir büyücülük okulunda okumaktadır. Defne yeni öğrendiği bir büy�
 Büyünün işe yarayabilmesi için iki farklı sihirli parçacık kümesinin herbiri için havaya bir halka çizmeli ve bu halka o kümedeki tüm sihirli parçacıkların üzerinden geçmelidir.
 Büyünün son aşamasında bu iki halka birbirine zincir gibi geçmişse ve birbirine temas etmiyorsa büyü gerçekleşebilir.
 
-Input Format
+Input Format:
+İlk satırda sorgu sayısı Q,
+Sonraki Q blokta,
+İlk satırda ilk sihirli parçacık kümesinin koordinatları x1,y1,z1 x2,y2,z2 x3,y3,z3 şeklinde verilcektir.
+Sonraki satırda ikinci sihirli parçacık kümesinin koordinatları x4,y4,z4 x5,y5,z5 x6,y6,z6 verilcektir.
+
+
+Output Format:
+Her bir sorgu için büyü başarılıysa EVET değilse HAYIR yazdırınız.
