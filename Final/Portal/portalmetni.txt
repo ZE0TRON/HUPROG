@@ -21,7 +21,7 @@ Son satırda bitiş odasının koordinatları verilmektedir.
 OUTPUT FORMAT:
 Bilge'ın labirentten kurtulacağı minimum süreyi yazdırınız.
 
-CONSTRAINS:
+CONSTRAINTS:
 
 
 

@@ -18,17 +18,16 @@ def lcs(S,T):
         nstr+=elem
     return nstr
 def SubStrLocation(string,substr):
-    index=-1
     for i in range(len(string)):
         if(string[i]==substr[0]):
-            index=i
+            flag=1
             for j in range(len(substr)):
                 if(i+j<len(string)):
                     if(string[i+j]!=substr[j]):
-                        index=-1
-                else:
-                    index=-1
-    return index
+                        flag=0
+            if(flag==1):
+                return i
+    return -1
 
 
 
@@ -46,9 +45,29 @@ def Bulkardes(start,end,counter):
     end=end[counter2:]
     LCS=lcs(start,end)
     print("Start  : ",start,"End : ",end)
+    print("LCS  : ",LCS)
+    minv=float('inf')
     if(len(LCS)==0):
-        startindex=0
-        endindex=0
+        minsk=-5
+        minek=-5
+        temp1=start
+        temp2=end
+        for j in range(len(start)):
+            for c in range(len(end)):
+                startindex=j
+                endindex=c
+                temp1=start[startindex:]+start[:startindex]
+                temp2=end[endindex:]+end[:endindex]
+                c=Bulkardes(start,end,counter+1)
+                if(c<minv):
+                    minv=c
+                    minsk=temp1
+                    minek=temp2
+        start=start[minsk:]+start[:minsk]
+        end=end[minek:]+end[:minek]
+        return Bulkardes(start,end,counter+1)
+
+
 
     else:
         startindex=SubStrLocation(start,LCS)
@@ -58,9 +77,14 @@ def Bulkardes(start,end,counter):
 
         return Bulkardes(start,end,counter+1)
     else:
+        print("startindex : ",startindex)
+        print("endindex :" ,endindex)
         start=start[startindex:]+start[:startindex]
         end=end[endindex:]+end[:endindex]
-        return Bulkardes(start,end,counter+2)
+        if(start==end):
+            return Bulkardes(start,end,counter+1)
+        else:
+            return Bulkardes(start,end,counter+2)
 
 Q=int(input())
 for test in range(Q):
