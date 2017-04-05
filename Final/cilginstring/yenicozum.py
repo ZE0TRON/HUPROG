@@ -40,29 +40,38 @@ def Bulkardes(start,end,counter):
             break
     if counter2==len(start):
         return counter
+    else:
+        if(len(start)==2):
+            print("Serguzest burdan",start,end)
+            return counter
     print("Kırpılmadan Start  : ",start,"End : ",end)
     start=start[counter2:]
     end=end[counter2:]
     LCS=lcs(start,end)
     print("Start  : ",start,"End : ",end)
     print("LCS  : ",LCS)
-    minv=float('inf')
-    if(len(LCS)==0):
+
+    if(len(LCS)<2):
+        #print("Girdim buraya")
         minsk=-5
         minek=-5
         temp1=start
         temp2=end
-        for j in range(len(start)):
-            for c in range(len(end)):
+        minv=float('inf')
+        #print("Start : ",start,"End : ",end)
+        for j in range(1,len(start)-1):
+            for c in range(1,len(end)-1):
                 startindex=j
                 endindex=c
                 temp1=start[startindex:]+start[:startindex]
                 temp2=end[endindex:]+end[:endindex]
-                c=Bulkardes(start,end,counter+1)
+                #print("Temp1 :",temp1 ,"Temp2 : ",temp2)
+                c=Bulkardes(temp1,temp2,counter+1)
                 if(c<minv):
                     minv=c
-                    minsk=temp1
-                    minek=temp2
+                    minsk=startindex
+                    minek=endindex
+        #print("Bi kere cikmistim ben")
         start=start[minsk:]+start[:minsk]
         end=end[minek:]+end[:minek]
         return Bulkardes(start,end,counter+1)
@@ -77,8 +86,8 @@ def Bulkardes(start,end,counter):
 
         return Bulkardes(start,end,counter+1)
     else:
-        print("startindex : ",startindex)
-        print("endindex :" ,endindex)
+        #print("startindex : ",startindex)
+        #print("endindex :" ,endindex)
         start=start[startindex:]+start[:startindex]
         end=end[endindex:]+end[:endindex]
         if(start==end):
