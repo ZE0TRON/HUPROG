@@ -8,13 +8,12 @@ Bilge, labirentten en hızlı şekilde kurtulabilirse Dünya'ya geri yollanacakt
 
 INPUT FORMAT:
 İlk satırda labirentin boyutu IxJ (satır x sütun sayısı),
-İkinci satırda bir odadan diğer odaya geçiş süresi,
-Üçüncü satırda N portal çifti sayısı,
+takip eden I satırda labirent haritası,
+sonraki satırda bir odadan diğer odaya geçiş süresi,
+sonraki satırda N portal çifti sayısı,
 Takip eden iki satırlık N blokta:
 İlk satırda portal çiftinin konumları (xi,yi,xo,yo),
 İkinci satırda portal çiftinin açık kaldığı zaman aralığı (t1,t2),
-Sonraki satırda D kapalı oda sayısını,
-Takip eden D satırda kapalı odaların koordinatları,
 Sonraki satırda başlangıç odasının koordinatları,
 Son satırda bitiş odasının koordinatları verilmektedir.
 
@@ -27,17 +26,15 @@ CONSTRAINTS:
 
 INPUT:
 5 5
+0 X 0 0 0
+0 X 0 0 0
+0 0 0 X 0
+X 0 0 X 0
+0 0 0 X 0
 1
 1
 2 0 0 3
 4 25
-6
-0 1
-1 1
-2 3
-3 0
-3 3
-4 3
 0 0
 4 4
 
@@ -45,8 +42,4 @@ OUTPUT:
 9
 
 EXPLANATION:
-G X 0 P O
-O X 0 0 0
-P 0 0 X 0
-X 0 0 X 0
-0 0 0 X C
+<img><img>
