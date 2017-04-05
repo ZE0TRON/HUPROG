@@ -1,30 +1,46 @@
 from collections import defaultdict
-"""def negativer():
+from time import time
+def negativer():
     return -1
 DP=defaultdict(negativer)
-"""
+
 def BFS(start, end):
-    q=[(start,0)]
+    q=[(start,0,end)]
     travelled=[]
     while len(q)!=0:
-        current,counter = q.pop(0)
-        if current==end:
+        current,counter,end = q.pop(0)
+        counter2=0
+        for i in range(len(current)):
+            if current[i]==end[i] :
+                counter2+=1
+            else:
+                break
+        if counter2==len(current):
             return counter
+        current=current[counter2:]
+        end=end[counter2:]
         for i in range(0,N):
             for j in range(i,N):
                 elem=current[:i]+current[j:]+current[i:j]
                 if elem not in travelled:
                     if(counter<len(current)):
-                        q.append((elem,counter+1))
+                        q.append((elem,counter+1,end))
                         travelled.append(elem)
     return float('inf')
 """
 def DParak(a,counter):
-    if(a==aranan):
+    counter2=0
+    for i in range(len(a)):
+        if a[i]==aranan[i] :
+            counter2+=1
+        else:
+            break
+
+    if(counter2==len(a)):
         return counter
-    if(counter>len(a)*len(a)):
-        return float('inf')
+
     if(DP[a]==-1):
+        a=a[counter2:]
         minv=float('inf')
         N=len(a)
         for i in range(0,N):

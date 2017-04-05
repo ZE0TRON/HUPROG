@@ -8,10 +8,13 @@ while(temp!=aranan):
     while(temp[findingWords:findingWords+1]==aranan[findingWords:findingWords+1]):
         findingWords+=1
     cc=1
-    while(temp[findingWords+cc]!=aranan[findingWords]):
-        cc+=1
-    temp+=temp[findingWords:findingWords+cc]
-    temp[findingWords:findingWords+cc]=""
-    counter+=1
-    print(temp,counter)
+    try:
+        while(temp[findingWords+cc]!=aranan[findingWords]):
+            cc+=1
+        temp+=temp[findingWords:findingWords+cc]
+        temp[findingWords:findingWords+cc]=""
+        counter+=1
+    except:
+        pass
+    #print(temp,counter)
 print(counter)
