@@ -1,14 +1,16 @@
-Defne bir büyücülük okulunda okumaktadır. Defne yeni öğrendiği bir büyü konusunda sıkıntı
-çekmektedir. Büyü havadaki  3 adet doğrusal olmayacak şekilde dağılmış sihirli parçacıkları kullanmakla alakalıdır.
-Büyünün işe yarayabilmesi için iki farklı sihirli parçacık kümesinin herbiri için havaya bir halka çizmeli ve bu halka o kümedeki tüm sihirli parçacıkların üzerinden geçmelidir.
-Büyünün son aşamasında bu iki halka birbirine zincir gibi geçmişse ve birbirine temas etmiyorsa büyü gerçekleşebilir.
+﻿Defne, Minnochcius Büyücülük Okulu'nun parlak öğrencilerindendir. Başlamasına günler kala, Geleneksel Uluslararası HÜkusPokus Büyü Turnuvasına katılmaya karar veren 
+Defne, geçmiş yarışmalarda çıkmış büyülere çalışmaktadır. Geçen senenin final büyüsünü uygulamada ise bir hayli zorlanmaktadır.
+Büyü, havada doğrusal dağılmamış üç adet sihirli parçacıktan oluşan iki kümeyi kullanmakla alakalıdır.
+Büyücü, iki farklı sihirli parçacık kümesinin her biri için havaya bir halka çizmeli ve bu halka o kümedeki tüm sihirli parçacıkların üzerinden geçmelidir.
+Bu işlem yapıldığında, bu iki halka birbirine zincir gibi geçmişse ve hiçbir noktadan temas etmiyorsa büyü başarıyla uygulanmış demektir.
+Defne'nin büyüsünün başarılı olup olmayacağını bulabilir misiniz?
 
 Input Format:
 İlk satırda sorgu sayısı Q,
-Sonraki Q blokta,
-İlk satırda ilk sihirli parçacık kümesinin koordinatları x1,y1,z1 x2,y2,z2 x3,y3,z3 şeklinde verilcektir.
-Sonraki satırda ikinci sihirli parçacık kümesinin koordinatları x4,y4,z4 x5,y5,z5 x6,y6,z6 verilcektir.
+Sonraki Q blokta:
+İlk satırda, ilk sihirli parçacık kümesinin koordinatları x1,y1,z1 x2,y2,z2 x3,y3,z3
+İkinci satırda, ikinci sihirli parçacık kümesinin koordinatları x4,y4,z4 x5,y5,z5 x6,y6,z6 verilecektir.
 
 
 Output Format:
-Her bir sorgu için büyü başarılıysa EVET değilse HAYIR yazdırınız.
+Her bir sorgu için yeni satırda olmak üzere; Defne'nin büyüsü başarılıysa EVET, değilse HAYIR yazdırınız.
