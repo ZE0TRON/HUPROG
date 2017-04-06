@@ -35,7 +35,7 @@ int main() {
     scanf("%d",&q);
 
     while(q--) {
-        scanf("%d", &n)
+        scanf("%d", &n);
         scanf("%d", &m);
         memset(map, 63, sizeof(map));
         memset(dp, -1, sizeof(dp));
