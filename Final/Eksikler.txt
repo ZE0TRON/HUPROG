@@ -1,9 +1,8 @@
-Çılgın Stringi koyup herkesi admin yapın.
 cCc ye testcase hazırlancak constrainst yazılcak.
 Okan cake is a lie in editorialist olarak kendimi yazip düzgün bi editorial yazıyom bu ne lan :D
 WubbaLubbaDubDub constrains eklencek editorial yazılcak test caseler eklencek.
 Cilginecenin inputlar düzeltilcek.
-Cilginstringe input output hazırlancak. Editorial kapanacak.
+Cilginstringe input output hazırlancak.
 Pacman akif test caseler hazırlancak
 Pacman akif edutorial yazılcak.
 Constraintslerin hepsini ingilizce metinlere eklenecek.
