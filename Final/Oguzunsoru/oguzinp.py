@@ -19,7 +19,7 @@ for _ in range(q):
         l = randint(minL,maxL)
         k = randint(minK,maxK)
         c =  k ** 2 + l ** 2
-        if(sqrt(c)==int(sqrt(c))):
+        if(sqrt(c)==int(sqrt(c)) and l >= hissedar):
             break
 
         #if l >= hissedar:
