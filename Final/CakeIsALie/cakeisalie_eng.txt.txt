@@ -9,7 +9,7 @@ Bilge can go back to Earth if he can get away from the maze at the minimum time.
 Input Format:
 First line contains two space-separated integers I,J (row x column),
 Next I subsequent lines contain maze map (X=walls),
-Next line contains an integer, denoting duration of passing to another room,
+Next line contains an integer T, denoting duration of passing to another room,
 Next line contains an integer N, number of portal pairs,
 Next N subsequent lines:
 First line contains four space-separated integers denoting xi,yi,xo,yo (Portal pair locations),
