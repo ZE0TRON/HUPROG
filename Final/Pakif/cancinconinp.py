@@ -109,7 +109,7 @@ while soruSayısı > 0:
         if len(bilge) % 2 != 0:
            tek += 1
     oran = tek / nodeSayısı
-    if not(oran < 0.15 and oran > 0.05):
+    if not(oran < 0.21 and oran > 0.05):
         continue
     else:
         print("çok güzel oluşturdum aferin bana. oran:",oran)
