@@ -7,30 +7,23 @@ In the given word it is allowed to cut a piece in any length from any place in t
 Input Format:
 First line contains an integer Q, number of queries.
 Next Q subsequent lines contain:
-First line contains an integer N, length of the word.
-Second line contains two words, original word and encoded word.
+First line contains an integer N, length of the substrings that will be cut.
+Second line contains an integer M, length of the word.
+Third line contains two words, original word and encoded word.
 
 Output Format:
 For each query output the minimum number of changes to modify original word to encoded word.
 
 Sample Input
-2
+1
+3
 12
-ACMHACETTEPE ACMEEPETTHAC
-12
-SERGUZESTLER ESERGUZRSTLE
+ACMHACETTEPE APEHACCMETTE
 
 Sample Output:
-2
-4
+3
 
 Explanation:
 When changes applied as below encoded word can be produced.
 
 <img></img>
-
-SERGUZESTLER
-ESTLERSERGUZ
-ESTSERGUZLER
-ESERGUZLERST
-ESERGUZRSTLE
