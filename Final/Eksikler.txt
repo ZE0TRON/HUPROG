@@ -1,6 +1,5 @@
 Çılgın Stringi koyup herkesi admin yapın.
 cCc ye testcase hazırlancak constrainst yazılcak.
-Yarışma Oluşturulcak sayfa düzenlencek.
 Okan cake is a lie in editorialist olarak kendimi yazip düzgün bi editorial yazıyom bu ne lan :D
 WubbaLubbaDubDub constrains eklencek editorial yazılcak test caseler eklencek.
 Cilginecenin inputlar düzeltilcek.
@@ -9,4 +8,3 @@ Pacman akif test caseler hazırlancak
 Pacman akif edutorial yazılcak.
 Constraintslerin hepsini ingilizce metinlere eklenecek.
 İngilizce metinler pdfe dönüştürülecek.
-Katılımcılara whatsapptan yazılcak yerin değiştiğiyle alakalı.
