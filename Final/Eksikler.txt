@@ -12,3 +12,4 @@ Pacman akif test caseler hazırlancak
 Pacman akif edutorial yazılcak.
 Constraintslerin hepsini ingilizce metinlere eklenecek.
 İngilizce metinler pdfe dönüştürülecek.
+Katılımcılara whatsapptan yazılcak yerin değiştiğiyle alakalı.
