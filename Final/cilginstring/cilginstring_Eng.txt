@@ -11,6 +11,12 @@ First line contains an integer N, length of the substrings that will be cut.
 Second line contains an integer M, length of the word.
 Third line contains two words, original word and encoded word.
 
+Constraints:
+1≤Q≤10 
+2≤N≤9  
+3≤M≤20 
+
+
 Output Format:
 For each query output the minimum number of changes to modify original word to encoded word.
 
