@@ -1,14 +1,17 @@
 Number of M shareholders unite their shares in a poll at different dates. Assume share values are x1, x2, x3... xM at initial. After N years a shareholders share becomes sqrt(x^2+N).
 Share holders number of years that in the poll and polls current total value are known, can you find total initial share values? (x1+x2+..xM)
 
-Constraints:
-
 Input Format:
 First line contains an integer Q, denoting number of queries.
 Next Q subsequent lines:
 First line contains an integer M, denoting number of shareholders.
 Next M subsequent lines contain an integer denoting a shareholders N.
 Next line contains an integer denoting current total value of poll.
+
+Constraints: 
+1<Q<5000
+1<M<10000
+1<N<10000
 
 Output Format:
 For each query output the total of x1+x2+x3...xM.
