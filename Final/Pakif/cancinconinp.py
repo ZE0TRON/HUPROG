@@ -18,7 +18,7 @@ def BFS(graph, start):
 
 print("Dosya Adı: ")
 output = input()
-out = open(output + ".txt","w")
+out = open("input"+output + ".txt","w")
 
 print("soru sayısını gir pilge: ")
 soruSayısı = int(input())
