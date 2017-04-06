@@ -1,5 +1,13 @@
-Emric get in trouble with galactic federation. Emric is planning to beam the federation to an N dimensional space, between N+2 bomb that explodes while expanding in (N-1)th dimension. Bombs ranges varies in certain intervals randomly. The shield which protects the federation is an N-1 dimensional sphere. However Emric finds out that, federation doesn't effect from the explosion if shield is tangent to all the bombs ranges form as spheres and also if each bomb range sphere is tangent to a bigger N-1 dimensional sphere that covers all.
-Emric doesn't want to risk anything, can you help him to simulate the explosion?
+Emric gets in trouble with Galactic Federation. Emric is planning to beam the federation to an N dimensional space, between N+2 bomb that explodes while expanding in (N-1)th dimension(Type of the bombs are n-sphere).
+Bombs ranges varies in certain intervals randomly. Galactic Federation's energy and protection shields are (N-1)-spheres. 
+The shield which protects the federation is an N-1 dimensional sphere. 
+However Emric finds out that, federation doesn't effect from the explosion if when the conditions satisfied.
+The conditions are like that:
+1) Galactic Federation's protection shield must be tangent to all bombs inside it. 
+2) All bombs must be tangent to energy field at center.
+3) Each bomb must be tangent to bomb next to it, also the last bomb must be tangent to the first bomb.
+
+Emric doesn't want to risk anything, so he decides to create a simulation program. Can you help him to simulate the explosion?
 
 Constraints:
 

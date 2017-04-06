@@ -1,25 +1,24 @@
-Emric'in başı galaktik federasyonla derde girmiştir. Emric galaktik federasyonu N boyutlu bir öklit uzayında  (N-1)-küre (bkz : n-sphere)şeklinde N+1 tane bombanın arasına ışınlayacaktır.
-Bombaların patlama menzilleri belirli aralıklarda rastgele bir şekilde değişebilmektedir.
-Bazı özel şartlar sağlandığında galaktik federasyon bu patlamadan hasar almadan çıkabilmektedir. Galaktik federasyonun enerji kalkanı n-küre şeklinde olan (N-1)-küredir.
-Bu şartlar:
-1)Galaktik federasyonun koruyucu kalkanının içerdeki tüm bombalara teğet olması.
-2)Tüm bombaların içerdeki enerji kalkanına teğet olması.
-3)Her bombanın bir yanında bombaya teğet olması ve sonuncu bomba ilk bombaya teğet olması
-Emric'in çok küçük riskleri bile almak istememektedir.Bu yüzden bir simülasyon programı yazması gerekmektedir. Bu konuda ona yardımcı olabilir misiniz ?
+﻿Emric'in başı Galaktik Federasyon ile derde girmiştir. Emric, Galaktik Federasyonu N boyutlu bir Öklid uzayında (N-1)-küre (bkz: n-sphere) şeklinde N+1 tane bombanın arasına ışınlayacaktır.
+Bombaların patlama menzilleri belirli aralıklarda rastgele bir şekilde değişebilmektedir. Galaktik federasyonun enerji kalkanı ve koruyucu kalkanı ise (N-1)-küredir. (bkz:n-sphere)
+Bazı özel şartlar sağlandığında ise Galaktik Federasyon bu patlamadan hasar almadan çıkabilmektedir. 
+Bu şartlar aşağıdaki gibidir:
+1)Galaktik Federasyon'un koruyucu kalkanı, içerideki tüm bombalara teğet olmalıdır.
+2)Tüm bombalar, içerdeki enerji kalkanına teğet olmalıdır.
+3)Her bomba, yanındaki bombaya teğet olmalı ve sonuncu bomba ilk bombaya teğet olmalıdır.
+Emric, en küçük riski bile almak istememektedir. Bu yüzden patlamayı simüle edecek bir program yazmaya koyulur. Bu konuda ona yardımcı olabilir misiniz?
 
 Constraints:
 3≤N≤17 <br>
 3≤X≤80000 <br>
 6000≤Y≤130000 <br>
 Input Format:
-İlk satırda
-Olayın gerçekleşeceği öklit evreninin boyutu N,
-İkinci satırda bombaların menzillerinin alabileceği minimum değer X,
-Üçüncü satırda bombaların menzillerinin alabileceği maksimum değer Y verilecektir.
+İlk satırda olayın gerçekleşeceği Öklid evreninin boyutu N,
+İkinci satırda, bombaların menzillerinin alabileceği minimum değer X,
+Üçüncü satırda, bombaların menzillerinin alabileceği maksimum değer Y verilecektir.
 
 Output Format:
 Verilen girdilere göre galaktik federasyonun hasar almadan kurtulma olasılığını ekrana yazdırınız.
-Çıktının virgülden sonraki ilk 3 basamağının aynı olması yeterlidir.
+Çıktı ile doğru sonucun virgülden sonraki ilk 3 basamağının aynı olması yeterlidir.
 
 Sample Input:
 3
