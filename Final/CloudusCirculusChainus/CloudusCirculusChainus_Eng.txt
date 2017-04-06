@@ -1,13 +1,13 @@
-Defne is one of the brightest students of Minnochcius Witchcraft and Wizardry School. When Defne decided to sign up for the Traditional International HükusPokus Wizardry Turnament, there were only few days left. She started practising past years spells. She is struggling with last years final spell now. The spell is about using two sets of magical particles. Every set contains three magical particles that is non-linearly scattered in space.
-Wizard need to draw a circle that passes through all three particle for each set. Spell succeeds if circles chains each other and they don't have any touching point. Can you find whether Defne's spell succeeds?
+Defne is one of the brightest students of Minnochcius Witchcraft and Wizardry School. When Defne decided to sign up for the Traditional International HükusPokus Wizardry Turnament, there were only few days left. She started practising past years spells. She is struggling with last years final spell now. The spell is about using two sets of magical particles. Every set contains three magical particles which are non-linearly scattered in space.
+Wizard needs to draw a circle that passes through all three particles for each set. Spell succeeds if circles chains each other and they don't have any touching point. Can you find whether Defne's spell succeeds or not?
 
 Input Format
 First line contains an integer Q, denoting number of query.
 Next Q subsequent lines:
-First line contains nine space-seperated integers denoting first set of particles coordinates, x1 y1 z1 x2 y2 z2 x3 y3 z3.
-Second line contains nine space-seperated integers denoting second set of particles coordinates, x4 y4 z4 x5 y5 z5 x6 y6 z6.
+First line contains 9 space-seperated integers, denoting first set of particles coordinates, x1, y1, z1, x2, y2, z2, x3, y3, z3,.
+Second line contains 9 space-seperated integers, denoting second set of particles coordinates, x4, y4, z4, x5, y5, z5, x6, y6, z6.
 
 Output Format
-For each query output YES if spell succeeds, NO otherwise on a new line.
+For each query, output YES if spell succeeds, NO otherwise on a new line.
 
 
