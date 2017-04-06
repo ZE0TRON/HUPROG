@@ -9,7 +9,7 @@ Bilge, labirentten en hızlı şekilde kurtulabilirse Dünya'ya geri yollanacakt
 INPUT FORMAT:
 İlk satırda labirentin boyutu IxJ (satır x sütun sayısı),
 Takip eden I satırda labirent haritası, (X=duvar)
-Sonraki satırda bir odadan diğer odaya geçiş süresi,
+Sonraki satırda bir odadan diğer odaya T geçiş süresi,
 Sonraki satırda N portal çifti sayısı,
 Takip eden iki satırlık N blokta:
 İlk satırda portal çiftinin konumları (xi,yi,xo,yo),
@@ -21,7 +21,9 @@ OUTPUT FORMAT:
 Bilge'ın labirentten kurtulacağı minimum süreyi yazdırınız.
 
 CONSTRAINTS:
-
+1<I,J<1000
+1<=T<=25
+1<=N<=10^4
 
 
 INPUT:
