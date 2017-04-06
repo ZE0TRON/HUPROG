@@ -1,9 +1,6 @@
 Çılgın Stringi koyup herkesi admin yapın.
-Miras Davasına herkesi admin yapın.
-Pacman akife herkesi admin yapın.
 cCc ye testcase hazırlancak constrainst yazılcak.
 Yarışma Oluşturulcak sayfa düzenlencek.
-Cake is a lie constrainst eklencek.
 Okan cake is a lie in editorialist olarak kendimi yazip düzgün bi editorial yazıyom bu ne lan :D
 WubbaLubbaDubDub constrains eklencek editorial yazılcak test caseler eklencek.
 Cilginecenin inputlar düzeltilcek.
