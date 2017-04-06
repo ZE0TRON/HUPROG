@@ -8,9 +8,9 @@ Bilge, labirentten en hızlı şekilde kurtulabilirse Dünya'ya geri yollanacakt
 
 INPUT FORMAT:
 İlk satırda labirentin boyutu IxJ (satır x sütun sayısı),
-takip eden I satırda labirent haritası, (X=duvar)
-sonraki satırda bir odadan diğer odaya geçiş süresi,
-sonraki satırda N portal çifti sayısı,
+Takip eden I satırda labirent haritası, (X=duvar)
+Sonraki satırda bir odadan diğer odaya geçiş süresi,
+Sonraki satırda N portal çifti sayısı,
 Takip eden iki satırlık N blokta:
 İlk satırda portal çiftinin konumları (xi,yi,xo,yo),
 İkinci satırda portal çiftinin açık kaldığı zaman aralığı (t1,t2),
