@@ -1,24 +1,24 @@
-In his dream, Bilge is kidnapped by aliens from HaaaToka Planet and find himself in V216 facilities as a test subject.
+In his dream, Bilge has kidnapped by aliens from HaaaToka Planet and found himself in V216 facilities as a test subject.
 In facility, aliens put Bilge to a maze that consist of rooms. There are three sort of rooms in the maze: open rooms, rooms that don't have any entry or an exit and rooms that have portals.
-Portals which are one of the highest technology of aliens are time adjustable and are found in pairs. Portals are bidirectional.
-Each portal has a time interval that is open and they remain closed outside off this intervals. Bilge can wait at any location and as long as he wants.
+Portals which are one of the highest technology of aliens are time adjustable and found in pairs. Portals are bidirectional.
+Each portal has a time interval which will be open and they remain closed outside off this intervals. Bilge can wait at any location and as long as he wants.
 It isn't obliged to use portal in portal rooms.
-While using a portal duration is zero, there is no time spent while passing. There is a duration to take while passing to another room. It can be moved right, left, up and down.
-Bilge can go back to Earth if he can get away from the maze at the minimum time. Find the way for Bilge to pass the maze?
+While using a portal, duration is zero, there is no time spent while passing. There is a constant duration to take while passing to another room. Bilge can move right, left, up and down in the maze.
+Bilge can go back to Earth if he can get away from the maze at the minimum time. Can you find the way for Bilge to pass the maze?
 
 Input Format:
-First line contains two space-separated integers I,J (row x column)
-Next I subsequent lines contain maze map. (X=walls)
-Next line contains an integer denoting duration of passing to another room.
-Next line contains an integer N, number of portal pairs.
+First line contains two space-separated integers I,J (row x column),
+Next I subsequent lines contain maze map (X=walls),
+Next line contains an integer, denoting duration of passing to another room,
+Next line contains an integer N, number of portal pairs,
 Next N subsequent lines:
-First line contains four space-separated integers denoting xi,yi,xo,yo (Portal pair locations)
-Second line contains two space-sepeared integers denoting t1, t2 (time interval that portal remain open)
-Next line contains the coordinates of starting room
-Last line contains the coordinates of finishing room
+First line contains four space-separated integers denoting xi,yi,xo,yo (Portal pair locations),
+Second line contains two space-sepeared integers denoting t1, t2 (time interval that portal remains open),
+Next line contains the coordinates of starting room,
+Last line contains the coordinates of finishing room.
 
 Output Format:
-Output the time it takes Bilge to get away from maze
+Output the minimum time it takes Bilge to get away from maze.
 
 CONSTRAINTS:
 1<I,J<1000
