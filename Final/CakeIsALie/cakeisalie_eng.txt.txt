@@ -21,7 +21,9 @@ Output Format:
 Output the time it takes Bilge to get away from maze
 
 CONSTRAINTS:
-
+1<I,J<1000
+1<=T<=25
+1<=N<=10^4
 
 
 INPUT:
@@ -37,7 +39,3 @@ X 0 0 X 0
 4 25
 0 0
 4 4
-
-
-
-
