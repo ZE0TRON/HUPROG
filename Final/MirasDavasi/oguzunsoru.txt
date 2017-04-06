@@ -2,8 +2,6 @@
 hisselerinin değerleri x1,x2,x3,x4...xM olsun. Bir hissedarın N sene sonraki hissesinin değeri ise sqrt(x^2+N) olsun.
 Hissedarların kaç yıldır havuzda oldukları ve hisse havuzunun şu anki toplam değeri bilindiğine göre tüm hisselerin havuza katılmadan önceki değerlerinin toplamını bulunuz.
 
-Constraints: 
-
 Input Format:
 İlk satırda Q sorgu sayısı,
 Takip eden Q blokta,
@@ -11,7 +9,10 @@ Takip eden Q blokta,
 Sonraki M satırda sırasıyla her hissedarın N'i verilecektir.
 Sonraki satırda havuzun şu anki toplam değeri verilecektir.
 
+Constraints: 
+1<Q<5000
+1<M<10000
+1<N<10000
+
 Output Format :
 Her bir sorgu için yeni satırda olmak üzere, x1+x2+....xM toplamını yazdırınız.
-
-
