@@ -110,9 +110,7 @@ while soruSayısı > 0:
     oran = tek / nodeSayısı
     if not(oran < 0.21 and oran > 0.05):
         continue
-    else:
-        print("çok güzel oluşturdum aferin bana. oran:",oran)
-        print("kalan test case:",soruSayısı)
+    
     print(nodeSayısı, edgeler,file=out)
     for num1,num2 in edgeList:
         print(num1,num2,randint(minA,maxA),file=out)

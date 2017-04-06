@@ -7,7 +7,7 @@
 #include <string>
 #include <sstream>
 #define min(x, y) ((x) < (y) ? (x) : (y))
-int map[16][16], odd[16];
+int map[1600][1600], odd[1600];
 using namespace std;
 void floyd(int n) {
     int i, j, k;
