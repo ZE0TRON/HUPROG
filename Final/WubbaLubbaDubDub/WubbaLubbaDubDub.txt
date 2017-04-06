@@ -1,12 +1,14 @@
-N tane n-1 boyutlu kürenin birbirine teğet olduğunu vercez.
+﻿N tane n-1 boyutlu kürenin birbirine teğet olduğunu vercez.
 Kürelerin yarı çaplarının alabileceği aralığı vercez.
 Sonrasında bu kürelerin yarı çapları toplamı a olsun
 Kaç farklı a değeri bulabiliriz.
 
 Emric'in başı galaktik fedarasyonla derde girmiştir. Emric galaktik fedarasyonu N boyutlu bir uzayda N-1 boyutta genişleyerek patlayan N+2 tane bombanın arasına ışınlayacaktır.
 Bombaların patlama menzilleri belirli aralıklarda rastgele bir şekilde değişebilmektedir.
-Eğer galaktik fedarasyonu sarmalayan N-1 boyutlu küre ve tüm bombaların menzilini oluşturan N-1 boyutlarındaki kürelere ve bu kürelerde bunların hepsini kapsayan koruyucu kalkan olan N-1 boyutlu küreye teğet olursa galaktik fedarasyon bu patlamaların hiç birinden etkilenmeyecektir.
+Eğer galaktik fedarasyonu sarmalayan N-1 boyutlu küre tüm bombaların menzilini oluşturan N-1 boyutlarındaki kürelere ve bu küreler de bunların hepsini kapsayan koruyucu kalkan olan N-1 boyutlu küreye teğet olursa galaktik fedarasyon bu patlamaların hiç birinden etkilenmeyecektir.
 Emric'in çok küçük riskleri bile almak istememektedir.Bu yüzden bir simülasyon programı yazması gerekmektedir. Bu konuda ona yardımcı olabilir misiniz ?
+
+Constraints:
 
 Input Format:
 İlk satırda
@@ -22,5 +24,6 @@ Sample Input:
 3
 5
 90000
+
 Sample Output:
 0.006

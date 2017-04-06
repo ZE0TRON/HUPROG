@@ -1,0 +1,23 @@
+Akif loves the Pacman game and he even wrote a bot for the game. To annoy him, Akif's humorous friends change the Pacman game and write it again. There are no ghosts in the new version of the game, there is only Pacman and food.
+To complete a stage Pacman has to eat all the food and go back to initial point.
+To win the game with higher score, player should finish it at the shortest time that is possible.
+Akif accepts the challenge and starts developing a bot that gets the maximum score. Can you help him to develop?
+
+Constraints:
+
+Input Format:
+Each corner of the pacman's map denotes to a node.
+A road that goes from one corner to an other denotes an edge that is length of the road.
+According to this:
+First line contains an integer Q, denoting number of queries.
+Next Q subsequent lines:
+First line contains two space-separated integers N,M (number of node, number of edge)
+Next M subsequent lines contain three space-separated integers A,B,C (node, node, length)
+
+Output Format:
+For each query output the shortest time it takes to complete each stage with higher score.
+
+
+Sample Input:
+
+Sample Output:

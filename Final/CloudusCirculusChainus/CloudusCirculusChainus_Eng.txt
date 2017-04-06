@@ -1,5 +1,6 @@
 Defne is one of the brightest students of Minnochcius Witchcraft and Wizardry School. When Defne decided to sign up for the Traditional International HükusPokus Wizardry Turnament, there were only few days left. She started practising past years spells. She is struggling with last years final spell now. The spell is about using two sets of magical particles. Every set contains three magical particles that is non-linearly scattered in space.
 Wizard need to draw a circle that passes through all three particle for each set. Spell succeeds if circles chains each other and they don't have any touching point. Can you find whether Defne's spell succeeds?
+
 Input Format
 First line contains an integer Q, denoting number of query.
 Next Q subsequent lines:

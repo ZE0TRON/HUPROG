@@ -1,0 +1,21 @@
+Emric get in trouble with galactic federation. Emric is planning to beam the federation to an N dimensional space, between N+2 bomb that explodes while expanding in (N-1)th dimension. Bombs ranges varies in certain intervals randomly. The shield which protects the federation is an N-1 dimensional sphere. However Emric finds out that, federation doesn't effect from the explosion if shield is tangent to all the bombs ranges form as spheres and also if each bomb range sphere is tangent to a bigger N-1 dimensional sphere that covers all.
+Emric doesn't want to risk anything, can you help him to simulate the explosion?
+
+Constraints:
+
+INPUT FORMAT:
+First line contains an integer N, denoting dimension of the space.
+Second line contains an integer X, denoting minimum value of bombs range.
+Third line contains an integer Y, denoting maximum value of bombs range.
+
+Output Format:
+Output the probabilty of federation to survive.
+It is decent if the outputs first three floating figure matches.
+
+Sample Input:
+3
+5
+90000
+
+Sample Output:
+0.006

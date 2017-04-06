@@ -1,20 +1,17 @@
 ﻿M tane hissedar, hisselerini farklı tarihlerde bir hisse havuzuna katıyorlar. Hissedarların havuza katıldıkları tarihteki
-hisse değerleri x1,x2,x3,x4...xn olsun. Bir hissedarın N sene sonraki hissesinin değeri ise sqrt(x^2+N) olsun.
-Hissedarların havuza katılma tarihleri, bugünün tarihi ve hisse havuzunun şu anki
-toplam değeri bilindiğine göre tüm hisselerin havuza katılmadan önceki değerlerinin toplamını bulunuz.
+hisselerinin değerleri x1,x2,x3,x4...xM olsun. Bir hissedarın N sene sonraki hissesinin değeri ise sqrt(x^2+N) olsun.
+Hissedarların kaç yıldır havuzda oldukları ve hisse havuzunun şu anki toplam değeri bilindiğine göre tüm hisselerin havuza katılmadan önceki değerlerinin toplamını bulunuz.
 
-Constaints:
+Constraints: 
 
 Input Format:
-
 İlk satırda Q sorgu sayısı,
 Takip eden Q blokta,
 İlk satırda M hissedar sayısı,
-Sonraki M satırda sırasıyla Ni verilecektir.
+Sonraki M satırda sırasıyla her hissedarın N'i verilecektir.
 Sonraki satırda havuzun şu anki toplam değeri verilecektir.
 
 Output Format :
-Her bir sorgu için yeni satırda olmak üzere, x1+x2+....xn toplamını yazdırınız.
+Her bir sorgu için yeni satırda olmak üzere, x1+x2+....xM toplamını yazdırınız.
 
-Explanation:
 

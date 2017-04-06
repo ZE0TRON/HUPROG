@@ -4,11 +4,11 @@ Uzaylıların gelişmiş teknolojilerinden biri olan portallar zaman ayarlıdır
 Her portalın açık olduğu bir zaman aralığı vardır ve bu süre dışında geçişe kapalıdır. Bilge istediği konumda, istediği kadar bekleyebilir.
 Portallı odalarda portal kullanımı zorunlu değildir, boş odalardaki gibi doğrudan komşu odaya geçiş yapılabilir.
 Odalar arası geçiş süresi sabittir, portal kullanıldığında ise geçiş anlıktır ve geçen süre sıfırdır. Labirentte sağ, sol, yukarı ve aşağıya ilerlenebilir.
-Bilge, labirentten en hızlı şekilde kurtulabilirse Dünya'ya geri yollanacaktır. Bilge'ın sıla hasretini sonlandırmak için izlemesi gereken yolu bulunuz.
+Bilge, labirentten en hızlı şekilde kurtulabilirse Dünya'ya geri yollanacaktır. Bilge'nin sıla hasretini sonlandırmak için izlemesi gereken yolu bulunuz.
 
 INPUT FORMAT:
 İlk satırda labirentin boyutu IxJ (satır x sütun sayısı),
-takip eden I satırda labirent haritası,
+takip eden I satırda labirent haritası, (X=duvar)
 sonraki satırda bir odadan diğer odaya geçiş süresi,
 sonraki satırda N portal çifti sayısı,
 Takip eden iki satırlık N blokta:

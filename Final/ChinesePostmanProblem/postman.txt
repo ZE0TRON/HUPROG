@@ -3,8 +3,10 @@ Akif'in muzip arkadaşları ise sırf onu sinir etmek için Pacman oyununu deği
 Oyunun yeni versiyonunda hiç hayalet yoktur, sadece Pacman ve yiyecekler vardır.
 Pacman'in bir etabı tamamlayabilmesi için tüm yiyecekleri yiyip başladığı noktaya dönmesi gerekmektedir.
 Oyuncu, bir etabı ne kadar kısa sürede bitirirse o kadar çok puan almaktadır.
-Akif ise bu şakanın altında kalmamak için yeni oyunda maksimum skoru alacak yeni bir bot geliştirmeye karar vermiştir.
+Akif meydan okumayı kabul eder ve yeni oyunda maksimum skoru alacak yeni bir bot geliştirmeye karar verir.
 Ona bu konuda yardımcı olabilir misiniz ?
+
+Constraints:
 
 Input Format:
 Pacman'in haritasındaki her bir köşe, bir çizgenin düğümünü temsil etsin.
