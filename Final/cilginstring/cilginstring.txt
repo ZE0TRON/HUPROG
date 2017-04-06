@@ -12,6 +12,12 @@ Takip eden Q blokta:
 İkinci satırda kelimenin uzunluğu(harf sayısı) M,
 Üçüncü satırda asıl kelime S1 ve şifreli kelime S2
 
+Constraints:
+1≤Q≤10 
+2≤N≤9  
+3≤M≤20 
+
+
 Output Format:
 Her sorgu sayısı için yeni satırda olmak üzere, en az kaç hamlede şifreli kelimenin oluşturulabileceğini yazdırınız.
 
