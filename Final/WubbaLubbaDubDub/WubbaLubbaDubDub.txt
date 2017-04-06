@@ -1,11 +1,10 @@
-﻿N tane n-1 boyutlu kürenin birbirine teğet olduğunu vercez.
-Kürelerin yarı çaplarının alabileceği aralığı vercez.
-Sonrasında bu kürelerin yarı çapları toplamı a olsun
-Kaç farklı a değeri bulabiliriz.
-
-Emric'in başı galaktik fedarasyonla derde girmiştir. Emric galaktik fedarasyonu N boyutlu bir uzayda N-1 boyutta genişleyerek patlayan N+2 tane bombanın arasına ışınlayacaktır.
+Emric'in başı galaktik federasyonla derde girmiştir. Emric galaktik federasyonu N boyutlu bir öklit uzayında  (N-1)-küre (bkz : n-sphere)şeklinde N+1 tane bombanın arasına ışınlayacaktır.
 Bombaların patlama menzilleri belirli aralıklarda rastgele bir şekilde değişebilmektedir.
-Eğer galaktik fedarasyonu sarmalayan N-1 boyutlu küre tüm bombaların menzilini oluşturan N-1 boyutlarındaki kürelere ve bu küreler de bunların hepsini kapsayan koruyucu kalkan olan N-1 boyutlu küreye teğet olursa galaktik fedarasyon bu patlamaların hiç birinden etkilenmeyecektir.
+Bazı özel şartlar sağlandığında galaktik federasyon bu patlamadan hasar almadan çıkabilmektedir. Galaktik federasyonun enerji kalkanı n-küre şeklinde olan (N-1)-küredir.
+Bu şartlar:
+1)Galaktik federasyonun koruyucu kalkanının içerdeki tüm bombalara teğet olması.
+2)Tüm bombaların içerdeki enerji kalkanına teğet olması.
+3)Her bombanın bir yanında bombaya teğet olması ve sonuncu bomba ilk bombaya teğet olması
 Emric'in çok küçük riskleri bile almak istememektedir.Bu yüzden bir simülasyon programı yazması gerekmektedir. Bu konuda ona yardımcı olabilir misiniz ?
 
 Constraints:
@@ -17,8 +16,8 @@ Olayın gerçekleşeceği evrenin boyutu N,
 Üçüncü satırda bombaların menzillerinin alabileceği maksimum değer Y verilecektir.
 
 Output Format:
-Verilen girdilere göre galaktik fedarasyonun hasar almadan kurtulma olasılığını ekrana yazdırınız.
-Çıktların virgülden sonraki ilk 3 basamağının aynı olması yeterlidir.
+Verilen girdilere göre galaktik federasyonun hasar almadan kurtulma olasılığını ekrana yazdırınız.
+Çıktının virgülden sonraki ilk 3 basamağının aynı olması yeterlidir.
 
 Sample Input:
 3
