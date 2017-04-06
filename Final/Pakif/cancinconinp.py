@@ -29,8 +29,7 @@ nodeSayısı = int(input())
 print("edge sayisi:")
 edgeSayisi = int(input())
 
-print("dogru test case sayısı yüzdesi: ")
-yuzde = int(input())
+yuzde = 100
 print("ağırlık aralığı: (min max)")
 minA,maxA = map(int,input().rstrip().split(" "))
 yanlis = 0
