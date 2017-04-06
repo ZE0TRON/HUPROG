@@ -8,10 +8,12 @@ Bu şartlar:
 Emric'in çok küçük riskleri bile almak istememektedir.Bu yüzden bir simülasyon programı yazması gerekmektedir. Bu konuda ona yardımcı olabilir misiniz ?
 
 Constraints:
-
+3≤N≤17 <br>
+3≤X≤80000 <br>
+6000≤Y≤130000 <br>
 Input Format:
 İlk satırda
-Olayın gerçekleşeceği evrenin boyutu N,
+Olayın gerçekleşeceği öklit evreninin boyutu N,
 İkinci satırda bombaların menzillerinin alabileceği minimum değer X,
 Üçüncü satırda bombaların menzillerinin alabileceği maksimum değer Y verilecektir.
 
