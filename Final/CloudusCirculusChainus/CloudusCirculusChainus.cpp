@@ -332,7 +332,7 @@ int main()
                         }
 
                 }
-
+                cout<<flag<<endl;
                 cout << (flag ? "YES" : "NO") << endl;
 
         }

@@ -1,10 +1,10 @@
 #include <iostream>
-#include <fstream>
-#include <time.h> 
-#include <stdlib.h>
 #include <vector>
 #include <string>
+#include <stdlib.h>
 #include <cmath>
+#include <fstream>
+
 using namespace std;
 
 #define SZ(V) (LL)V.size()
@@ -21,13 +21,13 @@ typedef long long LL;
 
 typedef pair<LL,LL> pll;
 
-typedef vector<double> vd;
+typedef vector<long  double> vd;
 
 bool flag;
 
 void normalize(vd &a){// normalizing a vector
 
-        double d;
+        long double d;
 
         FORN(i,3) d+=a[i]*a[i];
 
@@ -71,7 +71,7 @@ vd circum_center(vd a,vd b,vd c){// calculating circumcenter of circle given thr
 
         // calculating center of circle
 
-        double x=-190.0,y=-190.0;
+       long double x=-190.0,y=-190.0;
 
         FORN(i,3){
 
@@ -135,9 +135,9 @@ void rotate(vd center,vd a,vd b,vd c,vd &nx,vd &ny,vd &nz){
 
 }
 
-double dot(vd a,vd b){ // dot product of two vectors
+long double dot(vd a,vd b){ // dot product of two vectors
 
-        double ans=0;
+      long  double ans=0;
 
         FORN(i,3) ans+=a[i]*b[i];
 
@@ -161,11 +161,11 @@ void update(vd &a,vd x,vd y,vd z){ // calculating new coordinates by taking proj
 
 bool check(vd center,vd p,vd a,vd b){// checking if one of a,b lies inside the second circle and other outside
 
-        double radius=0.0;
+       long double radius=0.0;
 
         FORN(i,3) radius+=(p[i]-center[i])*(p[i]-center[i]);
 
-        double da=0.0,db=0.0;
+        long double da=0.0,db=0.0;
 
         FORN(i,3) da+=(a[i]-center[i])*(a[i]-center[i]);
 
@@ -175,23 +175,44 @@ bool check(vd center,vd p,vd a,vd b){// checking if one of a,b lies inside the s
 
 }
 
-string fonk1(int x1,int y1,int z1,int x2,int y2,int z2,int x3,int y3,int z3,int x4,int y4,int z4,int x5,int y5,int z5,int x6,int y6,int z6,int q)
+int main()
 
 {
+    ofstream myFileOut;
+    string outName;
+    cout<<"Dosya sirasi output"<<endl;
+    cin>>outName;
+    myFileOut.open("output"+outName+".txt");
+    
+    ifstream myFileInp;
+    myFileInp.open("input"+outName+".txt");
 
         LL test,sum,a[3];
 
-        test = q;
+        myFileInp >> test;
 
         while(test--){
 
                 vd a1(3),a2(3),a3(3),b1(3),b2(3),b3(3);
-                a1[0] = x1;a1[1] = y1;a1[2] = z1;
-                a2[0] = x2;a2[1] = y2;a2[2] = z2;
-                a3[0] = x3;a3[1] = y3;a3[2] = z3;
-                b1[0] = x4;b1[1] = y4;b1[2] = z4;
-                b2[0] = x5;b2[1] = y5;b2[2] = z5;
-                b3[0] = x6;b3[1] = y6;b3[2] = z6;
+
+                FORN(i,3) myFileInp >> a1[i];
+                
+
+                
+                FORN(i,3) myFileInp >> a2[i];
+                
+
+                FORN(i,3) myFileInp >> a3[i];
+                
+
+                FORN(i,3) myFileInp >> b1[i];
+                
+
+                FORN(i,3) myFileInp >> b2[i];
+                
+
+                FORN(i,3) myFileInp >> b3[i];
+                
 
                 vd c1=circum_center(a1,a2,a3);
 
@@ -247,7 +268,7 @@ string fonk1(int x1,int y1,int z1,int x2,int y2,int z2,int x3,int y3,int z3,int 
 
                 }
 
-                double d=0.0,radius=0.0;
+               long double d=0.0,radius=0.0;
 
                 FORN(i,3) d+=b1[i]*constants[i];
 
@@ -267,7 +288,7 @@ string fonk1(int x1,int y1,int z1,int x2,int y2,int z2,int x3,int y3,int z3,int 
 
                         else{
 
-                                double y=d/constants[1],k=(radius*radius - y*y);
+                               long double y=d/constants[1],k=(radius*radius - y*y);
 
                                 if(abs(k) <eps ) flag=false;
 
@@ -295,7 +316,7 @@ string fonk1(int x1,int y1,int z1,int x2,int y2,int z2,int x3,int y3,int z3,int 
 
                 else{
 
-                        double a,b,c;
+                        long double a,b,c;
 
                         a= (constants[0]*constants[0]) + (constants[1]*constants[1]);
 
@@ -303,7 +324,7 @@ string fonk1(int x1,int y1,int z1,int x2,int y2,int z2,int x3,int y3,int z3,int 
 
                         c= d*d - constants[0]*constants[0]*radius*radius;
 
-                        double k=b*b -4*a*c;
+                        long double k=b*b -4*a*c;
 
                         if(k<eps) flag=false;
 
@@ -312,9 +333,11 @@ string fonk1(int x1,int y1,int z1,int x2,int y2,int z2,int x3,int y3,int z3,int 
                                 vd x(3,0.0),y(3,0.0);
 
                                 x[1] = (-b + sqrt(k))/(2*a);
+                                cout<<x[1]<<endl;
+                                
 
                                 y[1] = (-b - sqrt(k))/(2*a);
-
+                                cout<<y[1]<<endl;
                                 x[0] = (d-b*x[1])/a;
 
                                 y[0] = (d-b*y[1])/a;
@@ -328,71 +351,10 @@ string fonk1(int x1,int y1,int z1,int x2,int y2,int z2,int x3,int y3,int z3,int 
                         }
 
                 }
-
-                return (flag ? "YES" : "NO") ;
+                myFileOut << (flag ? "YES" : "NO") << endl;
 
         }
-}
 
-int main() {
-  ofstream myfile;
-  string output;
-  cout<<"dosya adı: "<<endl;
-  cin>>output;
-  myfile.open("input"+output + ".txt");
-
-  cout<<"soru sayısı: "<<endl;
-  int q;
-  cin>>q;
-
-  cout<<"doğru soru yüzdesini girin: "<<endl;
-  int tane;
-  cin>>tane;
-  tane = q * tane / 100;
-  cout<<tane<<endl;
-
-  cout<<"noktaların koordinat sınırları: (min max)"<<endl;
-  int minKoor;int maxKoor;
-  cin>>minKoor>>maxKoor;
-
-  myfile<<q<<"\n";
-
-  srand (time(NULL));
-  for (int i = 0; i < q; i++)
-  {
-    
-    int x1 = rand() % maxKoor + minKoor;int y1 = rand() % maxKoor + minKoor;int z1 = rand() % maxKoor + minKoor;
-    int x2 = rand() % maxKoor + minKoor;int y2 = rand() % maxKoor + minKoor;int z2 = rand() % maxKoor + minKoor;
-    int x3 = rand() % maxKoor + minKoor;int y3 = rand() % maxKoor + minKoor;int z3 = rand() % maxKoor + minKoor;
-    int x4 = rand() % maxKoor + minKoor;int y4 = rand() % maxKoor + minKoor;int z4 = rand() % maxKoor + minKoor;
-    int x5 = rand() % maxKoor + minKoor;int y5 = rand() % maxKoor + minKoor;int z5 = rand() % maxKoor + minKoor;
-    int x6 = rand() % maxKoor + minKoor;int y6 = rand() % maxKoor + minKoor;int z6 = rand() % maxKoor + minKoor;
-    if (((x1/x2 == y1/y2 && x1/x2 == z1/z2)&&(x2/x3 == y2/y3 && x2/x3 == z2/z3)) || (x1 == x2 && y1 == y2 && z1 == z2) || (x2 == x3 && y2 == y3 && z2 == z3) || 
-          (x1 == x3 && y1 == y3 && z1 == z3) || (x1 == x4 && y1 == y4 && z1 == z4) || (x2 == x4 && y2 == y4 && z2 == z4) || (x1 == x5 && y1 == y5 && z1 == z5) ||
-        (x1 == x6 && y1 == y6 && z1 == z6) || (x2 == x5 && y2 == y5 && z2 == z5) || (x2 == x6 && y2 == y6 && z2 == z6) ||
-        (x3 == x4 && y3 == y4 && z3 == z4) || (x3 == x5 && y3 == y5 && z3 == z5) || (x3 == x6 && y3 == y6 && z3 == z6) ||
-        (x4 == x5 && y4 == y5 && z4 == z5) || (x4 == x6 && y4 == y6 && z4 == z6) || (x5 == x6 && y5 == y6 && z5 == z6) ||
-          ((x4/x5 == y4/y5 && x4/x5 == z4/z5)&&(x5/x6 == y5/y6 && x5/x6 == z5/z6)))
-      
-      {
-      i--;
-      continue;
-    }
-    if(i < tane && fonk1(x1,y1,z1,x2,y2,z2,x3,y3,z3,x4,y4,z4,x5,y5,z5,x6,y6,z6,q) == "NO"){
-      i--;
-      continue;
-    }
-    myfile<<x1<<" "<<y1<<" "<<z1<<" "<<x2<<" "<<y2<<" "<<z2<<" "<<x3<<" "<<y3<<" "<<z3<<endl;
-    myfile<<x4<<" "<<y4<<" "<<z4<<" "<<x5<<" "<<y5<<" "<<z5<<" "<<x6<<" "<<y6<<" "<<z6<<endl;
-    
-
-
-  }
-
-  //myfile << "Writing this to a file.\n";
-  myfile.close();
-  cout<<"deneme"<<endl;
-  return 0;
+        return 0;
 
 }
-
