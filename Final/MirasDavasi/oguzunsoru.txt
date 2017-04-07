@@ -1,6 +1,6 @@
 ﻿M tane hissedar, hisselerini farklı tarihlerde bir hisse havuzuna katıyorlar. Hissedarların havuza katıldıkları tarihteki
 hisselerinin değerleri x1,x2,x3,x4...xM olsun. Bir hissedarın N sene sonraki hissesinin değeri ise sqrt(x^2+N) olsun.
-Hissedarların kaç yıldır havuzda oldukları ve hisse havuzunun şu anki toplam değeri bilindiğine göre tüm hisselerin havuza katılmadan önceki değerlerinin toplamını bulunuz.
+Hissedarların kaç yıldır havuzda oldukları ve hisse havuzunun şu anki toplam değeri bilindiğine göre, tüm hisselerin havuza katılmadan önceki değerleri toplamınının minimum tam sayı değerini bulunuz.
 
 Input Format:
 İlk satırda Q sorgu sayısı,
@@ -15,4 +15,4 @@ Constraints:
 1<N<10000
 
 Output Format :
-Her bir sorgu için yeni satırda olmak üzere, x1+x2+....xM toplamını yazdırınız.
+Her bir sorgu için yeni satırda olmak üzere, x1+x2+....xM toplamının minimum tam sayı değerini yazdırınız.

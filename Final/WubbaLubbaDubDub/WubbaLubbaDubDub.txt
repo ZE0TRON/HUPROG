@@ -1,5 +1,5 @@
-﻿Emric'in başı Galaktik Federasyon ile derde girmiştir. Emric, Galaktik Federasyonu N boyutlu bir Öklid uzayında (N-1)-küre (bkz: n-sphere) şeklinde N+1 tane bombanın arasına ışınlayacaktır.
-Bombaların patlama menzilleri belirli aralıklarda rastgele bir şekilde değişebilmektedir. Galaktik federasyonun enerji kalkanı ve koruyucu kalkanı ise (N-1)-küredir. (bkz:n-sphere)
+﻿Emric'in başı Galaktik Federasyon ile derde girmiştir. Emric, Galaktik Federasyonu N boyutlu bir Öklid uzayında, (N-1)-küre (bkz: n-sphere) şeklinde N+1 tane bombanın arasına ışınlayacaktır.
+Bombaların patlama menzilleri belirli aralıklarda rastgele değişebilmektedir. Galaktik federasyonun enerji kalkanı ve koruyucu kalkanı ise (N-1)-küredir. (bkz:n-sphere)
 Bazı özel şartlar sağlandığında ise Galaktik Federasyon bu patlamadan hasar almadan çıkabilmektedir. 
 Bu şartlar aşağıdaki gibidir:
 1)Galaktik Federasyon'un koruyucu kalkanı, içerideki tüm bombalara teğet olmalıdır.

@@ -6,8 +6,6 @@ Oyuncu, bir etabı ne kadar kısa sürede bitirirse o kadar çok puan almaktadı
 Akif meydan okumayı kabul eder ve yeni oyunda maksimum skoru alacak yeni bir bot geliştirmeye karar verir.
 Ona bu konuda yardımcı olabilir misiniz ?
 
-Constraints:
-
 Input Format:
 Pacman'in haritasındaki her bir köşe, bir çizgenin düğümünü temsil etsin.
 Bir köşeden başka bir köşeye giden yol, bir çizgedeki yolun uzunluğu kadar ağırlıklı bir kenarı temsil etsin.
@@ -15,6 +13,12 @@ Buna göre, ilk satırda sorgu sayısı Q,
 Takip eden Q blokta:
 İlk satıda N,M düğüm ve kenar sayısı,
 Takip eden M satırda A, B düğümleri ve düğümler arasındaki uzaklık C verilmektedir.
+
+Constraints:
+1<Q<100000
+1<N<10
+1<M<30
+1<C<100000
 
 
 Output Format

@@ -1,5 +1,5 @@
 Number of M shareholders unite their shares in a poll at different dates. Assume share values are x1, x2, x3... xM at initial. After N years a shareholders share becomes sqrt(x^2+N).
-Share holders number of years that in the poll and polls current total value are known, can you find total initial share values? (x1+x2+..xM)
+Share holders number of years that in the poll and polls current total value are known, can you find the smallest integer value that total initial share values can get? (x1+x2+..xM)
 
 Input Format:
 First line contains an integer Q, denoting number of queries.
@@ -14,4 +14,4 @@ Constraints:
 1<N<10000
 
 Output Format:
-For each query output the total of x1+x2+x3...xM.
+For each query, output the smallest integer value that total of x1+x2+x3...xM can get.
